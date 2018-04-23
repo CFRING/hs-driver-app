@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_160"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_33"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/left_arrow_image"
+            android:layout_width="@dimen/width_17"
+            android:layout_height="@dimen/height_15"
+            android:layout_marginLeft="@dimen/width_13"
+            android:src="@drawable/arrow_left" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/choose_pay_way"
+            android:textSize="@dimen/width_15"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divide_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"/>
+
+
+    <ListView
+        android:id="@+id/choose_card_listview"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:divider="@null" />
+
+    <RelativeLayout
+        android:id="@+id/use_new_card"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_43"
+        android:paddingLeft="@dimen/width_9"
+        android:paddingRight="@dimen/width_9">
+
+        <View
+            style="@style/line_top_thin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_9"
+            android:textColor="@color/black"
+            android:textSize="@dimen/width_13"
+            android:text="@string/use_new_bankcard"/>
+
+        <ImageView
+            android:id="@+id/right_arrow_image"
+            android:layout_width="@dimen/width_17"
+            android:layout_height="@dimen/height_18"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/width_4"
+            android:src="@drawable/my_item_right" />
+    </RelativeLayout>
+</LinearLayout>

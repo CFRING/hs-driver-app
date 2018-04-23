@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--银行卡选择列表表项layout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/height_43"
+    android:minHeight="@dimen/height_43">
+
+    <ImageView
+        android:id="@+id/bank_card_image"
+        android:layout_width="@dimen/width_18"
+        android:layout_height="@dimen/height_18"
+        android:layout_marginLeft="@dimen/width_13"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/bank_card_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/bank_card_image"
+        android:layout_marginLeft="@dimen/width_13"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/width_13"
+        android:textColor="@color/black"/>
+
+    <View
+        style="@style/line_bottom_thin"/>
+</RelativeLayout>

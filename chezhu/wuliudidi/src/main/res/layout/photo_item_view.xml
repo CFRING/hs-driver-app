@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/height_108"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/photo_name"
+        android:layout_width="@dimen/height_50"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_11"
+        android:layout_marginLeft="@dimen/width_9"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/width_12" />
+
+    <com.hongshi.wuliudidi.view.CircleImageView
+        android:id="@+id/photo_image"
+        android:layout_width="@dimen/width_102"
+        android:layout_height="@dimen/height_86"
+        android:layout_toRightOf="@+id/photo_name"
+        android:layout_alignTop="@id/photo_name"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="@dimen/width_13"
+        android:layout_marginBottom="@dimen/height_11"
+        android:src="@drawable/identity_card_front" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/line_color" />
+
+</RelativeLayout>

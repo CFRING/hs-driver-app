@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/oil_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/shiyou_logo"/>
+
+    <TextView
+        android:id="@+id/oil_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/oil_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="26dp"
+        android:text="中国石油"/>
+
+    <TextView
+        android:id="@+id/oil_card_wei_hao_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:layout_below="@id/oil_text"
+        android:layout_alignLeft="@id/oil_text"
+        android:text="xxxxxxxxxxxxxx"/>
+
+    <ImageView
+        android:id="@+id/right_arrow_image"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/my_item_right"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

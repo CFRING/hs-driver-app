@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/list_item_background">
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/phone_change_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45" />
+
+    <LinearLayout
+        android:id="@+id/img_container"
+        android:layout_below="@id/phone_change_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+    <ImageView
+        android:id="@+id/step1_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="115dp"
+        android:layout_height="1px"
+        android:background="@color/chart_6"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:id="@+id/step2_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/identify_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/yan_zheng_shen_fen"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/img_container"
+        android:layout_marginTop="6dp"
+        android:layout_alignLeft="@id/img_container"/>
+
+    <ImageView
+        android:id="@+id/step_finish_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/phone_change_step_finish_flag"
+        android:layout_toRightOf="@id/identify_check"
+        android:layout_alignBottom="@id/identify_check"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/change_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_change_tip"
+        android:textSize="18sp"
+        android:textColor="@color/light_grey"
+        android:layout_alignRight="@id/img_container"
+        android:layout_alignBottom="@id/identify_check"/>
+
+    <RelativeLayout
+        android:id="@+id/input_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/identify_check"
+        android:layout_marginTop="20dp">
+
+        <View
+            android:id="@+id/line_1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/light_grey"/>
+
+        <LinearLayout
+            android:id="@+id/psw_input_container"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_below="@id/line_1">
+
+            <TextView
+                android:id="@+id/login_psw_input_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_psw_tip"
+                android:textSize="18sp"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/edit_psw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:inputType="textPassword"
+                android:background="@null"
+                android:hint="@string/input_login_psw_tip"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/light_grey"
+            android:layout_below="@id/psw_input_container"/>
+
+        <LinearLayout
+            android:id="@+id/yanzhegnma_input_container"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:layout_below="@id/psw_input_container"
+            android:layout_marginTop="1px"
+            android:visibility="visible">
+            <!--<View-->
+                <!--android:id="@+id/line_4"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1px"-->
+                <!--android:background="@color/light_grey" />-->
+            <TextView
+                android:id="@+id/yanzhengma_input_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/captchas"
+                android:textSize="18sp"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="15dp"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/edit_yanzhengma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text=""
+                android:hint="@string/input_captchas"
+                android:textColorHint="@color/light_grey"
+                android:layout_gravity="center_vertical"
+                android:background="@null"/>
+
+            <com.hongshi.wuliudidi.view.TimeCounterButton
+                android:id="@+id/get_captchas"
+                android:layout_height="@dimen/height_25"
+                android:layout_width="@dimen/width_77"
+                android:layout_centerVertical="true"
+                android:background="@drawable/frame_btn_style"
+                android:text="@string/get_captchas"
+                android:textSize="@dimen/width_12"
+                android:textColor="@drawable/frame_btn_textcolor"
+                android:layout_gravity="right"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_3"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/light_grey"
+            android:layout_below="@id/yanzhegnma_input_container"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_height="@dimen/height_33"
+        android:layout_width="@dimen/width_248"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/input_container"
+        android:layout_marginTop="25dp"
+        android:text="@string/yan_zheng"
+        android:textColor="@color/white"
+        android:background="@drawable/solid_btn_style" />
+
+</RelativeLayout>

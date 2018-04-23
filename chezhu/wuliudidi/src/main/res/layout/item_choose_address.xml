@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/address_text"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/height_7"
+    android:paddingBottom="@dimen/height_7"
+    android:background="@drawable/item_address_bg"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:lines="1"
+    android:maxLength="5"
+    android:text="全部"
+    android:textColor="@color/black"
+    android:textSize="@dimen/width_13" />

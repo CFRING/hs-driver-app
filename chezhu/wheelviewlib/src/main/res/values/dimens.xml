@@ -1,0 +1,16 @@
+<resources>
+
+    <!--DateArrayAdapter-->
+    <dimen name="wheel_text_size">12px</dimen>
+    <dimen name="wheel_text_padding_left">0px</dimen>
+    <dimen name="wheel_text_padding_top">15px</dimen>
+    <dimen name="wheel_text_padding_right">0px</dimen>
+    <dimen name="wheel_text_padding_bottom">15px</dimen>
+
+    <!--wheel_address_dialog-->
+    <dimen name="relativeLayout_height">100px</dimen>
+    <dimen name="cancel_btn_width">120px</dimen>
+    <dimen name="cancel_btn_height">100px</dimen>
+    <dimen name="cancel_btn_padding_left">20px</dimen>
+    <dimen name="cancel_btn_text_size">12px</dimen>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:orientation="vertical" >
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/player_info_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_53"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/player_photo_image"
+                android:layout_width="@dimen/width_43"
+                android:layout_height="@dimen/height_36"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/width_9"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/player_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/width_18"
+                android:layout_toRightOf="@+id/player_photo_image"
+                android:textColor="@color/black"
+                android:textSize="@dimen/width_12" />
+            <EditText
+                android:id="@+id/player_name_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/width_18"
+                android:layout_toRightOf="@+id/player_photo_image"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textSize="@dimen/width_12" />
+        </RelativeLayout>
+
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            />
+        <com.hongshi.wuliudidi.view.AuctionItem
+            android:id="@+id/mark_item"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_33" />
+
+        <com.hongshi.wuliudidi.view.AuctionItem
+            android:id="@+id/phone_number_item"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_33" />
+
+        <com.hongshi.wuliudidi.view.AuctionItem
+            android:id="@+id/mark_number_item"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_33" />
+    </LinearLayout>
+
+    <com.hongshi.wuliudidi.view.AuctionItem
+        android:id="@+id/bind_item"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_33"
+        android:layout_marginTop="@dimen/height_7" />
+    <Button 
+        android:id="@+id/del_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_33"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/height_7" 
+        android:visibility="gone"
+        android:textSize="@dimen/width_12"
+        android:textColor="@color/theme_color"
+        android:text="删除队员"/>
+
+</LinearLayout>

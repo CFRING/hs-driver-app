@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/good_type_text"
+        android:layout_width="@dimen/width_89"
+        android:layout_height="@dimen/height_34"
+        android:textSize="@dimen/width_13"
+        android:textColor="@color/black"
+        android:background="@drawable/good_type_choose_bj"
+        android:text="@string/coal"
+        android:gravity="center"/>
+</LinearLayout>

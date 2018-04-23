@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width_247"
+    android:layout_height="@dimen/height_119"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/round_corner_10dp_style">
+    <TextView
+        android:id="@+id/sdk_dialog_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/sdk_black"
+        android:textSize="@dimen/width_13"
+        android:text="@string/short_message_captchas"/>
+
+    <TextView
+        android:id="@+id/sdk_hint_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textColor="@color/sdk_light_grey"
+        android:textSize="@dimen/width_12"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_weight="1">
+        <EditText
+            android:id="@+id/sdk_code_input"
+            android:layout_width="@dimen/width_91"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_19"
+            android:background="@null"
+            android:hint="@string/short_message_captchas"
+            android:inputType="phone"
+            android:textColor="@color/sdk_black"
+            android:textColorHint="@color/sdk_light_grey"
+            android:maxLength="6"
+            android:textSize="@dimen/width_12" />
+
+        <Button
+            android:id="@+id/input_cancel"
+            android:layout_width="@dimen/width_16"
+            android:layout_height="@dimen/width_16"
+            android:background="@drawable/input_cancel"
+            android:visibility="invisible" />
+
+        <com.hongshi.wuliudidi.view.TimeCounterButton
+            android:id="@+id/get_captchas"
+            android:layout_width="@dimen/width_77"
+            android:layout_height="@dimen/height_25"
+            android:layout_marginLeft="@dimen/width_19"
+            android:background="@drawable/greybutton_round_corner_style"
+            android:textSize="@dimen/width_12"
+            android:text="@string/get_captchas"
+            android:textColor="@color/sdk_white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/sdk_line_color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_32"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/sdk_blue"
+            android:text="@string/cancel"
+            android:background="@null"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/sdk_line_color"/>
+        <Button
+            android:id="@+id/sure_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/sdk_blue"
+            android:text="@string/ok"
+            android:background="@null"/>
+    </LinearLayout>
+</LinearLayout>

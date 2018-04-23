@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_56"
+    android:background="@color/sdk_white">
+
+    <View
+        android:id="@+id/top_long_line"
+        style="@style/h_long_line"/>
+
+    <View
+        android:id="@+id/top_line"
+        style="@style/h_line"/>
+
+    <TextView
+        android:id="@+id/jiao_yi_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/jiao_yi_type"
+        android:textColor="@color/sdk_text_gray"
+        android:textSize="@dimen/width_12"
+        android:layout_marginLeft="@dimen/width_22"
+        android:layout_marginTop="@dimen/height_12"/>
+
+    <TextView
+        android:id="@+id/jiao_yi_type_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/sdk_text_gray"
+        android:textSize="@dimen/width_12"
+        android:layout_toRightOf="@id/jiao_yi_type"
+        android:layout_alignTop="@id/jiao_yi_type"
+        android:layout_marginLeft="@dimen/width_21"/>
+
+    <TextView
+        android:id="@+id/ti_xian_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ti_xian_account"
+        android:textColor="@color/sdk_text_gray"
+        android:textSize="@dimen/width_12"
+        android:layout_marginTop="@dimen/height_11"
+        android:layout_below="@id/jiao_yi_type"
+        android:layout_alignLeft="@id/jiao_yi_type"
+        android:layout_marginBottom="@dimen/height_12"/>
+
+    <TextView
+        android:id="@+id/ti_xian_account_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/sdk_text_gray"
+        android:textSize="@dimen/width_12"
+        android:layout_toRightOf="@id/ti_xian_account"
+        android:layout_alignTop="@id/ti_xian_account"
+        android:layout_marginLeft="@dimen/width_21"
+        android:layout_marginRight="@dimen/width_13"
+        android:layout_marginBottom="@dimen/height_12"/>
+
+    <View
+        android:id="@+id/bottom_long_line"
+        style="@style/h_long_line"
+        android:layout_below="@id/ti_xian_account_text"/>
+
+    <View
+        android:id="@+id/bottom_line"
+        style="@style/h_line"
+        android:layout_below="@id/ti_xian_account_text"/>
+
+</RelativeLayout>

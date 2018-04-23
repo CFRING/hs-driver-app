@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.sdk.com.activity.TiXianActivity"
+    android:background="@color/sdk_theme_back"
+    android:orientation="vertical">
+
+    <com.hongshi.wuliudidi.cashier.view.SdkTitleView
+        android:id="@+id/ti_xian_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <com.hongshi.wuliudidi.cashier.view.ChooseCardView
+        android:id="@+id/choose_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        style="@style/h_long_line"
+        android:layout_marginBottom="14dp"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/sdk_line_color1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sdk_white">
+
+        <TextView
+            android:id="@+id/ti_xian_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ti_xian_money"
+            android:textColor="@color/sdk_black"
+            android:textSize="15sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/rmb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rmb"
+                android:textColor="@color/sdk_black"
+                android:textSize="30sp"
+                android:layout_alignLeft="@id/ti_xian_money"
+                android:layout_below="@id/ti_xian_money"
+                android:layout_marginTop="14dp"/>
+
+            <EditText
+                android:id="@+id/ti_xian_money_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/sdk_black"
+                android:textSize="30sp"
+                android:inputType="numberDecimal"
+                android:maxLength="12"
+                android:layout_toRightOf="@id/rmb"
+                android:layout_alignBottom="@id/rmb"
+                android:textCursorDrawable = "@drawable/edit_cursor_bg"
+                android:paddingBottom="1px"
+                android:background="@color/sdk_white"
+                android:hint=""/>
+
+        <View
+            android:id="@+id/divide_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/rmb"
+            android:layout_marginTop="14dp"
+            android:background="@color/sdk_line_color1"/>
+
+        <TextView
+            android:id="@+id/can_ti_xian_money_tip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/can_ti_xian_money"
+            android:textColor="@color/sdk_text_gray"
+            android:textSize="13sp"
+            android:layout_below="@id/divide_line"
+            android:layout_marginTop="14dp"
+            android:layout_alignLeft="@id/ti_xian_money"
+            android:layout_marginBottom="14dp"/>
+
+        <TextView
+            android:id="@+id/can_ti_xian_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="@color/sdk_black"
+            android:textSize="13sp"
+            android:layout_alignBottom="@id/can_ti_xian_money_tip1"
+            android:layout_toRightOf="@id/can_ti_xian_money_tip1"
+            android:layout_marginLeft="1dp"/>
+
+        <TextView
+            android:id="@+id/can_ti_xian_money_tip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元"
+            android:textColor="@color/sdk_text_gray"
+            android:textSize="13sp"
+            android:layout_alignBottom="@id/can_ti_xian_money_tip1"
+            android:layout_toRightOf="@id/can_ti_xian_money"
+            android:layout_marginLeft="1dp"/>
+
+        <TextView
+            android:id="@+id/ti_xian_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ti_xian_all"
+            android:textSize="13sp"
+            android:textColor="@color/sdk_text_blue"
+            android:layout_alignBottom="@id/can_ti_xian_money"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+
+        <View
+            style="@style/h_long_line"
+            android:layout_below="@id/can_ti_xian_money_tip1"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tips"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/width_12"
+        android:textColor="@color/sdk_text_gray"
+        android:layout_marginLeft="@dimen/width_22"
+        android:layout_marginRight="@dimen/width_22"
+        android:drawableLeft="@drawable/warning_icon"
+        android:drawablePadding="5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"/>
+
+    <include layout="@layout/sdkbottom" />
+
+</LinearLayout>

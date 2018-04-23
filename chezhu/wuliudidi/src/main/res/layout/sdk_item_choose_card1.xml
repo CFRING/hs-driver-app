@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_gray_item">
+
+    <RelativeLayout
+        android:id="@+id/settle_company_container"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#f9f9f9"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/money_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_color"
+            android:text="xxxxxx"
+            android:textSize="12sp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/oil_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/settle_company_container">
+        <ImageView
+            android:id="@+id/oil_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/shihua_logo"/>
+
+        <TextView
+            android:id="@+id/oil_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/oil_image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:text=""/>
+
+        <TextView
+            android:id="@+id/card_number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/light_grey"
+            android:textSize="12sp"
+            android:layout_below="@id/oil_name"
+            android:layout_alignLeft="@id/oil_name"/>
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1px"-->
+            <!--android:background="@color/list_item_line"-->
+            <!--android:layout_below="@id/card_number_text"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="10dp"/>-->
+    </RelativeLayout>
+
+</RelativeLayout>

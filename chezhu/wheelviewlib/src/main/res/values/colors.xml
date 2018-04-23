@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="wheel_white">#ffffff</color>
+    <color name="wheel_black">#333333</color>
+    <color name="wheel_gray_light">#cccccc</color>
+    <color name="wheel_province_line_border">#dddddd</color>
+
+</resources>

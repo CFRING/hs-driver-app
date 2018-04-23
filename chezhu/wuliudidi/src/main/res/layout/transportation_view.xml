@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_33"
+        android:background="@color/item_bg"
+        android:orientation="horizontal"
+        tools:ignore="DisableBaselineAlignment" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <com.hongshi.wuliudidi.view.TaskOrderTitleView
+                android:id="@+id/unfinish_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <com.hongshi.wuliudidi.view.TaskOrderTitleView
+                android:id="@+id/finish_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <com.hongshi.wuliudidi.view.TaskOrderTitleView
+                android:id="@+id/all_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+     <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/unfinish_auction_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:dividerHeight="@dimen/height_7"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:divider="@color/light_grey"
+        android:layout_marginBottom="@dimen/height_42"
+        android:layout_marginTop="@dimen/height_7"
+        android:smoothScrollbar="true"
+        ptr:ptrHeaderTextColor ="@color/light_grey"
+        ptr:ptrMode="both" />
+     <!-- 
+    <ListView
+        android:id="@+id/transportion_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/height_42"
+        android:layout_marginTop="@dimen/height_7"
+        android:divider="@color/light_grey"
+        android:dividerHeight="@dimen/height_7" >
+    </ListView>
+ -->
+</LinearLayout>

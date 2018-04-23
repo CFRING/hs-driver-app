@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hongshi.wuliudidi.incomebook.TimeSiftingActivity"
+    android:background="@color/white">
+
+    <com.hongshi.wuliudidi.incomebook.DiDiTitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_background" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="@dimen/height_40"
+        android:layout_marginLeft="@dimen/width_13"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/annual_radiobtn"
+            style="@style/time_sifting_radiobtn"
+            android:layout_marginTop="@dimen/height_10"
+            android:layout_marginBottom="@dimen/height_10"/>
+
+        <RadioButton
+            android:id="@+id/monthly_radiobtn"
+            style="@style/time_sifting_radiobtn"
+            android:layout_marginTop="@dimen/height_10"
+            android:layout_marginBottom="@dimen/height_10"/>
+
+        <RadioButton
+            android:id="@+id/daily_radiobtn"
+            style="@style/time_sifting_radiobtn"
+            android:layout_marginTop="@dimen/height_10"
+            android:layout_marginBottom="@dimen/height_10"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/radio_group"
+        android:layout_marginLeft="@dimen/width_3"
+        android:layout_alignTop="@id/radio_group"
+        android:layout_alignBottom="@id/radio_group"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_grey"
+                android:textSize="16sp"
+                android:layout_marginRight="@dimen/width_8"
+                android:text="@string/date_sifting_annual"/>
+
+            <TextView
+                android:id="@+id/annual_text"
+                android:layout_width="@dimen/width_68"
+                android:layout_height="@dimen/height_19"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:background="@color/textview_background_grey"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_grey"
+                android:textSize="16sp"
+                android:layout_marginRight="@dimen/width_8"
+                android:text="@string/date_sifting_monthly"/>
+
+            <TextView
+                android:id="@+id/monthly_text"
+                android:layout_width="@dimen/width_68"
+                android:layout_height="@dimen/height_19"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:background="@color/textview_background_grey"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_grey"
+                android:textSize="16sp"
+                android:layout_marginRight="@dimen/width_8"
+                android:text="@string/date_sifting_daily"/>
+
+            <TextView
+                android:id="@+id/daily_start_text"
+                android:layout_width="@dimen/width_68"
+                android:layout_height="@dimen/height_19"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:background="@color/textview_background_grey"
+                android:visibility="gone"/>
+
+            <View
+                android:id="@+id/short_line"
+                android:layout_width="@dimen/width_14"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/width_6"
+                android:background="@color/black"/>
+
+            <TextView
+                android:id="@+id/daily_end_text"
+                android:layout_width="@dimen/width_68"
+                android:layout_height="@dimen/height_19"
+                android:layout_marginLeft="@dimen/width_6"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:background="@color/textview_background_grey"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+   <Button
+        android:id="@+id/clean_data_button"
+        android:layout_width="@dimen/width_64"
+        android:layout_height="@dimen/height_19"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/height_57"
+        android:background="@drawable/frame_btn_style"
+        android:textColor="@drawable/frame_btn_textcolor"
+        android:text="@string/clean_data"
+        android:textSize="16sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/sure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_33"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/solid_btn_right_angle_style"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="@string/sure"/>
+</RelativeLayout>

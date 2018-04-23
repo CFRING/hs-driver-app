@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width_248"
+    android:layout_height="@dimen/height_119"
+    android:layout_gravity="center"
+    android:background="@drawable/cancel_bg" >
+
+    <TextView
+        android:id="@+id/hint_content"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_86"
+        android:layout_marginLeft="@dimen/width_15"
+        android:layout_marginRight="@dimen/width_15"
+        android:gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="@dimen/width_13" />
+
+    <LinearLayout
+        android:id="@+id/b_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_33"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/left"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textSize="@dimen/width_15"
+            android:textColor="@color/blue" />
+
+        <View style="@style/line_height_thin" />
+
+        <TextView
+            android:id="@+id/right"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/width_15"
+            android:text="@string/sure"
+            android:textColor="@color/blue" />
+    </LinearLayout>
+
+    <View
+        style="@style/line_bottom"
+        android:layout_above="@id/b_layout" />
+
+</RelativeLayout>

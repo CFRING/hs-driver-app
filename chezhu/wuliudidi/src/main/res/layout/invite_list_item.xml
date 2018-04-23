@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/photo_image"
+            android:layout_width="@dimen/width_43"
+            android:layout_height="@dimen/height_36"
+            android:layout_marginBottom="@dimen/height_11"
+            android:layout_marginLeft="@dimen/width_13"
+            android:layout_marginTop="@dimen/height_11"
+            android:background="@drawable/default_photo" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/width_9"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/captain_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/width_14" />
+
+                <TextView
+                    android:id="@+id/invite_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/width_13"
+                    android:textColor="@color/light_grey"
+                    android:textSize="@dimen/width_11" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/realContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_7"
+                android:textColor="@color/black"
+                android:textSize="@dimen/width_14" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/width_13"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:id="@+id/buttom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_33" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/width_9"
+            android:text="查看详情"
+            android:textSize="@dimen/width_14" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/width_13"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/no"
+                android:layout_width="@dimen/width_77"
+                android:layout_height="@dimen/height_25"
+                android:background="@drawable/btn_bg"
+                android:gravity="center"
+                android:text="拒绝" />
+
+            <TextView
+                android:id="@+id/yes"
+                android:layout_width="@dimen/width_77"
+                android:layout_height="@dimen/height_25"
+                android:gravity="center"
+                android:background="@drawable/btn_bg"
+                android:layout_marginLeft="@dimen/width_9"
+                android:text="同意"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/yes_or_no"
+            android:focusable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/width_13"
+            android:text="同意"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

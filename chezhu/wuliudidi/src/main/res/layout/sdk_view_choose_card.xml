@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/choose_card_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sdk_white">
+
+    <!--<TextView-->
+        <!--android:id="@+id/ti_xian_card"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/ti_xian_card"-->
+        <!--android:textColor="@color/sdk_text_gray"-->
+        <!--android:textSize="@dimen/width_12"-->
+        <!--android:layout_marginLeft="@dimen/width_22"-->
+        <!--android:layout_centerVertical="true"/>-->
+
+    <ImageView
+        android:id="@+id/yin_hang_image"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:src="@drawable/gong_shang_yin_hang"/>
+
+    <TextView
+        android:id="@+id/yin_hang_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/sdk_black"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/yin_hang_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+        android:text="xxxxx"/>
+
+    <TextView
+        android:id="@+id/yin_hang_wei_hao_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/sdk_gray_light"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/yin_hang_image"
+        android:layout_alignLeft="@id/yin_hang_text"
+        android:layout_below="@id/yin_hang_text"
+        android:text="xxxxx"/>
+
+    <ImageView
+        android:layout_width="@dimen/width_9"
+        android:layout_height="@dimen/height_11"
+        android:src="@drawable/jiantou_right"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

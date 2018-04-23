@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background">
+    <com.hongshi.wuliudidi.view.DiDiTitleView 
+        android:id="@+id/system_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+     <ListView
+        android:id="@+id/message_listview"
+        android:layout_marginTop="@dimen/height_7"
+        android:dividerHeight="@dimen/height_7"
+        android:divider="@color/home_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:layout_below="@id/system_title"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/message_list_add"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/system_title"
+        android:divider="@null"
+        android:dividerHeight="7dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        ptr:ptrHeaderTextColor ="@color/light_grey"
+        ptr:ptrMode="both" />
+</RelativeLayout>

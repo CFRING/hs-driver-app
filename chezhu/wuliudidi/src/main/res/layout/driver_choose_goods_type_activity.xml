@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@color/home_background">
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/goods_page_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:layout_below="@id/goods_page_title"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:horizontalSpacing="15dp"
+        android:verticalSpacing="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/edit_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/gridView"
+        android:layout_marginTop="10dp"
+        android:background="@color/white">
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="16sp"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:text="增加"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_gravity="center_vertical"/>-->
+        <EditText
+            android:id="@+id/input_goods_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_gravity="center_vertical"
+            android:hint="请输入货物名称(可不填)"
+            android:textColorHint="@color/line_color"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:background="@drawable/edit_text_style"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/edit_container"
+        android:background="@color/white"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/cancel_goods_choose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_press_style"
+            android:textColor="@color/theme_color"
+            android:textSize="18sp"
+            android:text="@string/cancel"
+            android:gravity="center"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:background="@color/line_color"/>
+        <TextView
+            android:id="@+id/ensure_goods_choose"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/text_press_style"
+            android:textColor="@color/theme_color"
+            android:textSize="18sp"
+            android:text="@string/sure"
+            android:gravity="center"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

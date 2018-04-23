@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <com.hongshi.wuliudidi.qr.zxing.view.ViewfinderView
+            android:id="@+id/viewfinder_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/qr_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top" />
+
+   <RelativeLayout
+        android:id="@+id/buttom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_57"
+        android:layout_gravity="bottom"
+        android:background="@color/theme_color" >
+        <Button
+            android:id="@+id/call"
+            android:layout_width="@dimen/width_137"
+            android:layout_height="@dimen/height_29"
+            android:layout_centerInParent="true"
+            android:text="@string/custom_service_confirm"
+            android:background="@drawable/bg_call"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</FrameLayout>

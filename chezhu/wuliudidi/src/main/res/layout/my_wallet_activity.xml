@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background" >
+    
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/my_wallet_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/my_wallet_title">
+        <LinearLayout
+            android:id="@+id/header_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="horizontal"
+            android:background="@color/title_background">
+
+            <com.hongshi.wuliudidi.view.TextViewWithDrawable
+                android:id="@+id/scan_entry0"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:text="扫一扫"
+                android:textSize="12sp"
+                android:drawablePadding="5dp"
+                android:textColor="@color/white"
+                android:adjustViewBounds="true"
+                android:drawableTop="@drawable/wallet_scan_icon"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:paddingTop="12dp"/>
+
+            <com.hongshi.wuliudidi.view.TextViewWithDrawable
+                android:id="@+id/withdrawal"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:text="提现"
+                android:textSize="12sp"
+                android:drawablePadding="5dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal|center_vertical"
+                android:adjustViewBounds="true"
+                android:drawableTop="@drawable/withdrawal_icon_my_wallet"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:paddingTop="12dp"/>
+            <!--<View-->
+            <!--android:layout_width="1px"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:background="@color/line_color"-->
+            <!--android:layout_gravity="center_vertical"/>-->
+            <com.hongshi.wuliudidi.view.TextViewWithDrawable
+                android:id="@+id/orders_list"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:text="交易订单"
+                android:textSize="12sp"
+                android:drawablePadding="5dp"
+                android:textColor="@color/white"
+                android:drawableTop="@drawable/order"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:paddingTop="12dp"/>
+
+            <com.hongshi.wuliudidi.view.TextViewWithDrawable
+                android:id="@+id/truck_mall"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:text="汽车商城"
+                android:textSize="12sp"
+                android:drawablePadding="5dp"
+                android:textColor="@color/white"
+                android:drawableTop="@drawable/shopping_mall"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:paddingTop="12dp"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_108"
+            android:visibility="gone">
+
+            <com.hongshi.wuliudidi.view.MyViewFlow
+                android:id="@+id/view_flow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_108" >
+            </com.hongshi.wuliudidi.view.MyViewFlow>
+
+            <LinearLayout
+                android:id="@+id/lunbo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="3dip" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="" />
+
+                <com.hongshi.wuliudidi.view.CircleFlowIndicator
+                    android:id="@+id/viewflowindic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:padding="2dip"
+                    android:radius="4dip" />
+            </LinearLayout>
+        </FrameLayout>
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/my_account_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/home_background"
+            android:dividerHeight="5dp"
+            android:fadingEdge="none"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:smoothScrollbar="true"
+            ptr:ptrHeaderTextColor ="@color/light_grey"
+            ptr:ptrMode="both" />
+    </LinearLayout>
+
+    <com.hongshi.wuliudidi.view.NullDataView
+        android:id="@+id/no_data_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <com.hongshi.wuliudidi.view.NoLoginView
+        android:id="@+id/no_login_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

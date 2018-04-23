@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_bg"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_33"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="@dimen/width_56"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/width_9"
+        android:layout_centerVertical="true"
+        android:singleLine="true"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/width_12" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/width_14"
+        android:layout_toRightOf="@+id/name"
+        android:layout_centerVertical="true"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/width_12" />
+    
+    <ImageView
+        android:id="@+id/my_right_icon"
+        android:layout_width="@dimen/width_17"
+        android:layout_height="@dimen/height_15"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/width_9"
+        android:src="@drawable/my_item_right" 
+        android:visibility="gone"/>
+    
+    <EditText
+        android:id="@+id/content_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/width_17"
+        android:layout_toRightOf="@+id/name"
+        android:layout_toLeftOf="@id/my_right_icon"
+        android:layout_centerVertical="true"
+        android:background="@color/white"
+        android:textColor="@color/gray"
+        android:visibility="gone"
+        android:textSize="@dimen/width_12" />
+    
+    <Button
+        android:id="@+id/right_btn"
+        android:layout_width="@dimen/width_77"
+        android:layout_height="@dimen/height_25"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/width_9"
+        android:visibility="gone"/>
+    <View 
+        android:id="@+id/auction_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/auction_line_color"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/active_account_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45"/>
+
+    <ImageView
+        android:id="@+id/active_logo"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/app_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <TextView
+        android:id="@+id/active_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/active_logo"
+        android:textSize="17sp"
+        android:layout_marginTop="10dp"/>
+
+    <RelativeLayout
+        android:id="@+id/protocol_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/active_name"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/protocol_tip"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/active_account_tip"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/transit_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="@string/red_lion_transit_protocol"
+            android:textColor="@color/lake_blue"
+            android:layout_below="@id/protocol_tip"
+            android:layout_alignLeft="@id/protocol_tip"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/register_protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:text="@string/red_lion_register_protocol"
+            android:textColor="@color/lake_blue"
+            android:layout_toRightOf="@id/transit_protocol"
+            android:layout_alignBottom="@id/transit_protocol"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/sure_active_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/sure"
+        android:textColor="@color/white"
+        android:background="@drawable/solid_btn_style"
+        android:layout_below="@id/protocol_container"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="16sp"/>
+
+</RelativeLayout>

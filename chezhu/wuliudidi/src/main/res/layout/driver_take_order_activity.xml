@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:orientation="vertical">
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/driver_take_order_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/driver_goods_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/width_8"
+        android:layout_marginRight="@dimen/width_8"
+        android:layout_marginBottom="@dimen/height_36"
+        android:divider="@color/home_background"
+        android:dividerHeight="@dimen/height_7"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        android:layout_below="@id/driver_take_order_title"
+        android:layout_marginTop="15dp"
+        ptr:ptrHeaderTextColor ="@color/light_grey"
+        ptr:ptrMode="both" />
+    <ImageView
+        android:id="@+id/take_order_switch"
+        android:layout_width="143dp"
+        android:layout_height="115dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp"/>
+    <ImageButton
+        android:id="@+id/back_top"
+        android:layout_width="@dimen/width_34"
+        android:layout_height="@dimen/height_29"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/height_47"
+        android:layout_marginRight="@dimen/width_9"
+        android:background="@drawable/home_top"
+        android:focusable="true"
+        android:visibility="gone" />
+</RelativeLayout>

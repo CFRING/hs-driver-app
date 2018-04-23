@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/height_5"
+    android:layout_marginBottom="@dimen/height_2">
+
+    <TextView
+        android:id="@+id/truck_text1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/light_grey"
+        android:textSize="@dimen/width_12"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/truck_text2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/light_grey"
+        android:textSize="@dimen/width_12"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/truck_text3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/light_grey"
+        android:textSize="@dimen/width_12"
+        android:visibility="invisible" />
+</LinearLayout>

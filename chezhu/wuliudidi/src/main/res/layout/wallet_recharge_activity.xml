@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hongshi.wuliudidi.activity.WalletRechargeActivity"
+    android:background="@color/home_background">
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/wallet_recharge_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wallet_recharge_title"
+        android:layout_marginTop="@dimen/height_7"
+        android:orientation="vertical">
+        <!--银行卡充值-->
+        <RelativeLayout
+            android:id="@+id/by_bank_card_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_43"
+            android:gravity="center_vertical"
+            android:background="@drawable/item_background_color_style">
+            <View
+                style="@style/line_top_thin"/>
+
+            <ImageView
+                android:id="@+id/bank_card_image"
+                android:layout_width="@dimen/width_22"
+                android:layout_height="@dimen/width_22"
+                android:layout_marginLeft="@dimen/width_9"
+                android:layout_centerVertical="true"
+                android:src="@drawable/bank_card_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/bank_card_image"
+                android:layout_marginLeft="@dimen/width_13"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/width_15"
+                android:textColor="@color/black"
+                android:text="@string/bank_card"/>
+
+            <ImageView
+                android:layout_width="@dimen/width_17"
+                android:layout_height="@dimen/height_15"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/width_13"
+                android:layout_centerVertical="true"
+                android:src="@drawable/my_item_right" />
+
+            <View
+                style="@style/line_bottom_thin"/>
+        </RelativeLayout>
+
+        <!--银联充值-->
+        <RelativeLayout
+            android:id="@+id/by_unionpay_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_43"
+            android:layout_marginTop="@dimen/height_7"
+            android:gravity="center_vertical"
+            android:background="@drawable/item_background_color_style">
+            <View
+                style="@style/line_top_thin"/>
+
+            <ImageView
+                android:id="@+id/unionpay_image"
+                android:layout_width="@dimen/width_26"
+                android:layout_height="@dimen/height_14"
+                android:layout_marginLeft="@dimen/width_9"
+                android:layout_centerVertical="true"
+                android:src="@drawable/unionpay_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/unionpay_image"
+                android:layout_marginLeft="@dimen/width_13"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/width_15"
+                android:textColor="@color/black"
+                android:text="@string/unionpay"/>
+
+            <ImageView
+                android:layout_width="@dimen/width_17"
+                android:layout_height="@dimen/height_15"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/width_13"
+                android:layout_centerVertical="true"
+                android:src="@drawable/my_item_right" />
+
+            <View
+                style="@style/line_bottom_thin"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

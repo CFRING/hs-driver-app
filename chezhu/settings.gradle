@@ -1,0 +1,7 @@
+include ':library', ':slidelibrary'
+include ':wuliudidi'
+include ':PluginLib'
+include ':incomebook'
+include ':cashier'
+include ':myroute'
+include ':wheelviewlib'

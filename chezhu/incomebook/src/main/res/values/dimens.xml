@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="width_6">7dp</dimen>
+    <dimen name="height_180">227dp</dimen>
+    <dimen name="height_33">42dp</dimen>
+    <dimen name="width_9">10dp</dimen>
+    <dimen name="width_13">15dp</dimen>
+    <dimen name="height_108">136dp</dimen>
+    <dimen name="height_40">54dp</dimen>
+    <dimen name="width_27">32dp</dimen>
+    <dimen name="height_10">14dp</dimen>
+    <dimen name="width_3">4dp</dimen>
+    <dimen name="width_12">14dp</dimen>
+    <dimen name="width_8">9dp</dimen>
+    <dimen name="width_68">77dp</dimen>
+    <dimen name="height_19">26dp</dimen>
+    <dimen name="width_14">16dp</dimen>
+    <dimen name="width_64">72dp</dimen>
+    <dimen name="height_57">76dp</dimen>
+    <dimen name="width_11">13dp</dimen>
+    <dimen name="width_15">17dp</dimen>
+    <dimen name="height_7">10dp</dimen>
+    <dimen name="height_43">58dp</dimen>
+    <dimen name="width_17">19dp</dimen>
+    <dimen name="width_10">11dp</dimen>
+    <dimen name="height_3">4dp</dimen>
+    <dimen name="height_8">11dp</dimen>
+    <dimen name="height_6">8dp</dimen>
+    <dimen name="height_62">83dp</dimen>
+    <dimen name="width_39">44dp</dimen>
+    <dimen name="width_4">5dp</dimen>
+    <dimen name="width_60">68dp</dimen>
+    <dimen name="width_30">34dp</dimen>
+    <dimen name="height_45">60dp</dimen>
+    <dimen name="height_4">6dp</dimen>
+    <dimen name="height_15">20dp</dimen>
+</resources>

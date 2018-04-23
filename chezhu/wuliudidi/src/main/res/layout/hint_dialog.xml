@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width_248"
+    android:layout_height="@dimen/height_144"
+    android:layout_gravity="center"
+    android:background="@drawable/hint_dialog"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_33" >
+
+        <ImageView
+            android:id="@+id/hint_image"
+            android:layout_width="@dimen/width_15"
+            android:layout_height="@dimen/height_13"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_13"
+            android:src="@drawable/hint_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/hint_image"
+            android:text="@string/hint_dialog_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/width_15" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/hint_content"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_80"
+        android:layout_marginLeft="@dimen/width_15"
+        android:layout_marginRight="@dimen/width_15"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/width_13" />
+
+    <View style="@style/line_bottom_thick" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/left"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textSize="@dimen/width_15"
+            android:textColor="@color/theme_color"
+            android:gravity="center"/>
+
+        <View style="@style/line_height_thin" />
+
+        <TextView
+            android:id="@+id/right"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:textSize="@dimen/width_15"
+            android:layout_weight="1"
+            android:textColor="@color/theme_color"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>

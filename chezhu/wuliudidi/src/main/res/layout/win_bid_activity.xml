@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background" >
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include
+        android:id="@+id/top_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/task_info_item"
+        android:layout_below="@+id/title"
+        android:visibility="gone" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/assign_order"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title"
+        android:divider="@color/home_background"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:dividerHeight="@dimen/height_7"
+        android:smoothScrollbar="true"
+        ptr:ptrHeaderTextColor ="@color/light_grey"
+        ptr:ptrMode="both" />
+
+    <!-- 时间 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_45"
+        android:layout_below="@+id/assign_order"
+        android:layout_marginBottom="@dimen/height_33"
+        android:background="@color/list_item_background"
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_7"
+            android:textColor="@color/light_grey" />
+
+        <TextView
+            android:id="@+id/order_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_7"
+            android:layout_marginTop="@dimen/height_7"
+            android:textColor="@color/light_grey" />
+
+        <View
+            style="@style/line_bottom_thin"
+            android:layout_gravity="bottom" />
+    </LinearLayout>
+    
+	<include
+        android:id="@+id/consign_finish_time_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/consign_detail_bottom_layout"
+        android:visibility="gone" />
+    
+    <Button
+        android:id="@+id/del"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_35"
+        android:layout_alignParentBottom="true"
+        android:background="@color/list_item_background"
+        android:text="删除" />
+    
+</RelativeLayout>

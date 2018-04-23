@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--单辆车的运输记录项-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/right_arrow_gray"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/bill_code_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="单据号 xxxx"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/width_10"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp" />
+
+        <ImageView
+            android:id="@+id/truck"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/truck"
+            android:layout_below="@id/bill_code_text"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp" />
+            <TextView
+                android:id="@+id/truck_number_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="浙A12345"
+                android:textColor="@color/black"
+                android:textSize="@dimen/width_14"
+                android:layout_alignTop="@id/truck"
+                android:layout_marginTop="3dp"
+                android:includeFontPadding="false"
+                android:layout_toRightOf="@id/truck"
+                android:layout_marginLeft="15dp"/>
+
+            <TextView
+                android:id="@+id/goods_name_and_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="红狮水泥"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/width_10"
+                android:layout_below="@id/truck_number_text"
+                android:layout_alignLeft="@id/truck_number_text"/>
+
+        <TextView
+            android:id="@+id/kuang_dian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/矿点 xxxxx"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/width_10"
+            android:layout_toRightOf="@id/goods_name_and_weight"
+            android:layout_marginLeft="13dp"
+            android:layout_alignBottom="@id/goods_name_and_weight"/>
+
+            <TextView
+                android:id="@+id/date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/width_12"
+                android:text="2016-4-25"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/bill_code_text"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/company_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公司 xxxxx"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/width_10"
+                android:layout_below="@id/goods_name_and_weight"
+                android:layout_marginTop="15dp"
+                android:layout_alignLeft="@id/goods_name_and_weight" />
+
+            <TextView
+                android:id="@+id/full_weight_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="毛重(吨) xxx"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/width_10"
+                android:layout_below="@id/company_text"
+                android:layout_marginTop="10dp"
+                android:layout_alignLeft="@id/company_text"
+                android:layout_marginBottom="12dp"/>
+
+            <TextView
+                android:id="@+id/net_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="净重(吨) xxx"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/width_10"
+                android:layout_alignLeft="@id/full_weight_text"
+                android:layout_below="@id/full_weight_text"
+                android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

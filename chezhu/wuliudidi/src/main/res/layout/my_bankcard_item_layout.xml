@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/height_79"
+    android:minHeight="@dimen/height_79"
+    android:paddingBottom="@dimen/height_11">
+
+    <ImageView
+        android:id="@+id/bank_icon_image"
+        android:layout_width="@dimen/width_38"
+        android:layout_height="@dimen/width_38"
+        android:layout_marginTop="@dimen/height_11"
+        android:layout_marginLeft="@dimen/width_13"/>
+
+    <TextView
+        android:id="@+id/bank_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/bank_icon_image"
+        android:layout_toRightOf="@id/bank_icon_image"
+        android:layout_marginLeft="@dimen/width_5"
+        android:textColor="@color/white"
+        android:textSize="@dimen/width_14"/>
+
+    <TextView
+        android:id="@+id/card_name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/bank_name_text"
+        android:layout_below="@id/bank_name_text"
+        android:layout_marginTop="@dimen/height_4"
+        android:textSize="@dimen/width_11"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/card_number_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/width_18"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/width_18"/>
+
+</RelativeLayout>

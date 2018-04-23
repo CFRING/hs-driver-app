@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/height_86"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/item_background_color_style" >
+    
+    <ImageView 
+        android:id="@+id/image"
+        android:layout_width="@dimen/width_43"
+        android:layout_height="@dimen/height_36"
+        android:layout_marginTop="@dimen/height_14"/>
+    
+    <TextView 
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/width_12"
+        android:layout_marginTop="@dimen/height_7"
+        android:layout_marginBottom="@dimen/height_4"/>
+    
+    <ImageView 
+        android:id="@+id/auth_flage_image"
+        android:layout_width="@dimen/width_45"
+        android:layout_height="@dimen/height_9"
+        android:layout_marginBottom="@dimen/height_6"
+        android:visibility="gone"/>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_15"
+        android:background="#f5f5f5"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/width_13"
+        android:text="A"
+        android:textColor="#999999" />
+
+    <View
+        android:id="@+id/line"
+        style="@style/line_bottom"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_29"
+        android:gravity="center_vertical"
+        android:text="杭州"
+        android:textSize="@dimen/width_12"
+        android:textColor="#333333"
+        android:layout_marginLeft="@dimen/width_13" />
+
+    <View
+        style="@style/line_bottom"
+        android:layout_marginLeft="@dimen/width_13"/>
+
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray">
+    
+	<com.hongshi.wuliudidi.view.DiDiTitleView 
+	    android:id="@+id/suggestion_title"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"/>
+	
+	<TextView
+	    android:id="@+id/select_type_hint"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/suggestion_title"
+	    android:layout_marginTop="@dimen/height_18"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginLeft="@dimen/width_13"
+	    android:text="@string/feedback_type"
+	    android:textColor="@color/light_grey"
+	    android:textSize="13sp"/> 
+	    
+	<RadioGroup 
+	    android:id="@+id/radio_group"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_below="@id/select_type_hint"
+	    android:layout_marginTop="@dimen/height_6"
+	    android:layout_alignLeft="@id/select_type_hint">
+	    
+	    <RadioButton 
+	        android:id="@+id/type_app_feature"
+	        style="@style/suggestion_radiobtn"
+	        android:text="@string/app_feature"/>
+	       
+	    
+	    <RadioButton 
+	        android:id="@+id/type_suggestion"
+	        style="@style/suggestion_radiobtn"
+	        android:layout_marginLeft="@dimen/width_9"
+	        android:text="@string/suggestion"/>
+	    
+	    <RadioButton 
+	        android:id="@+id/type_anything_else"
+	        style="@style/suggestion_radiobtn"
+	        android:layout_marginLeft="@dimen/width_9"
+	        android:text="@string/anything_else"/>
+	</RadioGroup>
+	
+	<RelativeLayout
+	    android:id="@+id/edittext_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/height_130"
+	    android:layout_marginLeft="@dimen/width_13"
+	    android:layout_marginRight="@dimen/width_13"
+	    android:layout_below="@id/radio_group"
+	    android:layout_marginTop="@dimen/width_9"
+	    android:background="@drawable/edittext_style">
+	    
+	    <EditText 
+		    android:id="@+id/input_feedback"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="@dimen/width_9"
+		    android:layout_marginRight="@dimen/width_9"
+		    android:layout_marginTop="@dimen/height_7"
+		    android:layout_marginBottom="@dimen/height_7"
+		    android:hint="@string/input_feedback"
+		    android:textColorHint="@color/line_color"
+		    android:textSize="14sp"
+		    android:gravity="top"
+		    android:background="@android:color/transparent"/>
+	</RelativeLayout>	
+	
+	<Button 
+	    android:id="@+id/submint"
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/height_32"
+	    android:layout_marginLeft="@dimen/width_21"
+	    android:layout_marginRight="@dimen/width_21"
+	    android:layout_below="@id/edittext_layout"
+	    android:layout_marginTop="@dimen/height_22"
+	    android:background="@drawable/solid_btn_style"
+	    android:text="@string/submit"
+	    android:textColor="@color/white"/>
+	
+</RelativeLayout>

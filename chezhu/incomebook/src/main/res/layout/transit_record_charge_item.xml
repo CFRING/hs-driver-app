@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/billTypeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="油费"
+        android:layout_marginTop="@dimen/height_7"
+        android:textColor="@color/black"
+        android:textSize="@dimen/width_10" />
+
+    <TextView
+        android:id="@+id/state_settle"
+        android:layout_marginTop="@dimen/height_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/width_9"
+        android:text="已结算"
+        android:textColor="@color/black"
+        android:textSize="@dimen/width_10" />
+
+    <TextView
+        android:id="@+id/unit_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_7"
+        android:layout_marginRight="@dimen/width_13"
+        android:layout_toLeftOf="@id/state_settle"
+        android:text="吨"
+        android:textColor="@color/black"
+        android:textSize="@dimen/width_10"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_marginTop="@dimen/height_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/height_4"
+        android:layout_toLeftOf="@id/unit_txt"
+        android:text="800.00"
+        android:textColor="@color/black"
+        android:textSize="@dimen/width_10" />
+
+</RelativeLayout>

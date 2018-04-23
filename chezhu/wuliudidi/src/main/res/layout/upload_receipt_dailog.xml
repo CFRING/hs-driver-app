@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/width_43"
+    android:paddingRight="@dimen/width_43"
+    android:paddingTop="@dimen/height_14"
+    android:paddingBottom="@dimen/height_18"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+	<!--<LinearLayout-->
+		<!--android:id="@+id/transi_amount_edit_container"-->
+	    <!--android:layout_width="fill_parent"-->
+	    <!--android:layout_height="@dimen/height_25"-->
+	    <!--android:background="@drawable/edittext_style"-->
+	    <!--android:orientation="horizontal"-->
+	    <!--android:gravity="center_vertical">-->
+	    <!---->
+	    <!--<TextView -->
+	        <!--android:id="@+id/count_unit"-->
+	        <!--android:layout_width="wrap_content"-->
+	        <!--android:layout_height="wrap_content"-->
+	        <!--android:layout_marginLeft="@dimen/width_13"-->
+	        <!--android:layout_gravity="center"-->
+	        <!--android:textSize="@dimen/width_13"-->
+	        <!--android:textColor="@color/gray"/>-->
+	    <!---->
+	    <!--<EditText -->
+	        <!--android:id="@+id/transi_amount_edittext"-->
+	        <!--android:layout_width="fill_parent"-->
+	        <!--android:layout_height="fill_parent"-->
+	        <!--android:layout_gravity="center_vertical"-->
+	        <!--android:background="@null"-->
+	        <!--android:textSize="@dimen/width_13"-->
+	        <!--android:textColor="@color/black"-->
+	        <!--android:inputType="numberDecimal"/>-->
+	<!--</LinearLayout>-->
+	
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/height_11">
+	    
+	    <TextView 
+	        android:id="@+id/upload_receipt_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="@dimen/width_13"
+	        android:textSize="@dimen/width_12"
+	        android:textColor="@color/gray"
+	        android:text="@string/upload_receipt"/>
+	    
+	    <TextView 
+	        android:id="@+id/renew_photo_textview"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@id/upload_receipt_textview"
+	        android:layout_alignParentRight="true"
+	        android:textSize="@dimen/width_13"
+	        android:textColor="@color/theme_color"
+	        android:text="重新拍照"/>
+	    
+	    <ImageView 
+	        android:id="@+id/receipt_image"
+	        android:layout_width="@dimen/width_149"
+	        android:layout_height="@dimen/width_149"
+	        android:layout_below="@id/renew_photo_textview"
+	        android:layout_marginTop="@dimen/height_14"
+	        android:layout_alignParentRight="true"/>
+	</RelativeLayout>
+	
+	
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="@dimen/height_29"
+	    android:layout_marginTop="@dimen/height_18"
+	    android:orientation="horizontal">
+	    
+	    <Button 
+	        android:id="@+id/cancel_button"
+	        android:layout_height="fill_parent"
+	        android:layout_width="0px"
+	        android:layout_weight="1"
+	        android:background="@drawable/frame_btn_style"
+	        android:textColor="@drawable/frame_btn_textcolor"
+	        android:text="@string/cancel"/>
+	    
+	    <Button 
+	        android:id="@+id/upload_button"
+	        android:layout_height="fill_parent"
+	        android:layout_width="0px"
+	        android:layout_weight="1"
+	        android:layout_marginLeft="@dimen/width_21"
+	        android:background="@drawable/solid_btn_style"
+	        android:textColor="@color/white"
+	        android:text="@string/upload_receipt"/>
+	</LinearLayout>
+</LinearLayout>

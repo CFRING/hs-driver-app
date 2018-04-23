@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background">
+
+    <com.hongshi.wuliudidi.myroute.DiDiTitleView
+        android:id="@+id/my_route_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/my_route_empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_marginTop="120dp"
+        android:layout_below="@id/my_route_title">
+
+        <ImageView
+            android:id="@+id/empty_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/empty"/>
+        <TextView
+            android:id="@+id/no_route_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_route_info"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/empty_img"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/no_route_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_route_tips"
+            android:textSize="14sp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/no_route_tip"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:id="@+id/add_btn"
+            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/add_route_btn_txt"
+            android:textColor="#ffffff"
+            android:background="@drawable/solid_btn_style"
+            android:layout_below="@id/no_route_sum"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/my_route_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/my_route_title"
+        android:dividerHeight="10dp"
+        android:divider="#00000000"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" />
+</RelativeLayout>

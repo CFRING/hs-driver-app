@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_61"
+    android:background="@color/white"
+    android:minHeight="@dimen/height_61"
+    android:paddingLeft="@dimen/width_13" >
+
+    <CheckBox
+        android:id="@+id/choose_truck_checkbox"
+        android:background="@drawable/checkbox_style"
+        android:button="@null"
+        android:layout_width="@dimen/width_21"
+        android:layout_height="@dimen/width_21"
+        android:layout_centerVertical="true" />
+    
+    <ImageView 
+        android:id="@+id/truck_imageview"
+        android:layout_width="@dimen/height_36"
+        android:layout_height="@dimen/width_43"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/choose_truck_checkbox"
+        android:layout_marginLeft="@dimen/width_13"
+        android:src="@drawable/truck"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/truck_imageview"
+        android:layout_marginLeft="@dimen/width_9"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/truck_number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/width_12"
+            android:text="truck_number_text" />
+        
+        <TextView
+            android:id="@+id/truck_type_carriage_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_4"
+            android:textColor="@color/light_grey"
+            android:textSize="@dimen/width_10"
+            android:text="truck_type_carriage_text" />
+
+        <TextView
+            android:id="@+id/truck_load_space_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_4"
+            android:textColor="@color/light_grey"
+            android:textSize="@dimen/width_10"
+            android:text="truck_number_text" />
+    </LinearLayout>
+    
+    <View 
+        style="@style/line_bottom_thin"/>
+</RelativeLayout>

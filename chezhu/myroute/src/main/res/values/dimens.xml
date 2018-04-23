@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="width_303">341dp</dimen>
+    <dimen name="height_25">34dp</dimen>
+    <dimen name="width_18">21dp</dimen>
+    <dimen name="height_14">19dp</dimen>
+    <dimen name="width_17">20dp</dimen>
+    <dimen name="width_15">17dp</dimen>
+    <dimen name="height_32">43dp</dimen>
+    <dimen name="height_7">10dp</dimen>
+
+</resources>

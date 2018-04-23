@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hongshi.wuliudidi.activity.MyBankcardsActivity"
+    android:background="@color/night_blue">
+
+    <!--页面标题-->
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/my_bank_card_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--底部提示语layout-->
+    <LinearLayout
+        android:id="@+id/hint_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/height_7"
+        android:paddingLeft="@dimen/width_37"
+        android:paddingRight="@dimen/width_37"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/width_9"
+            android:layout_height="@dimen/width_9"
+            android:src="@drawable/hint_icon_grey"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_5"
+            android:textColor="@color/gray_light"
+            android:textSize="@dimen/width_10"
+            android:text="@string/bankcard_recharge_hint"/>
+    </LinearLayout>
+
+    <!-- 中间银行卡列表与添加银行卡layout-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/my_bank_card_title"
+        android:layout_above="@id/hint_layout"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/bankcard_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_7"
+            android:layout_marginLeft="@dimen/width_13"
+            android:layout_marginRight="@dimen/width_13"
+            android:divider="@null"
+            android:dividerHeight="@dimen/height_8"/>
+
+        <RelativeLayout
+            android:id="@+id/add_bankcard_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_33"
+            android:layout_marginTop="@dimen/height_7"
+            android:background="@color/night_mist_blue">
+            
+            <ImageView
+                android:id="@+id/add_image"
+                android:layout_width="@dimen/width_14"
+                android:layout_height="@dimen/width_14"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/width_17"
+                android:src="@drawable/add_icon"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/add_image"
+                android:layout_marginLeft="@dimen/width_9"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray_light"
+                android:textSize="@dimen/width_14"
+                android:text="@string/add_bankcard"/>
+
+            <ImageView
+                android:id="@+id/right_arrow_image"
+                android:layout_width="@dimen/width_17"
+                android:layout_height="@dimen/height_18"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/width_13"
+                android:src="@drawable/my_item_right" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

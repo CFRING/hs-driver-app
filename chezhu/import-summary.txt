@@ -1,0 +1,652 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Manifest Merging:
+-----------------
+Your project uses libraries that provide manifests, and your Eclipse
+project did not explicitly turn on manifest merging. In Android Gradle
+projects, manifests are always merged (meaning that contents from your
+libraries' manifests will be merged into the app manifest. If you had
+manually copied contents from library manifests into your app manifest
+you may need to remove these for the app to build correctly.
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+From library:
+* LICENSE
+* build.gradle
+* build\
+* build\generated\
+* build\generated\source\
+* build\generated\source\buildConfig\
+* build\generated\source\buildConfig\androidTest\
+* build\generated\source\buildConfig\androidTest\debug\
+* build\generated\source\buildConfig\androidTest\debug\com\
+* build\generated\source\buildConfig\androidTest\debug\com\handmark\
+* build\generated\source\buildConfig\androidTest\debug\com\handmark\pulltorefresh\
+* build\generated\source\buildConfig\androidTest\debug\com\handmark\pulltorefresh\library\
+* build\generated\source\buildConfig\androidTest\debug\com\handmark\pulltorefresh\library\test\
+* build\generated\source\buildConfig\androidTest\debug\com\handmark\pulltorefresh\library\test\BuildConfig.java
+* build\generated\source\buildConfig\debug\
+* build\generated\source\buildConfig\debug\com\
+* build\generated\source\buildConfig\debug\com\handmark\
+* build\generated\source\buildConfig\debug\com\handmark\pulltorefresh\
+* build\generated\source\buildConfig\debug\com\handmark\pulltorefresh\library\
+* build\generated\source\buildConfig\debug\com\handmark\pulltorefresh\library\BuildConfig.java
+* build\generated\source\buildConfig\release\
+* build\generated\source\buildConfig\release\com\
+* build\generated\source\buildConfig\release\com\handmark\
+* build\generated\source\buildConfig\release\com\handmark\pulltorefresh\
+* build\generated\source\buildConfig\release\com\handmark\pulltorefresh\library\
+* build\generated\source\buildConfig\release\com\handmark\pulltorefresh\library\BuildConfig.java
+* build\generated\source\r\
+* build\generated\source\r\androidTest\
+* build\generated\source\r\androidTest\debug\
+* build\generated\source\r\androidTest\debug\com\
+* build\generated\source\r\androidTest\debug\com\handmark\
+* build\generated\source\r\androidTest\debug\com\handmark\pulltorefresh\
+* build\generated\source\r\androidTest\debug\com\handmark\pulltorefresh\library\
+* build\generated\source\r\androidTest\debug\com\handmark\pulltorefresh\library\R.java
+* build\generated\source\r\androidTest\debug\com\handmark\pulltorefresh\library\test\
+* build\generated\source\r\androidTest\debug\com\handmark\pulltorefresh\library\test\R.java
+* build\generated\source\r\debug\
+* build\generated\source\r\debug\com\
+* build\generated\source\r\debug\com\handmark\
+* build\generated\source\r\debug\com\handmark\pulltorefresh\
+* build\generated\source\r\debug\com\handmark\pulltorefresh\library\
+* build\generated\source\r\debug\com\handmark\pulltorefresh\library\R.java
+* build\generated\source\r\release\
+* build\generated\source\r\release\com\
+* build\generated\source\r\release\com\handmark\
+* build\generated\source\r\release\com\handmark\pulltorefresh\
+* build\generated\source\r\release\com\handmark\pulltorefresh\library\
+* build\generated\source\r\release\com\handmark\pulltorefresh\library\R.java
+* build\intermediates\
+* build\intermediates\bundles\
+* build\intermediates\bundles\debug\
+* build\intermediates\bundles\debug\.classpath
+* build\intermediates\bundles\debug\.project
+* build\intermediates\bundles\debug\.settings\
+* build\intermediates\bundles\debug\.settings\org.eclipse.jdt.core.prefs
+* build\intermediates\bundles\debug\AndroidManifest.xml
+* build\intermediates\bundles\debug\R.txt
+* build\intermediates\bundles\debug\aapt\
+* build\intermediates\bundles\debug\aapt\.classpath
+* build\intermediates\bundles\debug\aapt\.project
+* build\intermediates\bundles\debug\aapt\.settings\
+* build\intermediates\bundles\debug\aapt\.settings\org.eclipse.jdt.core.prefs
+* build\intermediates\bundles\debug\aapt\AndroidManifest.xml
+* build\intermediates\bundles\debug\aapt\bin\
+* build\intermediates\bundles\debug\aapt\bin\AndroidManifest.xml
+* build\intermediates\bundles\debug\aapt\bin\classes\
+* build\intermediates\bundles\debug\aapt\bin\classes\com\
+* build\intermediates\bundles\debug\aapt\bin\classes\com\handmark\
+* build\intermediates\bundles\debug\aapt\bin\classes\com\handmark\pulltorefresh\
+* build\intermediates\bundles\debug\aapt\bin\classes\com\handmark\pulltorefresh\library\
+* build\intermediates\bundles\debug\aapt\bin\classes\com\handmark\pulltorefresh\library\BuildConfig.class
+* build\intermediates\bundles\debug\aapt\gen\
+* build\intermediates\bundles\debug\aapt\gen\com\
+* build\intermediates\bundles\debug\aapt\gen\com\handmark\
+* build\intermediates\bundles\debug\aapt\gen\com\handmark\pulltorefresh\
+* build\intermediates\bundles\debug\aapt\gen\com\handmark\pulltorefresh\library\
+* build\intermediates\bundles\debug\aapt\gen\com\handmark\pulltorefresh\library\BuildConfig.java
+* build\intermediates\bundles\debug\aapt\project.properties
+* build\intermediates\bundles\debug\bin\
+* build\intermediates\bundles\debug\bin\AndroidManifest.xml
+* build\intermediates\bundles\debug\bin\classes\
+* build\intermediates\bundles\debug\bin\classes\com\
+* build\intermediates\bundles\debug\bin\classes\com\handmark\
+* build\intermediates\bundles\debug\bin\classes\com\handmark\pulltorefresh\
+* build\intermediates\bundles\debug\bin\classes\com\handmark\pulltorefresh\library\
+* build\intermediates\bundles\debug\bin\classes\com\handmark\pulltorefresh\library\BuildConfig.class
+* build\intermediates\bundles\debug\bin\classes\com\handmark\pulltorefresh\library\R$anim.class
+* build\intermediates\bundles\debug\bin\classes\com\handmark\pulltorefresh\library\R$attr.class
+* build\intermediates\bundles\debug\bin\classes\com\handmark\pulltorefresh\library\R$dimen.class
+* build\intermediates\bundles\debug\bin\classes\com\handmark\pulltorefresh\library\R$drawable.class
+* build\intermediates\bundles\debug\bin\classes\com\handmark\pulltorefresh\library\R$id.class
+* build\intermediates\bundles\debug\bin\classes\com\handmark\pulltorefresh\library\R$layout.class
+* build\intermediates\bundles\debug\bin\classes\com\handmark\pulltorefresh\library\R$string.class
+* build\intermediates\bundles\debug\bin\classes\com\handmark\pulltorefresh\library\R$styleable.class
+* build\intermediates\bundles\debug\bin\classes\com\handmark\pulltorefresh\library\R.class
+* build\intermediates\bundles\debug\classes.jar
+* build\intermediates\bundles\debug\gen\
+* build\intermediates\bundles\debug\gen\com\
+* build\intermediates\bundles\debug\gen\com\handmark\
+* build\intermediates\bundles\debug\gen\com\handmark\pulltorefresh\
+* build\intermediates\bundles\debug\gen\com\handmark\pulltorefresh\library\
+* build\intermediates\bundles\debug\gen\com\handmark\pulltorefresh\library\BuildConfig.java
+* build\intermediates\bundles\debug\gen\com\handmark\pulltorefresh\library\R.java
+* build\intermediates\bundles\debug\project.properties
+* build\intermediates\bundles\debug\res\
+* build\intermediates\bundles\debug\res\anim\
+* build\intermediates\bundles\debug\res\anim\slide_in_from_bottom.xml
+* build\intermediates\bundles\debug\res\anim\slide_in_from_top.xml
+* build\intermediates\bundles\debug\res\anim\slide_out_to_bottom.xml
+* build\intermediates\bundles\debug\res\anim\slide_out_to_top.xml
+* build\intermediates\bundles\debug\res\drawable-hdpi-v4\
+* build\intermediates\bundles\debug\res\drawable-hdpi-v4\default_ptr_flip.png
+* build\intermediates\bundles\debug\res\drawable-hdpi-v4\default_ptr_rotate.png
+* build\intermediates\bundles\debug\res\drawable-hdpi-v4\indicator_arrow.png
+* build\intermediates\bundles\debug\res\drawable-mdpi-v4\
+* build\intermediates\bundles\debug\res\drawable-mdpi-v4\default_ptr_flip.png
+* build\intermediates\bundles\debug\res\drawable-mdpi-v4\default_ptr_rotate.png
+* build\intermediates\bundles\debug\res\drawable-mdpi-v4\indicator_arrow.png
+* build\intermediates\bundles\debug\res\drawable-xhdpi-v4\
+* build\intermediates\bundles\debug\res\drawable-xhdpi-v4\default_ptr_flip.png
+* build\intermediates\bundles\debug\res\drawable-xhdpi-v4\default_ptr_rotate.png
+* build\intermediates\bundles\debug\res\drawable-xhdpi-v4\indicator_arrow.png
+* build\intermediates\bundles\debug\res\drawable\
+* build\intermediates\bundles\debug\res\drawable\indicator_bg_bottom.xml
+* build\intermediates\bundles\debug\res\drawable\indicator_bg_top.xml
+* build\intermediates\bundles\debug\res\layout\
+* build\intermediates\bundles\debug\res\layout\pull_to_refresh_header_horizontal.xml
+* build\intermediates\bundles\debug\res\layout\pull_to_refresh_header_vertical.xml
+* build\intermediates\bundles\debug\res\values-ar\
+* build\intermediates\bundles\debug\res\values-ar\values-ar.xml
+* build\intermediates\bundles\debug\res\values-cs\
+* build\intermediates\bundles\debug\res\values-cs\values-cs.xml
+* build\intermediates\bundles\debug\res\values-de\
+* build\intermediates\bundles\debug\res\values-de\values-de.xml
+* build\intermediates\bundles\debug\res\values-es\
+* build\intermediates\bundles\debug\res\values-es\values-es.xml
+* build\intermediates\bundles\debug\res\values-fi\
+* build\intermediates\bundles\debug\res\values-fi\values-fi.xml
+* build\intermediates\bundles\debug\res\values-fr\
+* build\intermediates\bundles\debug\res\values-fr\values-fr.xml
+* build\intermediates\bundles\debug\res\values-he\
+* build\intermediates\bundles\debug\res\values-he\values-he.xml
+* build\intermediates\bundles\debug\res\values-it\
+* build\intermediates\bundles\debug\res\values-it\values-it.xml
+* build\intermediates\bundles\debug\res\values-iw\
+* build\intermediates\bundles\debug\res\values-iw\values-iw.xml
+* build\intermediates\bundles\debug\res\values-ja\
+* build\intermediates\bundles\debug\res\values-ja\values-ja.xml
+* build\intermediates\bundles\debug\res\values-ko\
+* build\intermediates\bundles\debug\res\values-ko\values-ko.xml
+* build\intermediates\bundles\debug\res\values-nl\
+* build\intermediates\bundles\debug\res\values-nl\values-nl.xml
+* build\intermediates\bundles\debug\res\values-pl\
+* build\intermediates\bundles\debug\res\values-pl\values-pl.xml
+* build\intermediates\bundles\debug\res\values-pt-rBR\
+* build\intermediates\bundles\debug\res\values-pt-rBR\values-pt-rBR.xml
+* build\intermediates\bundles\debug\res\values-pt\
+* build\intermediates\bundles\debug\res\values-pt\values-pt.xml
+* build\intermediates\bundles\debug\res\values-ro\
+* build\intermediates\bundles\debug\res\values-ro\values-ro.xml
+* build\intermediates\bundles\debug\res\values-ru\
+* build\intermediates\bundles\debug\res\values-ru\values-ru.xml
+* build\intermediates\bundles\debug\res\values-zh\
+* build\intermediates\bundles\debug\res\values-zh\values-zh.xml
+* build\intermediates\bundles\debug\res\values\
+* build\intermediates\bundles\debug\res\values\values.xml
+* build\intermediates\bundles\release\
+* build\intermediates\bundles\release\.project
+* build\intermediates\bundles\release\AndroidManifest.xml
+* build\intermediates\bundles\release\R.txt
+* build\intermediates\bundles\release\aapt\
+* build\intermediates\bundles\release\aapt\AndroidManifest.xml
+* build\intermediates\bundles\release\bin\
+* build\intermediates\bundles\release\bin\.project
+* build\intermediates\bundles\release\bin\AndroidManifest.xml
+* build\intermediates\bundles\release\bin\R.txt
+* build\intermediates\bundles\release\bin\aapt\
+* build\intermediates\bundles\release\bin\aapt\AndroidManifest.xml
+* build\intermediates\bundles\release\bin\classes.jar
+* build\intermediates\bundles\release\bin\res\
+* build\intermediates\bundles\release\bin\res\anim\
+* build\intermediates\bundles\release\bin\res\anim\slide_in_from_bottom.xml
+* build\intermediates\bundles\release\bin\res\anim\slide_in_from_top.xml
+* build\intermediates\bundles\release\bin\res\anim\slide_out_to_bottom.xml
+* build\intermediates\bundles\release\bin\res\anim\slide_out_to_top.xml
+* build\intermediates\bundles\release\bin\res\drawable-hdpi-v4\
+* build\intermediates\bundles\release\bin\res\drawable-hdpi-v4\default_ptr_flip.png
+* build\intermediates\bundles\release\bin\res\drawable-hdpi-v4\default_ptr_rotate.png
+* build\intermediates\bundles\release\bin\res\drawable-hdpi-v4\indicator_arrow.png
+* build\intermediates\bundles\release\bin\res\drawable-mdpi-v4\
+* build\intermediates\bundles\release\bin\res\drawable-mdpi-v4\default_ptr_flip.png
+* build\intermediates\bundles\release\bin\res\drawable-mdpi-v4\default_ptr_rotate.png
+* build\intermediates\bundles\release\bin\res\drawable-mdpi-v4\indicator_arrow.png
+* build\intermediates\bundles\release\bin\res\drawable-xhdpi-v4\
+* build\intermediates\bundles\release\bin\res\drawable-xhdpi-v4\default_ptr_flip.png
+* build\intermediates\bundles\release\bin\res\drawable-xhdpi-v4\default_ptr_rotate.png
+* build\intermediates\bundles\release\bin\res\drawable-xhdpi-v4\indicator_arrow.png
+* build\intermediates\bundles\release\bin\res\drawable\
+* build\intermediates\bundles\release\bin\res\drawable\indicator_bg_bottom.xml
+* build\intermediates\bundles\release\bin\res\drawable\indicator_bg_top.xml
+* build\intermediates\bundles\release\bin\res\layout\
+* build\intermediates\bundles\release\bin\res\layout\pull_to_refresh_header_horizontal.xml
+* build\intermediates\bundles\release\bin\res\layout\pull_to_refresh_header_vertical.xml
+* build\intermediates\bundles\release\bin\res\values-ar\
+* build\intermediates\bundles\release\bin\res\values-ar\values-ar.xml
+* build\intermediates\bundles\release\bin\res\values-cs\
+* build\intermediates\bundles\release\bin\res\values-cs\values-cs.xml
+* build\intermediates\bundles\release\bin\res\values-de\
+* build\intermediates\bundles\release\bin\res\values-de\values-de.xml
+* build\intermediates\bundles\release\bin\res\values-es\
+* build\intermediates\bundles\release\bin\res\values-es\values-es.xml
+* build\intermediates\bundles\release\bin\res\values-fi\
+* build\intermediates\bundles\release\bin\res\values-fi\values-fi.xml
+* build\intermediates\bundles\release\bin\res\values-fr\
+* build\intermediates\bundles\release\bin\res\values-fr\values-fr.xml
+* build\intermediates\bundles\release\bin\res\values-he\
+* build\intermediates\bundles\release\bin\res\values-he\values-he.xml
+* build\intermediates\bundles\release\bin\res\values-it\
+* build\intermediates\bundles\release\bin\res\values-it\values-it.xml
+* build\intermediates\bundles\release\bin\res\values-iw\
+* build\intermediates\bundles\release\bin\res\values-iw\values-iw.xml
+* build\intermediates\bundles\release\bin\res\values-ja\
+* build\intermediates\bundles\release\bin\res\values-ja\values-ja.xml
+* build\intermediates\bundles\release\bin\res\values-ko\
+* build\intermediates\bundles\release\bin\res\values-ko\values-ko.xml
+* build\intermediates\bundles\release\bin\res\values-nl\
+* build\intermediates\bundles\release\bin\res\values-nl\values-nl.xml
+* build\intermediates\bundles\release\bin\res\values-pl\
+* build\intermediates\bundles\release\bin\res\values-pl\values-pl.xml
+* build\intermediates\bundles\release\bin\res\values-pt-rBR\
+* build\intermediates\bundles\release\bin\res\values-pt-rBR\values-pt-rBR.xml
+* build\intermediates\bundles\release\bin\res\values-pt\
+* build\intermediates\bundles\release\bin\res\values-pt\values-pt.xml
+* build\intermediates\bundles\release\bin\res\values-ro\
+* build\intermediates\bundles\release\bin\res\values-ro\values-ro.xml
+* build\intermediates\bundles\release\bin\res\values-ru\
+* build\intermediates\bundles\release\bin\res\values-ru\values-ru.xml
+* build\intermediates\bundles\release\bin\res\values-zh\
+* build\intermediates\bundles\release\bin\res\values-zh\values-zh.xml
+* build\intermediates\bundles\release\bin\res\values\
+* build\intermediates\bundles\release\bin\res\values\values.xml
+* build\intermediates\bundles\release\classes.jar
+* build\intermediates\bundles\release\res\
+* build\intermediates\bundles\release\res\anim\
+* build\intermediates\bundles\release\res\anim\slide_in_from_bottom.xml
+* build\intermediates\bundles\release\res\anim\slide_in_from_top.xml
+* build\intermediates\bundles\release\res\anim\slide_out_to_bottom.xml
+* build\intermediates\bundles\release\res\anim\slide_out_to_top.xml
+* build\intermediates\bundles\release\res\drawable-hdpi-v4\
+* build\intermediates\bundles\release\res\drawable-hdpi-v4\default_ptr_flip.png
+* build\intermediates\bundles\release\res\drawable-hdpi-v4\default_ptr_rotate.png
+* build\intermediates\bundles\release\res\drawable-hdpi-v4\indicator_arrow.png
+* build\intermediates\bundles\release\res\drawable-mdpi-v4\
+* build\intermediates\bundles\release\res\drawable-mdpi-v4\default_ptr_flip.png
+* build\intermediates\bundles\release\res\drawable-mdpi-v4\default_ptr_rotate.png
+* build\intermediates\bundles\release\res\drawable-mdpi-v4\indicator_arrow.png
+* build\intermediates\bundles\release\res\drawable-xhdpi-v4\
+* build\intermediates\bundles\release\res\drawable-xhdpi-v4\default_ptr_flip.png
+* build\intermediates\bundles\release\res\drawable-xhdpi-v4\default_ptr_rotate.png
+* build\intermediates\bundles\release\res\drawable-xhdpi-v4\indicator_arrow.png
+* build\intermediates\bundles\release\res\drawable\
+* build\intermediates\bundles\release\res\drawable\indicator_bg_bottom.xml
+* build\intermediates\bundles\release\res\drawable\indicator_bg_top.xml
+* build\intermediates\bundles\release\res\layout\
+* build\intermediates\bundles\release\res\layout\pull_to_refresh_header_horizontal.xml
+* build\intermediates\bundles\release\res\layout\pull_to_refresh_header_vertical.xml
+* build\intermediates\bundles\release\res\values-ar\
+* build\intermediates\bundles\release\res\values-ar\values-ar.xml
+* build\intermediates\bundles\release\res\values-cs\
+* build\intermediates\bundles\release\res\values-cs\values-cs.xml
+* build\intermediates\bundles\release\res\values-de\
+* build\intermediates\bundles\release\res\values-de\values-de.xml
+* build\intermediates\bundles\release\res\values-es\
+* build\intermediates\bundles\release\res\values-es\values-es.xml
+* build\intermediates\bundles\release\res\values-fi\
+* build\intermediates\bundles\release\res\values-fi\values-fi.xml
+* build\intermediates\bundles\release\res\values-fr\
+* build\intermediates\bundles\release\res\values-fr\values-fr.xml
+* build\intermediates\bundles\release\res\values-he\
+* build\intermediates\bundles\release\res\values-he\values-he.xml
+* build\intermediates\bundles\release\res\values-it\
+* build\intermediates\bundles\release\res\values-it\values-it.xml
+* build\intermediates\bundles\release\res\values-iw\
+* build\intermediates\bundles\release\res\values-iw\values-iw.xml
+* build\intermediates\bundles\release\res\values-ja\
+* build\intermediates\bundles\release\res\values-ja\values-ja.xml
+* build\intermediates\bundles\release\res\values-ko\
+* build\intermediates\bundles\release\res\values-ko\values-ko.xml
+* build\intermediates\bundles\release\res\values-nl\
+* build\intermediates\bundles\release\res\values-nl\values-nl.xml
+* build\intermediates\bundles\release\res\values-pl\
+* build\intermediates\bundles\release\res\values-pl\values-pl.xml
+* build\intermediates\bundles\release\res\values-pt-rBR\
+* build\intermediates\bundles\release\res\values-pt-rBR\values-pt-rBR.xml
+* build\intermediates\bundles\release\res\values-pt\
+* build\intermediates\bundles\release\res\values-pt\values-pt.xml
+* build\intermediates\bundles\release\res\values-ro\
+* build\intermediates\bundles\release\res\values-ro\values-ro.xml
+* build\intermediates\bundles\release\res\values-ru\
+* build\intermediates\bundles\release\res\values-ru\values-ru.xml
+* build\intermediates\bundles\release\res\values-zh\
+* build\intermediates\bundles\release\res\values-zh\values-zh.xml
+* build\intermediates\bundles\release\res\values\
+* build\intermediates\bundles\release\res\values\values.xml
+* build\intermediates\classes\
+* build\intermediates\classes\debug\
+* build\intermediates\classes\debug\com\
+* build\intermediates\classes\debug\com\handmark\
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\BuildConfig.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\ILoadingLayout.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\IPullToRefresh.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\LoadingLayoutProxy.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\OverscrollHelper$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\OverscrollHelper.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshAdapterViewBase$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshAdapterViewBase.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$2.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$3.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$4.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$AnimationStyle.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$Mode.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$OnLastItemVisibleListener.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$OnPullEventListener.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$OnRefreshListener.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$OnRefreshListener2.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$OnSmoothScrollFinishedListener.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$Orientation.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$SmoothScrollRunnable.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase$State.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshBase.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshExpandableListView$InternalExpandableListView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshExpandableListView$InternalExpandableListViewSDK9.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshExpandableListView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshGridView$InternalGridView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshGridView$InternalGridViewSDK9.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshGridView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshHorizontalScrollView$InternalHorizontalScrollViewSDK9.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshHorizontalScrollView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshListView$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshListView$InternalListView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshListView$InternalListViewSDK9.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshListView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshScrollView$InternalScrollViewSDK9.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshScrollView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshWebView$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshWebView$2.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshWebView$InternalWebViewSDK9.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\PullToRefreshWebView.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$anim.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$attr.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$dimen.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$drawable.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$id.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$layout.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$string.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R$styleable.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\R.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\extras\
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\extras\PullToRefreshWebView2$JsValueCallback.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\extras\PullToRefreshWebView2.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\extras\SoundPullEventListener.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\EmptyViewMethodAccessor.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\FlipLoadingLayout$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\FlipLoadingLayout.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\IndicatorLayout$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\IndicatorLayout.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\LoadingLayout$1.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\LoadingLayout.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\RotateLoadingLayout.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\Utils.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\ViewCompat$SDK11.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\ViewCompat$SDK16.class
+* build\intermediates\classes\debug\com\handmark\pulltorefresh\library\internal\ViewCompat.class
+* build\intermediates\classes\release\
+* build\intermediates\classes\release\com\
+* build\intermediates\classes\release\com\handmark\
+* build\intermediates\classes\release\com\handmark\pulltorefresh\
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\BuildConfig.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\ILoadingLayout.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\IPullToRefresh.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\LoadingLayoutProxy.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\OverscrollHelper$1.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\OverscrollHelper.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshAdapterViewBase$1.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshAdapterViewBase.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshBase$1.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshBase$2.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshBase$3.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshBase$4.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshBase$AnimationStyle.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshBase$Mode.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshBase$OnLastItemVisibleListener.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshBase$OnPullEventListener.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshBase$OnRefreshListener.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshBase$OnRefreshListener2.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshBase$OnSmoothScrollFinishedListener.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshBase$Orientation.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshBase$SmoothScrollRunnable.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshBase$State.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshBase.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshExpandableListView$InternalExpandableListView.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshExpandableListView$InternalExpandableListViewSDK9.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshExpandableListView.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshGridView$InternalGridView.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshGridView$InternalGridViewSDK9.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshGridView.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshHorizontalScrollView$InternalHorizontalScrollViewSDK9.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshHorizontalScrollView.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshListView$1.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshListView$InternalListView.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshListView$InternalListViewSDK9.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshListView.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshScrollView$InternalScrollViewSDK9.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshScrollView.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshWebView$1.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshWebView$2.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshWebView$InternalWebViewSDK9.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\PullToRefreshWebView.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\R$anim.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\R$attr.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\R$dimen.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\R$drawable.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\R$id.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\R$layout.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\R$string.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\R$styleable.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\R.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\extras\
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\extras\PullToRefreshWebView2$JsValueCallback.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\extras\PullToRefreshWebView2.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\extras\SoundPullEventListener.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\internal\
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\internal\EmptyViewMethodAccessor.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\internal\FlipLoadingLayout$1.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\internal\FlipLoadingLayout.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\internal\IndicatorLayout$1.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\internal\IndicatorLayout.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\internal\LoadingLayout$1.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\internal\LoadingLayout.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\internal\RotateLoadingLayout.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\internal\Utils.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\internal\ViewCompat$SDK11.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\internal\ViewCompat$SDK16.class
+* build\intermediates\classes\release\com\handmark\pulltorefresh\library\internal\ViewCompat.class
+* build\intermediates\incremental\
+* build\intermediates\incremental\aidl\
+* build\intermediates\incremental\aidl\androidTest\
+* build\intermediates\incremental\aidl\androidTest\debug\
+* build\intermediates\incremental\aidl\androidTest\debug\dependency.store
+* build\intermediates\incremental\aidl\debug\
+* build\intermediates\incremental\aidl\debug\dependency.store
+* build\intermediates\incremental\aidl\release\
+* build\intermediates\incremental\aidl\release\dependency.store
+* build\intermediates\incremental\mergeAssets\
+* build\intermediates\incremental\mergeAssets\androidTest\
+* build\intermediates\incremental\mergeAssets\androidTest\debug\
+* build\intermediates\incremental\mergeAssets\androidTest\debug\merger.xml
+* build\intermediates\incremental\mergeAssets\debug\
+* build\intermediates\incremental\mergeAssets\debug\merger.xml
+* build\intermediates\incremental\mergeAssets\release\
+* build\intermediates\incremental\mergeAssets\release\merger.xml
+* build\intermediates\incremental\mergeResources\
+* build\intermediates\incremental\mergeResources\androidTest\
+* build\intermediates\incremental\mergeResources\androidTest\debug\
+* build\intermediates\incremental\mergeResources\androidTest\debug\merger.xml
+* build\intermediates\incremental\packageResources\
+* build\intermediates\incremental\packageResources\debug\
+* build\intermediates\incremental\packageResources\debug\merger.xml
+* build\intermediates\incremental\packageResources\release\
+* build\intermediates\incremental\packageResources\release\merger.xml
+* build\intermediates\manifests\
+* build\intermediates\manifests\androidTest\
+* build\intermediates\manifests\androidTest\debug\
+* build\intermediates\manifests\androidTest\debug\AndroidManifest.xml
+* build\intermediates\manifests\tmp\
+* build\intermediates\manifests\tmp\manifestMerger8839718062333878225.xml
+* build\intermediates\res\
+* build\intermediates\res\androidTest\
+* build\intermediates\res\androidTest\debug\
+* build\intermediates\res\androidTest\debug\anim\
+* build\intermediates\res\androidTest\debug\anim\slide_in_from_bottom.xml
+* build\intermediates\res\androidTest\debug\anim\slide_in_from_top.xml
+* build\intermediates\res\androidTest\debug\anim\slide_out_to_bottom.xml
+* build\intermediates\res\androidTest\debug\anim\slide_out_to_top.xml
+* build\intermediates\res\androidTest\debug\drawable-hdpi-v4\
+* build\intermediates\res\androidTest\debug\drawable-hdpi-v4\default_ptr_flip.png
+* build\intermediates\res\androidTest\debug\drawable-hdpi-v4\default_ptr_rotate.png
+* build\intermediates\res\androidTest\debug\drawable-hdpi-v4\indicator_arrow.png
+* build\intermediates\res\androidTest\debug\drawable-mdpi-v4\
+* build\intermediates\res\androidTest\debug\drawable-mdpi-v4\default_ptr_flip.png
+* build\intermediates\res\androidTest\debug\drawable-mdpi-v4\default_ptr_rotate.png
+* build\intermediates\res\androidTest\debug\drawable-mdpi-v4\indicator_arrow.png
+* build\intermediates\res\androidTest\debug\drawable-xhdpi-v4\
+* build\intermediates\res\androidTest\debug\drawable-xhdpi-v4\default_ptr_flip.png
+* build\intermediates\res\androidTest\debug\drawable-xhdpi-v4\default_ptr_rotate.png
+* build\intermediates\res\androidTest\debug\drawable-xhdpi-v4\indicator_arrow.png
+* build\intermediates\res\androidTest\debug\drawable\
+* build\intermediates\res\androidTest\debug\drawable\indicator_bg_bottom.xml
+* build\intermediates\res\androidTest\debug\drawable\indicator_bg_top.xml
+* build\intermediates\res\androidTest\debug\layout\
+* build\intermediates\res\androidTest\debug\layout\pull_to_refresh_header_horizontal.xml
+* build\intermediates\res\androidTest\debug\layout\pull_to_refresh_header_vertical.xml
+* build\intermediates\res\androidTest\debug\values-ar\
+* build\intermediates\res\androidTest\debug\values-ar\values-ar.xml
+* build\intermediates\res\androidTest\debug\values-cs\
+* build\intermediates\res\androidTest\debug\values-cs\values-cs.xml
+* build\intermediates\res\androidTest\debug\values-de\
+* build\intermediates\res\androidTest\debug\values-de\values-de.xml
+* build\intermediates\res\androidTest\debug\values-es\
+* build\intermediates\res\androidTest\debug\values-es\values-es.xml
+* build\intermediates\res\androidTest\debug\values-fi\
+* build\intermediates\res\androidTest\debug\values-fi\values-fi.xml
+* build\intermediates\res\androidTest\debug\values-fr\
+* build\intermediates\res\androidTest\debug\values-fr\values-fr.xml
+* build\intermediates\res\androidTest\debug\values-he\
+* build\intermediates\res\androidTest\debug\values-he\values-he.xml
+* build\intermediates\res\androidTest\debug\values-it\
+* build\intermediates\res\androidTest\debug\values-it\values-it.xml
+* build\intermediates\res\androidTest\debug\values-iw\
+* build\intermediates\res\androidTest\debug\values-iw\values-iw.xml
+* build\intermediates\res\androidTest\debug\values-ja\
+* build\intermediates\res\androidTest\debug\values-ja\values-ja.xml
+* build\intermediates\res\androidTest\debug\values-ko\
+* build\intermediates\res\androidTest\debug\values-ko\values-ko.xml
+* build\intermediates\res\androidTest\debug\values-nl\
+* build\intermediates\res\androidTest\debug\values-nl\values-nl.xml
+* build\intermediates\res\androidTest\debug\values-pl\
+* build\intermediates\res\androidTest\debug\values-pl\values-pl.xml
+* build\intermediates\res\androidTest\debug\values-pt-rBR\
+* build\intermediates\res\androidTest\debug\values-pt-rBR\values-pt-rBR.xml
+* build\intermediates\res\androidTest\debug\values-pt\
+* build\intermediates\res\androidTest\debug\values-pt\values-pt.xml
+* build\intermediates\res\androidTest\debug\values-ro\
+* build\intermediates\res\androidTest\debug\values-ro\values-ro.xml
+* build\intermediates\res\androidTest\debug\values-ru\
+* build\intermediates\res\androidTest\debug\values-ru\values-ru.xml
+* build\intermediates\res\androidTest\debug\values-zh\
+* build\intermediates\res\androidTest\debug\values-zh\values-zh.xml
+* build\intermediates\res\androidTest\debug\values\
+* build\intermediates\res\androidTest\debug\values\values.xml
+* build\intermediates\resources\
+* build\intermediates\resources\resources-debug-androidTest.ap_
+* build\intermediates\symbols\
+* build\intermediates\symbols\androidTest\
+* build\intermediates\symbols\androidTest\debug\
+* build\intermediates\symbols\androidTest\debug\R.txt
+* build\outputs\
+* build\outputs\aar\
+* build\outputs\aar\refreshlib-debug.aar
+* build\outputs\aar\refreshlib-release.aar
+* build\tmp\
+* build\tmp\packageDebugJar\
+* build\tmp\packageDebugJar\MANIFEST.MF
+* build\tmp\packageReleaseJar\
+* build\tmp\packageReleaseJar\MANIFEST.MF
+* pom.xml
+* refreshlib.iml
+From wuliudidi:
+* ic_launcher-web.png
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:21.0.3
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+In library:
+* AndroidManifest.xml => library\src\main\AndroidManifest.xml
+* assets\ => library\src\main\assets
+* res\ => library\src\main\res\
+* src\ => library\src\main\java\
+In wuliudidi:
+* AndroidManifest.xml => wuliudidi\src\main\AndroidManifest.xml
+* assets\ => wuliudidi\src\main\assets\
+* libs\afinal_0.5.1_bin.jar => wuliudidi\libs\afinal_0.5.1_bin.jar
+* libs\AMap_Services_V2.5.0.jar => wuliudidi\libs\AMap_Services_V2.5.0.jar
+* libs\Android_2DMapApi_V2.5.0.jar => wuliudidi\libs\Android_2DMapApi_V2.5.0.jar
+* libs\Android_Location_V1.3.3.jar => wuliudidi\libs\Android_Location_V1.3.3.jar
+* libs\armeabi\libjpush171.so => wuliudidi\src\main\jniLibs\armeabi\libjpush171.so
+* libs\fastjson-1.1.37.jar => wuliudidi\libs\fastjson-1.1.37.jar
+* libs\jpush-sdk-release1.7.1.jar => wuliudidi\libs\jpush-sdk-release1.7.1.jar
+* libs\mframework.jar => wuliudidi\libs\mframework.jar
+* libs\MobLogCollector.jar => wuliudidi\libs\MobLogCollector.jar
+* libs\MobTools.jar => wuliudidi\libs\MobTools.jar
+* libs\ShareSDK-Core-2.6.2.jar => wuliudidi\libs\ShareSDK-Core-2.6.2.jar
+* libs\ShareSDK-QQ-2.6.2.jar => wuliudidi\libs\ShareSDK-QQ-2.6.2.jar
+* libs\ShareSDK-QZone-2.6.2.jar => wuliudidi\libs\ShareSDK-QZone-2.6.2.jar
+* libs\ShareSDK-Wechat-2.6.2.jar => wuliudidi\libs\ShareSDK-Wechat-2.6.2.jar
+* libs\ShareSDK-Wechat-Core-2.6.2.jar => wuliudidi\libs\ShareSDK-Wechat-Core-2.6.2.jar
+* libs\ShareSDK-Wechat-Moments-2.6.2.jar => wuliudidi\libs\ShareSDK-Wechat-Moments-2.6.2.jar
+* libs\zxing.jar => wuliudidi\libs\zxing.jar
+* res\ => wuliudidi\src\main\res\
+* src\ => wuliudidi\src\main\java\
+* src\org\achartengine\chart\package.html => wuliudidi\src\main\resources\org\achartengine\chart\package.html
+* src\org\achartengine\image\zoom-1.png => wuliudidi\src\main\resources\org\achartengine\image\zoom-1.png
+* src\org\achartengine\image\zoom_in.png => wuliudidi\src\main\resources\org\achartengine\image\zoom_in.png
+* src\org\achartengine\image\zoom_out.png => wuliudidi\src\main\resources\org\achartengine\image\zoom_out.png
+* src\org\achartengine\model\package.html => wuliudidi\src\main\resources\org\achartengine\model\package.html
+* src\org\achartengine\package.html => wuliudidi\src\main\resources\org\achartengine\package.html
+* src\org\achartengine\renderer\package.html => wuliudidi\src\main\resources\org\achartengine\renderer\package.html
+* src\org\achartengine\util\package.html => wuliudidi\src\main\resources\org\achartengine\util\package.html
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

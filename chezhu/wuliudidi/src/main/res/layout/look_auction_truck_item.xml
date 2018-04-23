@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:minHeight="@dimen/height_44"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/width_9"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/truck_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/width_12" />
+
+        <TextView
+            android:id="@+id/truck_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_4"
+            android:textSize="@dimen/width_10"
+            android:textColor="@color/light_grey" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/finish_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/width_9"
+        android:textSize="@dimen/width_20" 
+        android:textColor="@color/theme_color" />
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/width_9"
+        android:background="@color/line_color"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

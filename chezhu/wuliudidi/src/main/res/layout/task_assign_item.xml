@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_29"
+        android:background="@color/home_background" >
+
+        <TextView
+            android:id="@+id/creat_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/height_7"
+            android:text="2015-08-09"
+            android:textColor="@color/light_grey" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_29" >
+
+        <TextView
+            android:id="@+id/order_type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/height_9"
+            android:text="@string/task_order_number"
+            android:textColor="@color/light_grey"
+            android:textSize="@dimen/width_12" />
+        <ImageView 
+            android:layout_width="@dimen/width_12"
+            android:layout_height="@dimen/width_12"
+            android:layout_toRightOf="@id/order_type_name"
+            android:layout_centerVertical="true"
+            android:background="@drawable/my_item_right"
+            />
+
+        <TextView
+            android:id="@+id/task_order_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/height_6"
+            android:layout_toRightOf="@+id/order_type_name"
+            android:textColor="@color/light_grey"
+            android:textSize="@dimen/width_12" />
+
+        <TextView
+            android:id="@+id/task_order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/width_9"
+            android:text="运输中"
+            android:textColor="@color/green"
+            android:textSize="@dimen/width_12" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/height_9"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_15"
+        android:layout_marginTop="@dimen/height_11" >
+
+        <ImageView
+            android:id="@+id/start_image"
+            android:layout_width="@dimen/width_15"
+            android:layout_height="@dimen/height_13"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_9"
+            android:src="@drawable/start_city" />
+
+        <TextView
+            android:id="@+id/start_name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/start_image"
+            android:gravity="center_vertical"
+            android:text="杭州"
+            android:textColor="@color/black"
+            android:textSize="@dimen/width_14" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="@dimen/width_17"
+            android:layout_height="1px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/start_name"
+            android:background="#666666" />
+
+        <ImageView
+            android:id="@+id/end_image"
+            android:layout_width="@dimen/width_15"
+            android:layout_height="@dimen/height_13"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/line"
+            android:src="@drawable/end_city" />
+
+        <TextView
+            android:id="@+id/end_name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/end_image"
+            android:gravity="center_vertical"
+            android:text="温州"
+            android:textColor="@color/black"
+            android:textSize="@dimen/width_14" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/width_9"
+        android:layout_marginTop="@dimen/height_11"
+        android:text="货物名称  重量500吨"
+        android:textColor="#666666" />
+
+    <TextView
+        android:id="@+id/start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/width_9"
+        android:layout_marginTop="@dimen/height_11"
+        android:text="发货时间   2015-8-14"
+        android:textColor="#666666" />
+    <TextView
+        android:id="@+id/end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/width_9"
+        android:layout_marginTop="@dimen/height_11"
+        android:layout_marginBottom="@dimen/height_11"
+        android:text="到货时间   2015-8-15"
+        android:textColor="#666666" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/height_9"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_33" >
+
+        <TextView
+            android:id="@+id/buttom_type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_9"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/click_view"
+            android:layout_width="@dimen/width_60"
+            android:layout_height="@dimen/height_25"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/width_9"
+            android:background="@drawable/text_bg"
+            android:textSize="@dimen/width_12"
+            android:gravity="center"
+            android:text="立即派车"
+            android:textColor="@color/gray" />
+    </RelativeLayout>
+
+</LinearLayout>

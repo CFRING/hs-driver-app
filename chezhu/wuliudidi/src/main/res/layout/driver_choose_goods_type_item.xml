@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:gravity="center"
+    android:background="@drawable/title_border_style" >
+
+    <TextView
+        android:id="@+id/goods_type"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="石灰石"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/gray"
+        android:padding="1dp"/>
+    <ImageView
+        android:id="@+id/status_logo"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/forbid_icon"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</RelativeLayout>

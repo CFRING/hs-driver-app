@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background" >
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/auction_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </com.hongshi.wuliudidi.view.DiDiTitleView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/auction_title"
+        android:layout_marginBottom="@dimen/height_35" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/my_auction_message_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_33"
+                android:layout_marginTop="@dimen/height_7"
+                android:background="@color/white"
+                android:visibility="gone" >
+                <View 
+                    android:id="@+id/btn_id"
+                    android:layout_height="fill_parent"
+                    android:layout_width="@dimen/width_3"
+                    android:background="@color/btn_color"
+                    />
+
+                <TextView
+                    android:id="@+id/my_auction_message_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/btn_id"
+                    android:layout_marginLeft="@dimen/width_4"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/width_13" />
+
+                <ImageView
+                    android:id="@+id/right_imageview"
+                    android:layout_width="@dimen/width_17"
+                    android:layout_height="@dimen/height_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="@dimen/height_9"
+                    android:layout_marginRight="@dimen/width_9"
+                    android:layout_marginTop="@dimen/height_9"
+                    android:src="@drawable/my_item_right" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/address_order_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_7"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/height_11"
+                    android:layout_marginLeft="@dimen/width_9"
+                    android:layout_marginTop="@dimen/height_11"
+                    android:gravity="center_vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/start_city_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/start_image"
+                            android:layout_width="@dimen/width_15"
+                            android:layout_height="@dimen/height_13"
+                            android:src="@drawable/start_city" />
+
+                        <TextView
+                            android:id="@+id/send_addr_text"
+                            android:layout_width="@dimen/width_249"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/width_12" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/start_city_layout"
+                        android:layout_marginTop="@dimen/height_7"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/end_image"
+                            android:layout_width="@dimen/width_15"
+                            android:layout_height="@dimen/height_13"
+                            android:src="@drawable/end_city" />
+
+                        <TextView
+                            android:id="@+id/recv_addr_text"
+                            android:layout_width="@dimen/width_249"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/gray"
+                            android:textSize="@dimen/width_12" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/my_right_icon"
+                        android:layout_width="@dimen/width_17"
+                        android:layout_height="@dimen/height_15"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/width_9"
+                        android:src="@drawable/my_item_right" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_33" />
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/goods_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_33"
+                android:visibility="gone" />
+
+            <!-- 货物体积 -->
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/goods_volume"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_33"
+                android:visibility="gone" />
+
+            <!-- 货物数量 -->
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/goods_number"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_33"
+                android:visibility="gone" />
+
+            <!-- 运量 -->
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/transit_measure"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_33"
+                android:visibility="gone" />
+
+            <!-- 货物型号 -->
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/goods_model_number"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_33"
+                android:visibility="gone" />
+
+            <!-- 包装方式 -->
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/goods_package_type"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_33"
+                android:visibility="gone" />
+
+            <!-- 结算单位 -->
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/settle_company"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_33" />
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/pay_type"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_33" />
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/settle_type"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_33" />
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/bill"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_33" />
+
+            <!--剩余量-->
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/sheng_yu"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_33"
+                android:visibility="gone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/auction_type"
+                    android:layout_width="@dimen/width_40"
+                    android:layout_height="@dimen/height_12"
+                    android:layout_marginLeft="@dimen/width_9"
+                    android:layout_marginTop="@dimen/height_11" />
+
+                <RelativeLayout 
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/width_9">
+                    <TextView
+	                    android:id="@+id/price"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textColor="@color/light_grey"
+	                    android:textSize="@dimen/width_12" />
+                    <TextView 
+                        android:id="@+id/bidder_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="@dimen/width_14"
+                        android:textSize="@dimen/width_13"
+                        android:textColor="@color/gray"/>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/height_7"
+                    android:layout_marginLeft="@dimen/width_9"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="@dimen/width_11"
+                        android:layout_height="@dimen/height_9"
+                        android:layout_marginRight="@dimen/width_4"
+                        android:src="@drawable/deadline" />
+
+                    <TextView
+                        android:id="@+id/auction_time_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_grey"
+                        android:textSize="@dimen/width_11" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/send_time"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_33"
+                android:layout_marginTop="@dimen/height_7" />
+
+			<!-- 所需车辆类型 -->
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/suggest_truck_type"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_33" />
+            
+            <!-- 所需车厢类型 -->
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/suggest_truck_carrige"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_33" />
+
+			<!-- 所需车长 -->
+			<com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/suggest_truck_length"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_33" />
+			
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/goods_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_33" />
+
+            <RelativeLayout
+                android:id="@+id/remark_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/remark_name"
+                    android:layout_width="@dimen/width_51"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/width_9"
+                    android:text="@string/remark"
+                    android:textSize="@dimen/width_12"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/remark_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/height_11"
+                    android:layout_marginLeft="@dimen/width_17"
+                    android:layout_marginTop="@dimen/height_11"
+                    android:layout_marginRight="@dimen/width_9"
+                    android:layout_toRightOf="@+id/remark_name"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/width_12" />
+            </RelativeLayout>
+
+            <com.hongshi.wuliudidi.view.MyItemView
+                android:id="@+id/contact_vector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_7" />
+
+            <View
+                android:id="@+id/auction_line"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/auction_line_color" />
+
+            <com.hongshi.wuliudidi.view.MyItemView
+                android:id="@+id/auction_introduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/order_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_7"
+                layout="@layout/order_layout" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/auction_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_35"
+        android:layout_alignParentBottom="true"
+        android:background="@color/theme_color"
+        android:gravity="center"
+        android:text="@string/auction"
+        android:textColor="@color/white"
+        android:textSize="@dimen/width_16" />
+
+</RelativeLayout>

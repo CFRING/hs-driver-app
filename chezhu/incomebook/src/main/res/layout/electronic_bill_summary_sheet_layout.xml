@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/he_tong_bill_sheet"
+    android:layout_width="match_parent" android:layout_height="204dp"
+    android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/trucks_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/white">
+        <ImageView
+            android:id="@+id/left_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left_arrow_gray"
+            android:layout_marginLeft="5dp"/>
+        <TextView
+            android:id="@+id/first_truck_text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textColor="@color/gray"
+            android:background="@drawable/truck_select_style"
+            android:text="浙A00000"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/second_truck_text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textColor="@color/gray"
+            android:background="@drawable/truck_select_style"
+            android:layout_marginLeft="10dp"
+            android:text="浙A00000"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible"/>
+        <TextView
+            android:id="@+id/third_truck_text"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:textColor="@color/gray"
+            android:background="@drawable/truck_select_style"
+            android:layout_marginLeft="10dp"
+            android:text="浙A00000"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:visibility="invisible"/>
+        <ImageView
+            android:id="@+id/right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/right_arrow_gray"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@id/trucks_container">
+        <ImageView
+            android:id="@+id/center_line"
+            android:layout_width="wrap_content"
+            android:layout_height="146dp"
+            android:background="@drawable/bill_detail_line"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+        <ImageView
+            android:id="@+id/right_arrow_red"
+            android:layout_width="8dp"
+            android:layout_height="15dp"
+            android:background="@drawable/right_arrow_red"
+            android:layout_toLeftOf="@id/center_line"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="36dp"/>
+
+        <TextView
+            android:id="@+id/gong_zi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="工资 xxxx元"
+            android:textSize="13sp"
+            android:textColor="@color/theme_color"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/right_arrow_red"
+            android:layout_marginRight="18dp"
+            android:layout_alignBottom="@id/right_arrow_red"/>
+
+        <TextView
+            android:id="@+id/lun_tai_fei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="轮胎费 xxxxx元"
+            style="@style/text_style_for_bill_item_333333"
+            android:layout_below="@id/gong_zi"
+            android:layout_marginTop="26dp"
+            android:layout_alignLeft="@id/gong_zi"/>
+
+        <TextView
+            android:id="@+id/tong_xing_fei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通行费 xxxxx元"
+            style="@style/text_style_for_bill_item_333333"
+            android:layout_below="@id/lun_tai_fei"
+            android:layout_marginTop="22dp"
+            android:layout_alignLeft="@id/lun_tai_fei"/>
+
+        <TextView
+            android:id="@+id/lao_wu_fei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="劳务费 xxxxx元"
+            style="@style/text_style_for_bill_item_333333"
+            android:layout_below="@id/tong_xing_fei"
+            android:layout_marginTop="22dp"
+            android:layout_alignLeft="@id/tong_xing_fei"/>
+
+        <TextView
+            android:id="@+id/jin_er"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金额 xxxxxx元"
+            style="@style/text_style_for_bill_item_333333"
+            android:layout_toRightOf="@id/center_line"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/you_fei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="油费 xxxxxxx元"
+            style="@style/text_style_for_bill_item_333333"
+            android:layout_toRightOf="@id/center_line"
+            android:layout_below="@id/jin_er"
+            android:layout_marginTop="22dp"
+            android:layout_alignLeft="@id/jin_er"/>
+
+        <TextView
+            android:id="@+id/zu_lin_fei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="租赁费 xxxxxx元"
+            style="@style/text_style_for_bill_item_333333"
+            android:layout_below="@id/you_fei"
+            android:layout_marginTop="20dp"
+            android:layout_alignLeft="@id/you_fei"/>
+
+        <TextView
+            android:id="@+id/yun_fei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运费 xxxxx元"
+            style="@style/text_style_for_bill_item_333333"
+            android:layout_below="@id/zu_lin_fei"
+            android:layout_marginTop="16dp"
+            android:layout_alignLeft="@id/zu_lin_fei"/>
+    </RelativeLayout>
+</RelativeLayout>

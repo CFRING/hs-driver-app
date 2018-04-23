@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:orientation="vertical">
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/ti_xian_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <com.hongshi.wuliudidi.view.ChooseCardView
+        android:id="@+id/choose_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/oil_supplier_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/light_grey"
+            android:textSize="14sp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:maxLength="13"/>
+        <TextView
+            android:id="@+id/truck_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="浙A xxxxx"
+            android:textColor="@color/light_grey"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/settle_company_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="结算单位"
+            android:layout_marginTop="16dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:id="@+id/settle_company_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@id/settle_company_tip"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@id/settle_company_tip"/>
+
+        <View
+            android:id="@+id/divide_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            android:layout_below="@id/settle_company_tip"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:id="@+id/ti_xian_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ti_xian_money"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_below="@id/divide_line1"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:id="@+id/ti_xian_money_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:inputType="numberDecimal"
+            android:maxLength="12"
+            android:layout_toRightOf="@id/ti_xian_money"
+            android:layout_below="@id/divide_line1"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="2dp"
+            android:textCursorDrawable = "@drawable/edit_cursor_bg"
+            android:paddingBottom="1px"
+            android:background="@color/white"
+            android:hint=""
+            android:gravity="bottom"/>
+
+        <View
+            android:id="@+id/divide_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/ti_xian_money"
+            android:layout_marginTop="14dp"
+            android:background="@color/line_color"/>
+
+        <TextView
+            android:id="@+id/can_ti_xian_money_tip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/can_ti_xian_money"
+            android:textColor="@color/light_grey"
+            android:textSize="14sp"
+            android:layout_below="@id/divide_line"
+            android:layout_marginTop="14dp"
+            android:layout_alignLeft="@id/ti_xian_money"
+            android:layout_marginBottom="14dp"/>
+
+        <TextView
+            android:id="@+id/can_ti_xian_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_alignBottom="@id/can_ti_xian_money_tip1"
+            android:layout_toRightOf="@id/can_ti_xian_money_tip1"
+            android:layout_marginLeft="1dp"/>
+
+        <TextView
+            android:id="@+id/can_ti_xian_money_tip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="元,"
+            android:textColor="@color/light_grey"
+            android:textSize="14sp"
+            android:layout_alignBottom="@id/can_ti_xian_money_tip1"
+            android:layout_toRightOf="@id/can_ti_xian_money"
+            android:layout_marginLeft="1dp"/>
+
+        <TextView
+            android:id="@+id/ti_xian_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ti_xian_all"
+            android:textSize="14sp"
+            android:textColor="@color/text_blue"
+            android:layout_alignBottom="@id/can_ti_xian_money"
+            android:layout_toRightOf="@id/can_ti_xian_money_tip2"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/over_flow_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/oil_count_flow_tip"
+            android:textSize="14sp"
+            android:textColor="@color/theme_color"
+            android:layout_below="@id/divide_line"
+            android:layout_marginTop="14dp"
+            android:layout_alignLeft="@id/ti_xian_money"
+            android:layout_marginBottom="14dp"
+            android:visibility="gone"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            android:layout_below="@id/can_ti_xian_money_tip1"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_gray"
+        android:layout_marginLeft="@dimen/width_22"
+        android:layout_marginRight="@dimen/width_22"
+        android:text="@string/ti_xian"
+        android:textSize="@dimen/width_16"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tips"
+        android:layout_marginTop="15dp"
+        android:textSize="@dimen/width_12"
+        android:textColor="@color/light_grey"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

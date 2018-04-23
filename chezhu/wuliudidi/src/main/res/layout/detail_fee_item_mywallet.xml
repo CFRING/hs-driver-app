@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/truck_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        style="@style/text_style_for_bill_item1"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:drawableLeft="@drawable/truck_head_left"
+        android:gravity="center"
+        android:drawablePadding="8dp"/>
+
+    <TextView
+        android:id="@+id/fee_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00元"
+        style="@style/text_style_for_bill_item1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_alignBottom="@id/truck_number"
+        android:gravity="center"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

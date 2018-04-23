@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="105dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="105dp"
+        android:layout_height="21dp"
+        android:background="@drawable/error_title" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="6dp"
+                android:src="@drawable/error_title_image" />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温馨提示"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/error_mid" >
+
+        <TextView
+            android:id="@+id/content_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:text="11111"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="105dp"
+        android:layout_height="17dp"
+        android:background="@drawable/error_buttom" >
+
+        <ImageView
+            android:id="@+id/know"
+            android:layout_width="41dp"
+            android:layout_height="12dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/i_know" />
+    </RelativeLayout>
+
+</LinearLayout>

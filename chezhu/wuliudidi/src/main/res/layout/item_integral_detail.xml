@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="60dp"
+    android:background="@color/wheel_white">
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xxxxx"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:maxLength="20"/>
+    <TextView
+        android:id="@+id/date_and_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/light_grey"
+        android:text="########"
+        android:textSize="12sp"
+        android:layout_below="@id/title_text"
+        android:layout_marginTop="2dp"
+        android:layout_alignLeft="@id/title_text"/>
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="xxxxx"
+        android:textSize="18sp"
+        android:textColor="@color/home_text_press"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_below="@id/date_and_time"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/auction_line_color"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"/>
+</RelativeLayout>

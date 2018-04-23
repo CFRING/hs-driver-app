@@ -1,0 +1,22 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/night_blue"
+    android:orientation="vertical">
+
+    <!--页面标题-->
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/oil_card_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <ListView
+            android:id="@+id/oil_card_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="@dimen/width_13"
+            android:layout_marginRight="@dimen/width_13"
+            android:divider="@null"
+            android:dividerHeight="10dp"/>
+</LinearLayout>

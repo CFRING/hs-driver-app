@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <View style="@style/line_bottom" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="车头照片"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/item_name" />
+
+        <ImageView
+            android:id="@+id/right_icon"
+            android:layout_width="@dimen/width_17"
+            android:layout_height="@dimen/height_15"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="@dimen/width_9"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/my_item_right" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="@dimen/width_9"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/right_icon"
+            android:text="dsdasd"
+            android:textColor="@color/theme_color" />
+    </RelativeLayout>
+
+    <View style="@style/line_bottom" />
+
+</LinearLayout>

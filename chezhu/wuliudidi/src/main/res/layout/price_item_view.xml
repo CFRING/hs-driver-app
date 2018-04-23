@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    tools:ignore="DisableBaselineAlignment" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/color_show"
+            android:layout_width="@dimen/width_18"
+            android:layout_height="@dimen/height_15"
+            android:layout_marginLeft="@dimen/width_9"
+            android:background="@color/theme_color" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_5"
+            android:layout_toRightOf="@id/color_show"
+            android:text="30元/吨"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/bidnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/width_9"
+            android:text="20人"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/second_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/second_color_show"
+            android:layout_width="@dimen/width_18"
+            android:layout_height="@dimen/height_15"
+            android:layout_marginLeft="@dimen/width_9"
+            android:background="@color/theme_color" />
+
+        <TextView
+            android:id="@+id/second_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_5"
+            android:layout_toRightOf="@id/second_color_show"
+            android:text="30元/吨"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/second_bidnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/width_9"
+            android:text="20人"
+            android:textColor="@color/black" />
+    </RelativeLayout>
+
+</LinearLayout>

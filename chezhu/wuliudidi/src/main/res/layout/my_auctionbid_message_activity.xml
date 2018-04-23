@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:orientation="vertical" >
+    
+	<com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    
+	<com.hongshi.wuliudidi.view.AuctionItem 
+	    android:id="@+id/bid_price"
+	    android:layout_width="match_parent"
+        android:layout_height="@dimen/height_33"/>
+	
+	<com.hongshi.wuliudidi.view.AuctionItem 
+	    android:id="@+id/bid_weight"
+	    android:layout_width="match_parent"
+        android:layout_height="@dimen/height_33"/>
+	
+    <ScrollView
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+        
+        <LinearLayout 
+		    android:id="@+id/selected_trucks_layout"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"/>
+    </ScrollView>
+</LinearLayout>

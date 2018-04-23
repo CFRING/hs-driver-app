@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background" >
+
+    <RelativeLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_32"
+        android:background="@color/title_background" >
+        
+        <ImageView
+	        android:id="@+id/back"
+	        android:layout_width="@dimen/width_43"
+	        android:layout_height="@dimen/height_13"
+	        android:layout_marginLeft="@dimen/width_9" 
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/my_transit_bill"
+            android:textColor="@color/white"
+            android:textSize="@dimen/width_15"/>
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="@dimen/width_17"
+            android:layout_height="@dimen/height_15"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/width_9"
+            android:src="@drawable/list_style" />
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/task_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/top_view"
+        android:divider="@color/list_item_background"
+        android:dividerHeight="@dimen/height_7"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        ptr:ptrHeaderTextColor ="@color/light_grey"
+        ptr:ptrMode="both" />
+
+    <com.hongshi.wuliudidi.view.NullDataView 
+        android:id="@+id/no_data_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        />
+    <com.hongshi.wuliudidi.view.NoLoginView
+        android:id="@+id/no_login_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hongshi.wuliudidi.incomebook">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.NoTitleBar">
+        <activity android:name="com.hongshi.wuliudidi.incomebook.IncomeActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.hongshi.wuliudidi.incomebook.activity.IncomeActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hongshi.wuliudidi.incomebook.TimeSiftingActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name="com.hongshi.wuliudidi.incomebook.TransitRecordOverviewActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ElectronicBillActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".ElectronicBillDetailActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

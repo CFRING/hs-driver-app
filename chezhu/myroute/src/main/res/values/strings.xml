@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MyRoute</string>
+    <!--我的路线-->
+    <string name="no_route_info">暂无路线信息</string>
+    <string name="add_route_tips">添加路线，将有更多运输机会哦</string>
+    <string name="my_route_title">我的路线</string>
+    <string name="add_route_btn_txt">添加路线</string>
+    <string name="add_route_title_btn_txt">添加</string>
+    <string name="my_route_start_txt">出发地</string>
+    <string name="my_route_choose_start">选择运输出发地</string>
+    <string name="my_route_end_txt">目的地</string>
+    <string name="my_route_choose_end">选择运输目的地</string>
+    <string name="my_route_common_goods">常运货品</string>
+    <string name="my_route_choose_common_goods">不限</string>
+    <string name="my_route_count_exceeded_tip">很抱歉，最多只能添加5条线路哦</string>
+    <string name="my_route_cancel">取消</string>
+    <string name="my_route_sure">取消</string>
+    <string name="my_route_delete">删除路线</string>
+    <string name="my_route_delete_failure">删除失败</string>
+    <string name="my_route_no_data">无相关数据，请检查网络是否正常</string>
+    <string name="my_route_loading">正在加载...</string>
+    <string name="sure">确定</string>
+    <string name="my_route_fill_info_tips">请填写完整地址信息哦</string>
+</resources>

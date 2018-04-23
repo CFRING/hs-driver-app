@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background" >
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/truck_space_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/truck_space_title"
+        android:layout_marginTop="@dimen/height_7"
+        android:orientation="vertical" >
+
+        <com.hongshi.wuliudidi.view.AuctionItem
+            android:id="@+id/truck_length"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_33" />
+
+        <com.hongshi.wuliudidi.view.AuctionItem
+            android:id="@+id/truck_width"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_33" />
+
+        <com.hongshi.wuliudidi.view.AuctionItem
+            android:id="@+id/truck_height"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_33" />
+
+        <com.hongshi.wuliudidi.view.AuctionItem
+            android:id="@+id/truck_area"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/height_33" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ok_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_33"
+        android:background="@color/theme_color"
+        android:text="确认"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

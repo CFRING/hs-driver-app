@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="254dp"
+    android:background="@color/half_transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择类型"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_centerInParent="true"/>
+            <ImageView
+                android:id="@+id/cancel"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/edit_delete"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"/>
+
+        <TextView
+            android:id="@+id/all"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="全部"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:id="@+id/consume"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="消费"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:id="@+id/widthdrawl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="提现"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:id="@+id/settle_account"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="结算"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp" />
+    </LinearLayout>
+
+</RelativeLayout>

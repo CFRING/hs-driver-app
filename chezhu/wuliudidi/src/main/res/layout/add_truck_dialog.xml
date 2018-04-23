@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_259"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_33"
+        android:background="@color/home_background" >
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_9"
+            android:visibility="gone"
+            android:text="返回"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/width_14" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/width_14" />
+
+        <TextView
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/width_9"
+            android:text="完成"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/width_14" />
+    </RelativeLayout>
+
+    <GridView
+        android:focusable="true"
+        android:id="@+id/type_gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:numColumns="5"
+        android:listSelector="@color/theme_color"
+        android:gravity="center">
+    </GridView>
+</LinearLayout>

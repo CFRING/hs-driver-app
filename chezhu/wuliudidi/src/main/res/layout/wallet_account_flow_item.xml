@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--资金流水列表表项layout-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_51"
+    android:minHeight="@dimen/height_51"
+    android:orientation="vertical">
+    <View
+        android:id="@+id/divide_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_7"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+        
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="@dimen/width_35"
+            android:layout_height="@dimen/width_35"
+            android:layout_marginLeft="@dimen/width_9"
+            android:layout_marginRight="@dimen/width_29"
+            android:singleLine="false"
+            android:background="@drawable/solid_btn_style"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/width_12"
+            android:text="2000\n13月"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/item_name_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/width_13"
+                    android:text="运输收入#"/>
+                <TextView
+                    android:id="@+id/item_detail_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/width_11"
+                    android:text="已存入余额#"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/width_13"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/date_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/light_grey"
+                    android:textSize="@dimen/width_11"
+                    android:text="2016-04-15#"/>
+                <TextView
+                    android:id="@+id/amount_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/width_13"
+                    android:text="+2000#"/>
+            </LinearLayout>
+            <View
+                style="@style/line_bottom_thin"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

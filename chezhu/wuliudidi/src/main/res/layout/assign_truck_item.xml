@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/home_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_33"
+        android:layout_marginTop="@dimen/height_7"
+        android:background="@color/white" >
+
+        <CheckBox
+            android:id="@+id/check_box"
+            style="@style/CheckBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_13"
+            android:scaleX="0.8"
+            android:scaleY="0.8" />
+        <CheckBox
+            android:id="@+id/transit_box"
+            style="@style/TransitCheckBoxStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_13"
+            android:checked="false"
+            android:visibility="gone"
+            android:scaleX="0.8"
+            android:scaleY="0.8" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_43"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/width_12" />
+
+            <TextView
+                android:id="@+id/plantId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/truckId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/weight_layour"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_33"
+        android:background="@color/white" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/width_9"
+            android:layout_marginRight="@dimen/width_9"
+            android:background="@color/line_color" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_43"
+            android:text="@string/truck_load"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/width_12" />
+
+        <EditText
+            android:id="@+id/weight_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_17"
+            android:layout_toRightOf="@id/text1"
+            android:background="@color/white"
+            android:digits="@string/double_limit"
+            android:hint="@string/input_truck_load_capacity"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_grey"
+            android:textSize="@dimen/width_12" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/select_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_33"
+        android:background="@color/white" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/width_9"
+            android:layout_marginRight="@dimen/width_9"
+            android:background="@color/line_color" />
+
+        <TextView
+            android:id="@+id/driver_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_43"
+            android:text="司机号码"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/width_12" />
+
+        <TextView
+            android:id="@+id/phone_number"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_17"
+            android:layout_toRightOf="@+id/driver_number"
+            android:background="@color/white"
+            android:text="请选择司机的手机号码"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_grey"
+            android:textSize="@dimen/width_12" />
+
+        <TextView
+            android:id="@+id/driver_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="@dimen/width_20"
+            android:layout_height="@dimen/height_17"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/width_9"
+            android:src="@drawable/drivers_image" />
+    </RelativeLayout>
+
+</LinearLayout>

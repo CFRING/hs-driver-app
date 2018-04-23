@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/addr_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp">
+        <TextView
+            android:id="@+id/start_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="杭州市江干区"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/goods_load"
+            android:drawablePadding="5dp"
+            android:layout_marginLeft="10dp"
+            android:maxLength="6"/>
+        <TextView
+            android:id="@+id/end_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="杭州市江干区"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/goods_unload"
+            android:drawablePadding="5dp"
+            android:maxLength="6"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/start_city"
+            android:layout_alignBottom="@id/start_city"/>
+        <ImageView
+            android:id="@+id/auction_image"
+            android:layout_width="77dp"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/width_9" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/dash_divide_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/list_item_line"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/addr_container" />
+
+    <TextView
+        android:id="@+id/goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="亚东码头煤炭(平一)"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:layout_below="@id/dash_divide_line"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_alignLeft="@id/dash_divide_line"
+        android:maxLength="13"/>
+
+    <TextView
+        android:id="@+id/goods_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000车"
+        android:textSize="12sp"
+        android:textColor="@color/gray"
+        android:layout_toRightOf="@id/goods_name"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@id/goods_name"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="50元/车"
+        android:textSize="12sp"
+        android:textColor="@color/theme_color"
+        android:layout_alignTop="@id/goods_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp" />
+</RelativeLayout>

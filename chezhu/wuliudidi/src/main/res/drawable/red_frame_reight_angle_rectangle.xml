@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 一个editText的样式，背景空白，边缘为主题红的细线，无圆角-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <stroke
+        android:color="@color/theme_color"
+        android:width="1px"/>
+</shape>

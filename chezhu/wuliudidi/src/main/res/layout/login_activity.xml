@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background">
+    
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_32"
+		android:background="@color/title_background"/>
+
+    <TextView
+		android:id="@+id/account_tip"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:gravity="center"
+		android:text="@string/login_account_tip"
+		android:textSize="13sp"
+		android:textColor="@color/home_text_press"
+		android:layout_below="@id/login_title"
+		android:background="@color/login_account_color"/>
+
+	<RelativeLayout
+	    android:id="@+id/account_line"
+	    android:layout_width="@dimen/width_248"
+	    android:layout_height="@dimen/height_43"
+	    android:layout_below="@id/account_tip"
+	    android:layout_marginTop="@dimen/height_32"
+	    android:layout_centerHorizontal="true">
+	    
+	    <ImageView
+	        android:id="@+id/account_image"
+	        android:src="@drawable/user"
+	        android:layout_width="@dimen/width_19"
+	        android:layout_height="@dimen/height_16"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="@dimen/height_7"/>
+	    
+	    <Button
+	   	    android:id="@+id/input_cancel"
+	   	    android:layout_height="@dimen/height_13"
+	   	    android:layout_width="@dimen/width_15"
+	   	    android:background="@drawable/cancel"
+	   	    android:layout_alignParentRight="true"
+	   	    android:layout_alignBottom="@id/account_image"
+	   	    android:visibility="invisible"/>
+	    
+	    <EditText 
+	        android:id="@+id/account_input"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/account_image"
+	        android:layout_marginLeft="@dimen/width_10"
+	        android:layout_alignBottom="@id/account_image"
+	        android:layout_toLeftOf="@id/input_cancel"
+	        android:background="@null"
+	        android:hint="@string/cellphone"
+	        android:textColorHint="@color/light_grey"
+	        android:textSize="@dimen/width_14"
+	        android:inputType="phone"
+	        android:textColor="@color/light_grey"/>
+	    	
+	   	<View 
+	   	    android:layout_width="match_parent"
+	   	    android:layout_height="1px"
+	   	    android:background="@color/gray"
+	   	    android:layout_alignParentBottom="true"/>
+	</RelativeLayout>
+	
+	
+	<RelativeLayout
+	    android:id="@+id/passwd_line"
+	    android:layout_width="@dimen/width_248"
+	    android:layout_height="@dimen/height_43"
+	    android:layout_below="@id/account_line"
+	    android:layout_centerHorizontal="true">
+	    
+	    <ImageView
+	        android:id="@+id/passwd_image"
+	        android:src="@drawable/lock"
+	        android:layout_width="@dimen/width_19"
+	        android:layout_height="@dimen/height_16"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="@dimen/height_7"/>
+	    
+	    <Button
+	   	    android:id="@+id/passwd_cancel"
+	   	    android:layout_height="@dimen/height_13"
+	   	    android:layout_width="@dimen/width_15"
+	   	    android:background="@drawable/cancel"
+	   	    android:layout_alignParentRight="true"
+	   	    android:layout_alignBottom="@id/passwd_image"
+	   	    android:visibility="invisible"/>
+	    
+	    <EditText 
+	        android:id="@+id/passwd_input"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/passwd_image"
+	        android:layout_marginLeft="@dimen/width_10"
+	        android:layout_toLeftOf="@id/passwd_cancel"
+	        android:layout_alignBottom="@id/passwd_image"
+	        android:background="@null"
+	        android:hint="@string/password_text"
+	        android:textColorHint="@color/light_grey"
+	        android:textSize="@dimen/width_14"
+	        android:inputType="textPassword"
+	        android:digits="@string/passwd_limit"
+	        android:textColor="@color/light_grey"/>
+	    	
+	   	<View 
+	   	    android:layout_width="match_parent"
+	   	    android:layout_height="1px"
+	   	    android:background="@color/gray"
+	   	    android:layout_alignParentBottom="true"/>
+	</RelativeLayout>
+	
+	<Button 
+	    	android:id="@+id/login"
+	    	android:layout_height="@dimen/height_33"
+	    	android:layout_width="@dimen/width_248"
+	    	android:layout_centerHorizontal="true"
+	    	android:layout_below="@id/passwd_line"
+	    	android:layout_marginTop="@dimen/height_22"
+	    	android:text="@string/login_text"
+	    	android:textColor="@color/white"
+	    	android:background="@drawable/solid_btn_style"/>
+	
+	<TextView 
+	    android:id="@+id/forget_passwd"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/login"
+	    android:layout_marginTop="@dimen/height_17"
+	    android:layout_alignLeft="@id/login"
+		android:text="@string/forget_passwd"
+		android:textColor="@color/lake_blue"
+		android:textSize="@dimen/width_12"/>
+	
+	<TextView 
+	    android:id="@+id/register_now"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/login"
+	    android:layout_marginTop="@dimen/height_17"
+	    android:layout_alignRight="@id/login"
+		android:text="@string/register_now"
+		android:textColor="@color/lake_blue"
+		android:textSize="@dimen/width_12"/>
+	
+	<ImageView 
+	    android:layout_width="@dimen/width_152"
+	    android:layout_height="@dimen/height_150"
+	    android:src="@drawable/background"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"/>
+</RelativeLayout>

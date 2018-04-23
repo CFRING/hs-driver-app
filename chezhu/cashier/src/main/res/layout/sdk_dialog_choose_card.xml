@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/sdk_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_33"
+        android:layout_marginTop="40dp">
+
+        <RelativeLayout
+            android:id="@+id/jiantou_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/height_11"
+            android:paddingRight="15dp">
+            <ImageView
+                android:layout_width="@dimen/width_9"
+                android:layout_height="@dimen/height_11"
+                android:src="@drawable/jiantou_left"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/choose_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/dialog_title"
+            android:textColor="@color/sdk_black"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <View style="@style/h_long_line" />
+
+    <ListView
+        android:id="@+id/choose_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="1px"
+        android:divider="@color/sdk_gray">
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="160dp"
+    android:background="@drawable/round_corner_shape">
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="52dp"
+        android:layout_height="23dp"
+        android:text="3-22"
+        style="@style/text_style_for_bill_item_333333"
+        android:background="@drawable/electronic_bill_detail_item_bg"
+        android:paddingLeft="7dp"
+        android:gravity="center_vertical"/>
+    <TextView
+        android:id="@+id/company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_style_for_bill_item_333333"
+        android:text="公司: xxxxxxxx"
+        android:layout_alignBottom="@id/time"
+        android:layout_toRightOf="@id/time"
+        android:layout_marginLeft="8dp"/>
+    <TextView
+        android:id="@+id/ti_huo_dian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_style_for_bill_item_333333"
+        android:text="提货点: xxxxxxxxxx"
+        android:layout_below="@id/company"
+        android:layout_marginTop="8dp"
+        android:layout_alignLeft="@id/company"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#dddddd"
+        android:layout_below="@id/ti_huo_dian"
+        android:layout_marginTop="6dp"
+        android:layout_alignLeft="@id/ti_huo_dian"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/dan_ju_hao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_style_for_bill_item"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/divider"
+        android:text="单据号: xxxxxxxxxx"/>
+
+    <TextView
+        android:id="@+id/huo_pin"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:maxWidth="100dp"
+        android:singleLine="true"
+        style="@style/text_style_for_bill_item"
+        android:layout_below="@id/dan_ju_hao"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/divider"
+        android:text="货品: "/>
+    <TextView
+        android:id="@+id/dan_jia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_style_for_bill_item"
+        android:layout_toRightOf="@id/huo_pin"
+        android:layout_marginLeft="50dp"
+        android:layout_alignBottom="@id/huo_pin"
+        android:text="单价(元): xxxxxxxx"/>
+    <TextView
+        android:id="@+id/shu_liang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_style_for_bill_item"
+        android:layout_below="@id/huo_pin"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/dan_ju_hao"
+        android:text="数量(吨): xxxxxx"/>
+
+    <TextView
+        android:id="@+id/kou_kuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_style_for_bill_item"
+        android:layout_toRightOf="@id/shu_liang"
+        android:layout_alignBottom="@id/shu_liang"
+        android:layout_alignLeft="@id/dan_jia"
+        android:text="扣款(元): xxxxxxxx"/>
+    <TextView
+        android:id="@+id/kou_dun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_style_for_bill_item"
+        android:layout_below="@id/shu_liang"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/shu_liang"
+        android:text="扣吨(吨): xxxxxxx"/>
+    <TextView
+        android:id="@+id/jin_er"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/text_style_for_bill_item"
+        android:layout_toRightOf="@id/kou_dun"
+        android:layout_alignBottom="@id/kou_dun"
+        android:layout_alignLeft="@id/kou_kuan"
+        android:text="金额(元): xxxxxxx"/>
+
+</RelativeLayout>

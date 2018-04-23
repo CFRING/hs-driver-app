@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sdk_colorPrimary">#3F51B5</color>
+    <color name="sdk_colorPrimaryDark">#303F9F</color>
+    <color name="sdk_colorAccent">#FF4081</color>
+    <color name="sdk_red">#ff3300</color>
+    <color name="sdk_white">#ffffff</color>
+    <color name="sdk_title_background">#e23f42</color>
+    <color name="sdk_shape_pressed_red">#cc0000</color>
+    <color name="sdk_gray">#cccccc</color>
+    <color name="sdk_text_gray">#999999</color>
+    <color name="sdk_text_blue">#336699</color>
+    <color name="sdk_background_gray">#efefef</color>
+    <color name="sdk_black">#333333</color>
+    <color name="sdk_gray_light">#666666</color>
+    <color name="sdk_line_color">#dddddd</color>
+    <color name="sdk_line_color1">#eeeeee</color>
+    <color name="sdk_light_grey">#999999</color>
+    <color name="sdk_blue">#0099ff</color>
+    <color name="sdk_item_gray">#e5e5e5</color>
+    <color name="sdk_vifrification">#00000000</color>
+    <color name="sdk_theme_back">#f5f5f5</color>
+</resources>

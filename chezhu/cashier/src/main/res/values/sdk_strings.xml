@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">My Library</string>
+
+    <!--提现页面-->
+    <string name="my_bank">我的收银台</string>
+    <string name="ti_xian">确认提现</string>
+    <string name="ti_xian_money">提现金额</string>
+    <string name="can_ti_xian_money">可提现余额</string>
+    <string name="ti_xian_all">全部提现</string>
+    <string name="jiao_yi_type">交易类型</string>
+    <string name="ti_xian_account">提现账户</string>
+    <string name="ti_xian_card">到账银行卡</string>
+    <string name="rmb">¥</string>
+    <string name="gong_shang_yin_hang">工商银行</string>
+    <string name="jian_she_yin_hang">建设银行</string>
+    <string name="nong_ye_yin_hang">农业银行</string>
+    <string name="zhong_guo_yin_hang">中国银行</string>
+    <string name="ok">确认</string>
+    <string name="toast_zero">提现金额不能为零</string>
+    <string name="toast_over">提现金额超出可提现余额</string>
+    <string name="toast_empty">请输入提现金额</string>
+    <string name="cash_error">交易出错，请重新操作</string>
+
+    <!--验证码Dialog-->
+    <string name="input_cellphone">请输入您的手机号码</string>
+    <string name="get_captchas">获取验证码</string>
+    <string name="captchas_refresh">重新获取</string>
+    <string name="input_captchas">请输入短信验证码</string>
+    <string name="short_message_captchas">短信验证码</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+    <string name="hint_get_captchas">正在获取验证码</string>
+    <string name="waiting">请稍等</string>
+    <string name="input_phone_number">输入手机尾号</string>
+    <string name="receive_code">接收到的短信验证码</string>
+    <string name="error_msg">请求出错，请稍后再试</string>
+
+    <!--选择银行卡Dialog-->
+    <string name="dialog_title">请选择支付方式</string>
+
+    <!--tips-->
+    <string name="tips">工作日最快2小时到账 法定节假日顺延</string>
+</resources>

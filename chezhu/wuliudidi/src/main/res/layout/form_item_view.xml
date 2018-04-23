@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/height_33"
+    android:background="@color/white">
+    
+    <TextView 
+        android:id="@+id/item_name"
+        style="@style/table_item_textgray"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/width_9"
+        android:text="@string/goods_receiver"/>
+    
+    <TextView 
+        android:id="@+id/item_value"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/width_77"
+        style="@style/table_item_textblack"/>
+    
+    <Button 
+        android:id="@+id/button"
+        android:layout_width="@dimen/width_17"
+        android:layout_height="@dimen/height_15"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/width_11"
+        android:visibility="gone"
+        android:background="@drawable/my_item_right"/>
+    
+    <View
+        android:id="@+id/line"
+        style="@style/line_bottom_leaving_blank"/>
+</RelativeLayout>

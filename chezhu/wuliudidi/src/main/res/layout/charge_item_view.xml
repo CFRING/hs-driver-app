@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_43" >
+
+        <ImageView
+            android:id="@+id/item_icon"
+            android:layout_width="@dimen/width_30"
+            android:layout_height="@dimen/height_25"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_17" />
+
+        <TextView
+            android:id="@+id/item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_17"
+            android:layout_toRightOf="@id/item_icon"
+            android:text="油费"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/width_12" />
+
+        <ImageView
+            android:id="@+id/item_right_icon"
+            android:layout_width="@dimen/width_17"
+            android:layout_height="@dimen/height_15"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/width_9"
+            android:src="@drawable/my_item_right" />
+        <TextView
+            android:id="@+id/item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/width_17"
+            android:layout_toLeftOf="@id/item_right_icon"
+            android:text="4555"
+            android:textColor="@color/black"
+            android:textSize="@dimen/width_12" />
+    </RelativeLayout>
+
+    <View 
+        style="@style/line_bottom"
+        android:layout_marginLeft="@dimen/width_9"
+        />
+</LinearLayout>

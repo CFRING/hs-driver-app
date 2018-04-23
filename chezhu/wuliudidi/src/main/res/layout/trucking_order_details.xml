@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/home_background" >
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/trucking_order_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/goods_transit_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" >
+
+        <View style="@style/line_top_thin" />
+
+        <Button
+            android:id="@+id/goods_transit_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_35"
+            android:background="@color/theme_color"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/contact_imag"
+            android:layout_width="@dimen/width_60"
+            android:layout_height="@dimen/height_25"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/height_7"
+            android:layout_marginRight="@dimen/width_9"
+            android:layout_marginTop="@dimen/height_7"
+            android:src="@drawable/contact_style"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/reject_imag"
+            android:layout_width="@dimen/width_60"
+            android:layout_height="@dimen/height_25"
+            android:layout_marginBottom="@dimen/height_7"
+            android:layout_marginRight="@dimen/height_9"
+            android:layout_marginTop="@dimen/height_7"
+            android:layout_toLeftOf="@id/contact_imag"
+            android:src="@drawable/reject_style"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/goods_transit_layout"
+        android:layout_below="@id/trucking_order_title" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/transport_state_item"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_33" />
+
+            <com.hongshi.wuliudidi.view.MyItemView
+                android:id="@+id/sign_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_7"
+                android:visibility="gone" />
+
+            <com.hongshi.wuliudidi.view.DetailsAddressView
+                android:id="@+id/address_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray" />
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/goods_send_time_item"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_33" />
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/goods_arrive_time_item"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_33" />
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/truck_info_item"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_33" />
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/goods_name_item"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_33"
+                android:layout_marginTop="@dimen/height_7" />
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/goods_weight_item"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_33" />
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/goods_model_item"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_33" />
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/transport_mil_item"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_33" />
+
+            <RelativeLayout
+                android:id="@+id/goods_remark_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/remark_name"
+                    android:layout_width="@dimen/width_51"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/width_9"
+                    android:text="@string/remark"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/remark_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="@dimen/height_11"
+                    android:layout_marginLeft="@dimen/width_17"
+                    android:layout_marginTop="@dimen/height_11"
+                    android:layout_toRightOf="@+id/remark_name"
+                    android:layout_marginRight="@dimen/width_9"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/width_12" />
+            </RelativeLayout>
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/shipper_phone_item"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_33"
+                android:layout_marginTop="@dimen/height_7" />
+
+            <com.hongshi.wuliudidi.view.AuctionItem
+                android:id="@+id/consignee_phone_item"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_33" />
+
+            <!-- 运单布局 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_9"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line_color" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/width_9"
+                    android:layout_marginTop="@dimen/height_11"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="派车单号"
+                        android:textColor="@color/light_grey" />
+
+                    <TextView
+                        android:id="@+id/number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/width_9"
+                        android:text="hs2345467"
+                        android:textColor="@color/light_grey" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/width_9"
+                    android:layout_marginTop="@dimen/height_6"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="创建时间"
+                        android:textColor="@color/light_grey" />
+
+                    <TextView
+                        android:id="@+id/creat_time"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/width_9"
+                        android:singleLine="true"
+                        android:textColor="@color/light_grey" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/send_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/height_11"
+                    android:layout_marginLeft="@dimen/width_9"
+                    android:layout_marginTop="@dimen/height_6"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="发车时间"
+                        android:textColor="@color/light_grey" />
+
+                    <TextView
+                        android:id="@+id/send_time"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/width_9"
+                        android:singleLine="true"
+                        android:textColor="@color/light_grey" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/finish_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/height_11"
+                    android:layout_marginLeft="@dimen/width_9"
+                    android:layout_marginTop="@dimen/height_6"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="到货时间"
+                        android:textColor="@color/light_grey" />
+
+                    <TextView
+                        android:id="@+id/finish_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/width_9"
+                        android:singleLine="true"
+                        android:textColor="@color/light_grey" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line_color" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="@color/line_color"
+                    android:layout_marginLeft="6dp"/>
+
+                <RelativeLayout
+                    android:id="@+id/receipt_photo_layout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/height_7"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/upload_sheet_info_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/width_12"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="提货凭证"/>
+
+                    <ImageView
+                        android:id="@+id/upload_transit_imageview1"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_marginTop="23dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/upload_sheet_info_text" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/receipt_photo_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/height_7"
+                    android:background="@color/white"
+                    android:visibility="gone">
+                    
+                    <TextView 
+                        android:id="@+id/transit_amount_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/width_12"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:text="本次运量"/>
+                    
+                    <TextView 
+                        android:id="@+id/upload_transit_amount_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/width_12"
+                        android:layout_toRightOf="@id/transit_amount_text"
+                        android:layout_marginLeft="@dimen/width_17"
+                        android:layout_alignTop="@id/transit_amount_text"
+                        android:text="#吨"/>
+                    
+                    <TextView
+                        android:id="@+id/huidan_info_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/gray"
+                        android:textSize="@dimen/width_11"
+                        android:layout_below="@id/transit_amount_text"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="回单"/>
+                    
+                    <ImageView 
+                        android:id="@+id/upload_transit_imageview"
+                        android:layout_width="175dp"
+                        android:layout_height="175dp"
+                        android:layout_marginTop="23dp"
+                        android:layout_below="@id/huidan_info_text"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+	
+    <Button 
+		android:id="@+id/transit_status_btn"
+		android:layout_width="@dimen/width_62"
+		android:layout_height="@dimen/height_83"
+		android:background="@drawable/transit_status_button"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="@dimen/width_17"
+		android:layout_above="@id/goods_transit_layout"
+		android:layout_marginBottom="@dimen/height_14"/>
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/home_background">
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/integral_detail_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/integral_container"
+        android:background="@color/home_text_press"
+        android:layout_below="@id/integral_detail_title">
+        <ImageView
+            android:id="@+id/logo_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/jinbi"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"/>
+        <TextView
+            android:id="@+id/integral_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的积分"
+            android:textColor="@color/provide_white"
+            android:textSize="15sp"
+            android:layout_alignTop="@id/logo_img"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/logo_img"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/integral_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="000"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:layout_below="@id/integral_tip"
+            android:layout_marginTop="5dp"
+            android:layout_alignLeft="@id/integral_tip"/>
+
+            <TextView
+                android:id="@+id/integral_rules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分规则"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"/>
+            <ImageView
+                android:id="@+id/question_img"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/question_img"
+                android:layout_toLeftOf="@id/integral_rules"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="27dp"/>
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/date_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:layout_below="@id/integral_container">
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017年11月"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"/>
+        <ImageView
+            android:id="@+id/time_shift"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/date_filter_icon"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/details_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/date_container"
+        android:layout_marginTop="10dp"
+        android:divider="@color/home_background"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        ptr:ptrHeaderTextColor ="@color/light_grey"
+        ptr:ptrMode="both" />
+</RelativeLayout>

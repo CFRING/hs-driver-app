@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/consignment_msg_head_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/task_info_item"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/pcd_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_29"
+            android:layout_marginTop="@dimen/height_9" >
+
+            <TextView
+                android:id="@+id/order_type_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/height_9"
+                android:text="@string/task_order_number"
+                android:textColor="@color/light_grey"
+                android:textSize="@dimen/width_12" />
+
+            <TextView
+                android:id="@+id/task_order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/height_6"
+                android:layout_toRightOf="@+id/order_type_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/width_12" />
+            
+            <ImageView 
+                android:id="@+id/right_icon"
+                android:layout_width="@dimen/width_15"
+                android:layout_height="@dimen/height_13"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/task_order_number"
+                android:layout_marginLeft="@dimen/width_11"
+                android:src="@drawable/my_item_right"/>
+
+            <TextView
+                android:id="@+id/task_order_state"
+                android:layout_width="@dimen/width_83"
+                android:layout_height="@dimen/height_29"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/width_12" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/height_9"
+            android:background="@color/line_color" />
+
+        <TextView
+            android:id="@+id/name_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_9"
+            android:layout_marginTop="@dimen/height_11"
+            android:textColor="@color/light_grey"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/send_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_9"
+            android:layout_marginTop="@dimen/height_11"
+            android:textColor="@color/light_grey" />
+
+        <TextView
+            android:id="@+id/receive_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/height_11"
+            android:layout_marginLeft="@dimen/width_9"
+            android:layout_marginTop="@dimen/height_11"
+            android:textColor="@color/light_grey" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/height_9"
+            android:background="@color/line_color" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_33" >
+
+            <TextView
+                android:id="@+id/buttom_type_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/width_9"
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/click_view"
+                android:layout_width="@dimen/width_60"
+                android:layout_height="@dimen/height_22"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/width_9"
+                android:background="@drawable/text_bg"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/width_11"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/reject_view"
+                android:layout_width="@dimen/width_60"
+                android:layout_height="@dimen/height_22"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/width_9"
+                android:layout_toLeftOf="@id/click_view"
+                android:background="@drawable/text_bg"
+                android:gravity="center"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/width_11"
+                android:layout_alignParentRight="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/consign_finish_time_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/consign_detail_bottom_layout"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:orientation="vertical" >
+    
+     <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/add_truck_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+     
+     <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_truck_title"
+        android:layout_marginBottom="@dimen/height_35" >
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >
+		    <LinearLayout
+		        android:id="@+id/first_step_layout"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="vertical" >
+			    
+		        <!-- 驳回原因；已通过审核的给失效时间提示 -->
+		        <RelativeLayout 
+		            android:id="@+id/hint_layout"
+		            android:layout_height="wrap_content"
+		            android:layout_width="fill_parent"
+		            android:background="@color/white">
+		            <TextView 
+		                android:id="@+id/hint_text"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:minHeight="@dimen/height_33"
+		                android:layout_marginLeft="@dimen/width_17"
+		                android:layout_marginRight="@dimen/width_9"
+		                android:layout_marginTop="@dimen/height_10"
+		                android:layout_marginBottom="@dimen/height_10"
+		                android:singleLine="false"
+		                android:gravity="center"
+		                android:textSize="@dimen/width_12"
+		                android:textColor="@color/theme_color"
+		                android:visibility="gone"/>
+		            
+		            <View 
+		                android:layout_width="@dimen/width_9"
+		                android:layout_height="fill_parent"
+		                android:background="@color/mentha_green"/>
+		            
+		            <View
+		                style="@style/line_bottom_thin"/>
+		        </RelativeLayout>
+			    
+		        <!-- 车辆类型 -->
+		        <LinearLayout
+		            android:id="@+id/truck_type_layout"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="@dimen/height_7"
+		            android:background="@color/white"
+		            android:orientation="vertical"
+		            android:gravity="center_horizontal"
+		            android:paddingBottom="@dimen/height_11" >
+		            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="@dimen/height_11"
+		                android:layout_marginBottom="@dimen/height_11"
+		                android:textColor="@color/gray"
+		                android:textSize="@dimen/width_13"
+		                android:text="@string/truck_type"/>
+		            
+		            <com.hongshi.wuliudidi.view.NoScrollGridView 
+		                android:id="@+id/truck_type_gridview"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="@dimen/width_34"
+		                android:layout_marginRight="@dimen/width_34"
+		                android:listSelector="@null"
+		                android:numColumns="3"
+		                android:verticalSpacing="0px"
+		                android:horizontalSpacing="@dimen/width_17"/>
+		            
+		            <RelativeLayout
+		                android:id="@+id/single_truck_type_layout"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:background="@color/white"
+					    android:visibility="gone" >
+					    
+					    <ImageView 
+					        android:id="@+id/single_truck_type_image"
+					        android:layout_width="@dimen/width_73"
+					        android:layout_height="@dimen/width_73"
+					        android:layout_centerHorizontal="true"
+					        android:background="@drawable/round_corner_rectangle_style"/>
+
+					    <TextView 
+					        android:id="@+id/type_name_text"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_centerHorizontal="true"
+					        android:layout_below="@id/single_truck_type_image"
+					        android:layout_marginTop="@dimen/height_7"
+					        android:textColor="@color/gray"
+					        android:textSize="@dimen/width_9"/>
+					</RelativeLayout>
+		        </LinearLayout>
+		        
+		        <!-- 车厢类型 -->
+		        <LinearLayout
+		            android:id="@+id/truck_carriage_layout"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="@dimen/height_7"
+		            android:orientation="vertical"
+		            android:gravity="center_horizontal"
+		            android:paddingBottom="@dimen/height_11"
+		            android:background="@color/white" >
+		            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="@dimen/height_11"
+		                android:layout_marginBottom="@dimen/height_11"
+		                android:textColor="@color/gray"
+		                android:textSize="@dimen/width_13"
+		                android:text="@string/truck_carriage_type"/>
+		            
+		            <com.hongshi.wuliudidi.view.NoScrollGridView 
+		                android:id="@+id/truck_carriage_gridview"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_marginLeft="@dimen/width_34"
+		                android:layout_marginRight="@dimen/width_34"
+		                android:listSelector="@null"
+		                android:numColumns="3"
+		                android:verticalSpacing="@dimen/height_7"
+		                android:horizontalSpacing="@dimen/width_17"/>
+		            
+		            <RelativeLayout
+		                android:id="@+id/single_truck_carrige_layout"
+					    android:layout_width="fill_parent"
+					    android:layout_height="wrap_content"
+					    android:background="@color/white"
+					    android:visibility="gone" >
+					    
+					    <ImageView 
+					        android:id="@+id/single_truck_carrige_image"
+					        android:layout_width="@dimen/width_73"
+					        android:layout_height="@dimen/width_73"
+					        android:layout_centerHorizontal="true"
+					        android:background="@drawable/round_corner_rectangle_style"/>
+
+					    <TextView 
+					        android:id="@+id/carrige_name_text"
+					        android:layout_width="wrap_content"
+					        android:layout_height="wrap_content"
+					        android:layout_centerHorizontal="true"
+					        android:layout_below="@id/single_truck_carrige_image"
+					        android:layout_marginTop="@dimen/height_7"
+					        android:textColor="@color/gray"
+					        android:textSize="@dimen/width_9"/>
+					</RelativeLayout>
+		        </LinearLayout>
+		        
+		        <!-- 是否自卸车 -->
+		        <RelativeLayout
+		            android:id="@+id/is_dump_truck_layout"
+		            android:layout_width="match_parent"
+		            android:layout_height="@dimen/height_83"
+		            android:layout_marginTop="@dimen/height_7"
+		            android:background="@color/white"
+		            android:gravity="center_vertical" >
+		            
+		            <TextView 
+		                android:id="@+id/zixieche_text"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:layout_marginLeft="@dimen/width_34"
+		                android:textSize="@dimen/width_13"
+		                android:textColor="@color/gray"
+		                android:text="@string/is_zixieche"/>
+		            
+		            <ImageView 
+		                android:layout_width="@dimen/width_73"
+	        			android:layout_height="@dimen/width_73"
+	        			android:layout_toRightOf="@id/zixieche_text"
+	        			android:layout_marginLeft="@dimen/width_34"
+	        			android:src="@drawable/zixieche"/>
+		            
+		            <ToggleButton 
+		                android:id="@+id/is_dump_truck_toggle"
+		                android:layout_width="@dimen/width_43"
+		                android:layout_height="@dimen/height_22"
+		                android:layout_alignParentRight="true"
+		                android:layout_marginRight="@dimen/width_34"
+		                android:layout_centerVertical="true"
+		                android:textOn=""
+		                android:textOff=""
+		                android:background="@drawable/togglebutton_onoff_style"/>
+		        </RelativeLayout>
+		        
+		        <!-- 车牌号码 -->
+		        <RelativeLayout
+		            android:id="@+id/truck_number_layout"
+		            android:layout_width="match_parent"
+		            android:layout_height="@dimen/height_32"
+		            android:layout_marginTop="@dimen/height_7"
+		            android:paddingLeft="@dimen/width_9"
+		            android:background="@color/white"
+		            android:gravity="center_vertical">
+		            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textSize="@dimen/width_13"
+		                android:textColor="@color/gray"
+		                android:text="@string/plate_number"
+		            	android:layout_centerVertical="true"/>
+		            
+		            <View 
+		                android:id="@+id/line_1"
+		                android:layout_width="1px"
+		                android:layout_height="@dimen/height_23"
+		                android:background="@color/line_color"
+		                android:layout_marginLeft="@dimen/width_121"
+		            	android:layout_centerVertical="true"/>
+		            	
+		            <LinearLayout 
+		                android:id="@+id/choose_plate_number_head"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_alignRight="@id/line_1"
+		                android:layout_marginRight="@dimen/width_9"
+		                android:layout_centerVertical="true"
+		                android:orientation="horizontal"
+		                android:gravity="center_vertical">
+		                
+		                <TextView 
+		                    android:id="@+id/truck_number_head_text"
+		                    android:layout_width="wrap_content"
+		                	android:layout_height="wrap_content"
+		                	android:textColor="@color/theme_color"
+		                	android:textSize="@dimen/width_13"
+		                	android:text="浙  A"/>
+		                
+		                <ImageView 
+		                    android:layout_width="@dimen/width_7"
+		                    android:layout_height="@dimen/height_6"
+		                    android:layout_marginLeft="@dimen/width_11"
+		                    android:src="@drawable/litttle_arrow_right"/>
+		            </LinearLayout>
+		            
+		            <LinearLayout 
+		                android:id="@+id/plate_number_layout"
+		                android:layout_width="fill_parent"
+		                android:layout_height="fill_parent"
+		                android:layout_toRightOf="@id/line_1"
+		                android:gravity="center_vertical"
+		                android:orientation="horizontal">
+		                <EditText 
+		                    android:id="@+id/nongyong_head_number_edittext"
+		                    android:layout_width="@dimen/width_25"
+		                    android:layout_marginLeft="@dimen/width_9"
+		                    android:layout_height="fill_parent"
+		                    android:inputType="number"
+		                    android:maxLength="2"
+		                    android:textColor="@color/theme_color"
+		                    android:background="@null"
+		                    android:layout_gravity="center"
+		                    android:textSize="@dimen/width_13"
+		                    android:hint=""
+		                    android:visibility="gone"/>
+		                
+		                <View 
+			                android:id="@+id/line_5"
+			                android:layout_width="1px"
+			                android:layout_height="@dimen/height_23"
+			                android:background="@color/line_color"
+			                android:visibility="gone"/>
+		                
+		                <EditText 
+			                android:id="@+id/plate_number_edittext"
+			                android:layout_width="fill_parent"
+			                android:layout_height="wrap_content"
+		                	android:layout_marginLeft="@dimen/width_9"
+			                android:digits="@string/passwd_limit"
+	                    	android:maxLength="5"
+			                android:hint="@string/input_plate_number"
+			                android:textSize="@dimen/width_13"
+			                android:textColorHint="@color/light_grey"
+			                android:textColor="@color/black"
+			                android:background="@null"/>
+		            </LinearLayout>
+		            
+		            <View style="@style/line_bottom_thin"/>
+		        </RelativeLayout>
+		        
+		        <!-- 最大载重 -->
+		        <RelativeLayout
+		            android:id="@+id/truck_load_layout"
+		            android:layout_width="wrap_content"
+		            android:layout_height="@dimen/height_32"
+		            android:paddingLeft="@dimen/width_9"
+		            android:background="@color/white" >
+		            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textSize="@dimen/width_13"
+		                android:textColor="@color/gray"
+		                android:text="@string/truck_max_load"
+		            	android:layout_centerVertical="true"/>
+		            
+		            <View 
+		                android:id="@+id/line_2"
+		                android:layout_width="1px"
+		                android:layout_height="@dimen/height_23"
+		                android:background="@color/line_color"
+		            	android:layout_centerVertical="true"
+		                android:layout_marginLeft="@dimen/width_121"/>
+		            
+		            <EditText 
+		                android:id="@+id/truck_load_edittext"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:layout_toRightOf="@id/line_2"
+		                android:layout_marginLeft="@dimen/width_9"
+		                android:hint="@string/input_maximum_load"
+		                android:inputType="numberDecimal"
+		                android:textSize="@dimen/width_13"
+		                android:textColorHint="@color/light_grey"
+		                android:textColor="@color/black"
+		                android:background="@null"/>
+		            
+		        </RelativeLayout>
+		        
+		        <!-- 载货空间 -->
+		        <RelativeLayout
+		            android:id="@+id/truck_space_layout"
+		            android:layout_width="wrap_content"
+		            android:layout_height="@dimen/height_32"
+		            android:paddingLeft="@dimen/width_9"
+		            android:background="@color/white" >
+		            
+		            <View style="@style/line_top_thin"/>
+		            
+		            <TextView 
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:textSize="@dimen/width_13"
+		                android:textColor="@color/gray"
+		                android:text="@string/truck_space"
+		            	android:layout_centerVertical="true"/>
+		            
+		            <View 
+		                android:id="@+id/line_3"
+		                android:layout_width="1px"
+		                android:layout_height="@dimen/height_23"
+		                android:background="@color/line_color"
+		                android:layout_marginLeft="@dimen/width_121"
+		                android:layout_centerVertical="true"/>
+		            
+		            <EditText 
+		                android:id="@+id/truck_space_edittext"
+		                android:layout_width="fill_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_centerVertical="true"
+		                android:layout_toRightOf="@id/line_3"
+		                android:layout_marginLeft="@dimen/width_9"
+		                android:hint="@string/optional_item"
+		                android:inputType="numberDecimal"
+		                android:textSize="@dimen/width_13"
+		                android:textColorHint="@color/light_grey"
+		                android:textColor="@color/black"
+		                android:background="@null"/>
+		        </RelativeLayout>
+	        </LinearLayout>
+	        
+		    <LinearLayout 
+		        android:id="@+id/next_step_layout"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="@dimen/height_7"
+		        android:orientation="vertical">
+		        
+		        <com.hongshi.wuliudidi.view.AddTruckPhotoItem
+		            android:id="@+id/truck_head_photo"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"/>
+		        
+		        <com.hongshi.wuliudidi.view.AddTruckPhotoItem
+		            android:id="@+id/truck_tail_photo"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="@dimen/height_7"/>
+		        
+		        <com.hongshi.wuliudidi.view.AddTruckPhotoItem
+		            android:id="@+id/truck_head_Licence_photo"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="@dimen/height_7"/>
+		        
+		        <com.hongshi.wuliudidi.view.AddTruckPhotoItem
+		            android:id="@+id/truck_tail_licence_photo"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="@dimen/height_7"/>
+		        
+		        <com.hongshi.wuliudidi.view.AddTruckPhotoItem
+		            android:id="@+id/transi_licence_front_photo"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="@dimen/height_7"/>
+		        
+		        <com.hongshi.wuliudidi.view.AddTruckPhotoItem
+		            android:id="@+id/transi_licence_back_photo"
+		            android:layout_width="fill_parent"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="@dimen/height_7"/>
+		    </LinearLayout>
+		</LinearLayout>
+    </ScrollView>
+    
+	<LinearLayout 
+        android:id="@+id/bottom_layout"
+        android:layout_height="@dimen/height_35"
+        android:layout_width="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+		<Button 
+			android:id="@+id/next_step"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height_35"
+			android:background="@drawable/solid_btn_style"
+			android:gravity="center"
+			android:textColor="@color/white"
+			android:textSize="@dimen/width_15"
+			android:text="确认"/>
+		
+	    <LinearLayout 
+			android:id="@+id/submit_layout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/height_4"
+			android:paddingLeft="@dimen/width_9"
+			android:paddingRight="@dimen/width_9"
+			android:orientation="horizontal"
+			android:visibility="gone">
+	           
+			<Button 
+	            android:id="@+id/last_step"
+	            android:layout_width="0px"
+	            android:layout_height="@dimen/height_35"
+	            android:layout_weight="1"
+	            android:layout_marginRight="@dimen/width_3"
+	            android:background="@drawable/solid_btn_style"
+	            android:gravity="center"
+	            android:textColor="@color/white"
+				android:textSize="@dimen/width_15"
+				android:text="@string/last_step"/>
+	           
+			<Button 
+	            android:id="@+id/submit_to_audit"
+	            android:layout_width="0px"
+	            android:layout_height="@dimen/height_35"
+	            android:layout_weight="1"
+	            android:background="@drawable/solid_btn_style"
+	            android:gravity="center"
+	            android:textColor="@color/white"
+				android:textSize="@dimen/width_15"
+				android:text="@string/submit_to_audit"/>
+		</LinearLayout>
+		
+       	<TextView 
+			android:id="@+id/passed_text"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/height_35"
+        	android:layout_marginTop="@dimen/height_7"
+			android:background="@color/white"
+			android:gravity="center"
+			android:textColor="@color/theme_color"
+			android:textSize="@dimen/width_15"
+			android:text="@string/verify_passed"
+			android:visibility="gone"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+    
+    <TextView 
+        android:id="@+id/tyd_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_11"
+        android:layout_marginLeft="@dimen/width_9"
+        android:textColor="@color/light_grey"/>
+    
+    <TextView 
+        android:id="@+id/creat_time"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/light_grey"
+        android:layout_marginTop="@dimen/height_7"
+        android:layout_marginLeft="@dimen/width_9"/>
+    
+    <TextView 
+        android:id="@+id/finish_time"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/light_grey"
+        android:layout_marginTop="@dimen/height_7"
+        android:layout_marginLeft="@dimen/width_9"/>
+    
+    <TextView 
+	    android:id="@+id/pay_way_text"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="@dimen/height_7"
+	    android:layout_marginLeft="@dimen/width_9"
+	    android:layout_marginRight="@dimen/width_9"
+	    android:textColor="@color/light_grey"
+	    android:singleLine="false"
+	    android:visibility="gone"/>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_11"
+        android:background="@android:color/transparent" />
+    
+</LinearLayout>

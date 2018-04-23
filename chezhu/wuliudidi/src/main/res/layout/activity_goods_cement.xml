@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background" >
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/filter_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_36"
+        android:layout_below="@id/home_title"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/filter_start_layout"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/start_area_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/width_13"
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:layout_width="@dimen/width_11"
+                android:layout_height="@dimen/height_4"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/width_16"
+                android:src="@drawable/arrow_down"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/height_7"
+            android:layout_marginBottom="@dimen/height_7"
+            android:background="@color/auction_line_color"/>
+
+        <RelativeLayout
+            android:id="@+id/filter_end_layout"
+            android:layout_width="0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/end_area_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/width_13"
+                android:layout_centerInParent="true"/>
+
+            <ImageView
+                android:layout_width="@dimen/width_11"
+                android:layout_height="@dimen/height_4"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/width_17"
+                android:src="@drawable/arrow_down"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/filter_layout"
+        android:background="@color/auction_line_color"/>
+
+
+    <com.hongshi.wuliudidi.view.NullDataView
+        android:id="@+id/no_data_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/goods_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="@dimen/width_8"
+        android:layout_marginRight="@dimen/width_8"
+        android:layout_below="@+id/filter_layout"
+        android:divider="@color/home_background"
+        android:dividerHeight="@dimen/height_7"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:smoothScrollbar="true"
+        ptr:ptrHeaderTextColor ="@color/light_grey"
+        ptr:ptrMode="both" />
+
+    <ImageButton
+        android:id="@+id/back_top"
+        android:layout_width="@dimen/width_34"
+        android:layout_height="@dimen/height_29"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/height_47"
+        android:layout_marginRight="@dimen/width_9"
+        android:background="@drawable/home_top"
+        android:focusable="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

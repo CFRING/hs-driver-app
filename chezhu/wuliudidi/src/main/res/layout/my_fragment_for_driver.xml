@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textview_background_grey" >
+
+    <RelativeLayout
+        android:id="@+id/user_photo_container"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:background="@color/item_bg">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/driver_user_icon_bg"/>
+
+        <com.hongshi.wuliudidi.view.CircleImageView
+            android:id="@+id/user_photo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp" />
+
+        <TextView
+            android:id="@+id/account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13899996666"
+            android:textSize="14sp"
+            android:textColor="@color/gray"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/user_photo"
+            android:layout_marginTop="5dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/message_layout"
+        android:layout_below="@+id/user_photo_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.hongshi.wuliudidi.view.MessageItemView
+            android:id="@+id/real_name_ca_item"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <com.hongshi.wuliudidi.view.MessageItemView
+            android:id="@+id/driving_license_ca_item"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <com.hongshi.wuliudidi.view.MessageItemView
+            android:id="@+id/my_truck_item"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"/>
+
+        <com.hongshi.wuliudidi.view.MessageItemView
+            android:id="@+id/receipt_record_item"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <com.hongshi.wuliudidi.view.MessageItemView
+            android:id="@+id/my_route_item"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+
+        <com.hongshi.wuliudidi.view.MessageItemView
+        android:id="@+id/contact_customer_service_item"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+            android:layout_marginTop="10dp"/>
+
+        <com.hongshi.wuliudidi.view.MessageItemView
+            android:id="@+id/setting_item"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+</RelativeLayout>

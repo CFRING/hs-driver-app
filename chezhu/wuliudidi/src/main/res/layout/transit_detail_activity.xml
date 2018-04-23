@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:background="@color/background_gray">
+	
+    <com.hongshi.wuliudidi.view.DiDiTitleView 
+		android:id="@+id/transit_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+    
+	<ScrollView
+	    android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+		    
+		   <!--  运单单号 -->
+		   <com.hongshi.wuliudidi.view.FormItem 
+		        android:id="@+id/transit_number"
+		        android:layout_width="fill_parent"
+    			android:layout_height="@dimen/height_33"/>
+		    
+		    <!--实际运量（吨）-->
+		    <RelativeLayout
+		        android:id="@+id/transit_weight"
+		        android:layout_height="@dimen/height_69"
+		        android:layout_width="match_parent"
+		        android:background="@color/white">
+		        
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:layout_marginTop="@dimen/height_13"
+		            android:layout_marginLeft="@dimen/width_9"
+		            android:textSize="@dimen/width_12"
+		            android:textColor="@color/gray"
+		            android:text="@string/real_load"/>
+		        
+		        <TextView
+		            android:id="@+id/real_load"
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:layout_alignParentBottom="true"
+		            android:layout_marginBottom="@dimen/height_5"
+		            android:layout_alignParentRight="true"
+		            android:layout_marginRight="@dimen/width_26"
+		            android:layout_marginLeft="@dimen/width_9"
+		            android:textSize="@dimen/width_15"
+		            android:textColor="@color/theme_color"/>
+		    </RelativeLayout>
+		    
+		    
+		    <RelativeLayout 
+		        android:layout_height="@dimen/height_8"
+		        android:layout_width="fill_parent"
+		        android:orientation="vertical">
+		        
+		        <View 
+		            style="@style/line_top_thick"/>
+		        <View 
+		            style="@style/line_bottom_thick"/>
+		    </RelativeLayout>
+		    
+			<!--过磅单号 -->
+		    <com.hongshi.wuliudidi.view.FormItem 
+		        android:id="@+id/weighing_form_number"
+		        android:layout_width="fill_parent"
+    			android:layout_height="@dimen/height_33"/>
+
+		    
+		    <!--收货单位 -->
+		    <com.hongshi.wuliudidi.view.FormItem
+		        android:id="@+id/goods_receiver"
+		        android:layout_width="fill_parent"
+    			android:layout_height="@dimen/height_33"/>
+		    
+		    <!--发货单位 -->
+		    <com.hongshi.wuliudidi.view.FormItem 
+		        android:id="@+id/goods_sender"
+		        android:layout_width="fill_parent"
+    			android:layout_height="@dimen/height_33"/>
+		
+		    <!--车牌号码 -->
+		    <com.hongshi.wuliudidi.view.FormItem 
+		        android:id="@+id/plate_number"
+		        android:layout_width="fill_parent"
+    			android:layout_height="@dimen/height_33"/>
+		    
+		    <!--驾驶员 -->
+		    <com.hongshi.wuliudidi.view.FormItem 
+		        android:id="@+id/driver"
+		        android:layout_width="fill_parent"
+    			android:layout_height="@dimen/height_33"/>
+		    
+		    <!--空车过磅 -->
+		    <com.hongshi.wuliudidi.view.FormItem 
+		        android:id="@+id/weight_emptycar"
+		        android:layout_width="fill_parent"
+    			android:layout_height="@dimen/height_33"/>
+		    
+		    <!--载货过磅 -->
+		    <com.hongshi.wuliudidi.view.FormItem 
+		        android:id="@+id/weight_loadedcar"
+		        android:layout_width="fill_parent"
+    			android:layout_height="@dimen/height_33"/>
+		    <!--货损货差 -->
+		    <com.hongshi.wuliudidi.view.FormItem 
+		        android:id="@+id/weight_loss"
+		        android:layout_width="fill_parent"
+    			android:layout_height="@dimen/height_33"/>
+		    
+		    <!--验收人 -->
+		    <com.hongshi.wuliudidi.view.FormItem 
+		        android:id="@+id/goods_checker"
+		        android:layout_width="fill_parent"
+    			android:layout_height="@dimen/height_33"/>
+		    
+		    <!--过磅人 -->
+		    <com.hongshi.wuliudidi.view.FormItem 
+		        android:id="@+id/goods_weigher"
+		        android:layout_width="fill_parent"
+    			android:layout_height="@dimen/height_33"/>
+		    
+		    <RelativeLayout 
+		        android:layout_height="@dimen/height_8"
+		        android:layout_width="fill_parent"
+		        android:orientation="vertical">
+		        
+		        <View 
+		            style="@style/line_top_thick"/>
+		        <View 
+		            style="@style/line_bottom_thick"/>
+		    </RelativeLayout>
+		    
+		    <!-- 付款方式 -->
+		    <RelativeLayout
+		        android:layout_height="@dimen/height_69"
+		        android:layout_width="fill_parent"
+		        android:gravity="center_vertical"
+		        android:background="@color/white">
+		        
+		        <TextView 
+		            android:id="@+id/payment"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="@dimen/width_12"
+		            android:textColor="@color/gray"
+		            android:text="@string/payment_terms"
+		            android:layout_marginLeft="@dimen/width_9"
+		            android:layout_alignParentLeft="true"
+		            android:layout_marginTop="@dimen/height_11"
+		            android:layout_alignParentTop="true"/>
+		        
+		        <TextView 
+		            android:id="@+id/payment_terms"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="@dimen/width_12"
+		            android:textColor="@color/gray"
+		            android:layout_toRightOf="@id/payment"
+		            android:layout_marginLeft="@dimen/width_9"
+		            android:layout_alignTop="@id/payment"/>
+		        
+		        <!-- 生成时间 -->
+		        <TextView 
+		            android:id="@+id/create"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="@dimen/width_12"
+		            android:textColor="@color/gray"
+		            android:text="@string/creating_time"
+		            android:layout_below="@id/payment"
+		            android:layout_marginTop="@dimen/height_7"
+		            android:layout_alignParentLeft="true"
+		            android:layout_marginLeft="@dimen/width_9"/>
+		        
+		        <TextView 
+		            android:id="@+id/create_time"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="@dimen/width_12"
+		            android:textColor="@color/gray"
+		            android:layout_toRightOf="@id/create"
+		            android:layout_marginLeft="@dimen/width_9"
+		            android:layout_alignTop="@id/create"/>
+		        
+		      	<View
+		            style="@style/line_bottom_thin"/>       
+		    </RelativeLayout>
+		    
+		    <!-- 运单成功 -->
+		    <RelativeLayout
+		        android:layout_width="fill_parent"
+		    	android:layout_height="@dimen/height_35"
+		    	android:orientation="horizontal"
+		    	android:background="@color/white">
+		        
+		        <RelativeLayout 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerInParent="true">
+		            <ImageView
+		                android:id="@+id/succeed"
+		                android:src="@drawable/succeed"
+		                android:layout_centerVertical="true"
+		                android:layout_height="@dimen/height_15"
+		                android:layout_width="@dimen/width_18"/>
+		            <TextView
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content"
+		                android:layout_toRightOf="@id/succeed"
+		                android:layout_marginLeft="@dimen/width_6"
+		                android:text="@string/transit_succeed"
+		                android:textColor="@color/black"
+		                android:textSize="@dimen/width_15"/>
+		        </RelativeLayout>
+		    </RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

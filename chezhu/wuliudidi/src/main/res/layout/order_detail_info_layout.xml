@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/header_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true">
+        <com.hongshi.wuliudidi.view.CircleImageView
+            android:id="@+id/user_head"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_photo"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/user_head"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divide_line0"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"
+        android:layout_below="@id/header_layout"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/money_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textSize="36sp"
+        android:textColor="#000000"
+        android:layout_below="@id/divide_line0"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/trade_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:layout_below="@id/money_num"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        android:id="@+id/divide_line1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/line_color"
+        android:layout_below="@id/trade_status"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="12dp"/>
+
+    <RelativeLayout
+        android:id="@+id/driver_info_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divide_line1"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/driver_name_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我 的 司 机"
+            android:textColor="@color/light_grey"
+            android:textSize="13sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/driver_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/light_grey"
+            android:textSize="13sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignBottom="@id/driver_name_tip"/>
+
+        <View
+            android:id="@+id/divide_line2"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line_color"
+            android:layout_below="@id/driver_name_tip"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/supplier_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/supplier_tip"
+        android:textColor="@color/light_grey"
+        android:textSize="13sp"
+        android:layout_below="@id/driver_info_container"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/supplier_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/light_grey"
+        android:textSize="13sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:maxLength="20"
+        android:layout_alignBottom="@id/supplier_tip"/>
+
+    <TextView
+        android:id="@+id/payment_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_tip"
+        android:textColor="@color/light_grey"
+        android:textSize="13sp"
+        android:layout_below="@id/supplier_tip"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/payment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/light_grey"
+        android:textSize="13sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:maxLength="20"
+        android:layout_alignBottom="@id/payment_tip"/>
+
+    <TextView
+        android:id="@+id/product_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/product_tip"
+        android:textColor="@color/light_grey"
+        android:textSize="13sp"
+        android:layout_below="@id/payment_tip"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/product_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/light_grey"
+        android:textSize="13sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:maxLength="20"
+        android:layout_alignBottom="@id/product_tip"/>
+
+    <TextView
+        android:id="@+id/create_time_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_time_tip"
+        android:textColor="@color/light_grey"
+        android:textSize="13sp"
+        android:layout_below="@id/product_tip"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/create_time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/light_grey"
+        android:textSize="13sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:maxLength="20"
+        android:layout_alignBottom="@id/create_time_tip"/>
+
+    <TextView
+        android:id="@+id/trade_code_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trade_code_tip"
+        android:textColor="@color/light_grey"
+        android:textSize="13sp"
+        android:layout_below="@id/create_time_tip"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/trade_code_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/light_grey"
+        android:textSize="13sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:maxLength="20"
+        android:layout_alignBottom="@id/trade_code_tip" />
+
+    <TextView
+        android:id="@+id/payment_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_desc"
+        android:textColor="@color/light_grey"
+        android:textSize="13sp"
+        android:layout_below="@id/trade_code_tip"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/payment_desc_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/light_grey"
+        android:textSize="13sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:maxLength="20"
+        android:layout_alignBottom="@id/payment_desc"/>
+</RelativeLayout>

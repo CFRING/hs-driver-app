@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background" >
+
+    <RelativeLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_32"
+        android:background="@color/title_bg" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="@dimen/width_69"
+                android:layout_height="@dimen/height_22" >
+
+                <TextView
+                    android:id="@+id/transportation_task"
+                    android:layout_width="@dimen/width_69"
+                    android:layout_height="@dimen/height_22"
+                    android:background="@drawable/transportation_press"
+                    android:gravity="center"
+                    android:text="运输任务"
+                    android:textSize="@dimen/width_14" />
+
+                <RelativeLayout
+                    android:id="@+id/transit_news_layout"
+                    android:layout_width="@dimen/width_8"
+                    android:layout_height="@dimen/height_7"
+                    android:visibility="gone"
+                    android:background="@drawable/news" >
+
+                    <TextView
+                        android:id="@+id/transit_news"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/width_69"
+                android:layout_height="@dimen/height_22" >
+
+                <TextView
+                    android:id="@+id/assign_task"
+                    android:layout_width="@dimen/width_69"
+                    android:layout_height="@dimen/height_22"
+                    android:background="@drawable/assign_none"
+                    android:gravity="center"
+                    android:text="派车计划"
+                    android:textSize="@dimen/width_14"/>
+                <RelativeLayout
+                    android:id="@+id/plan_news_layout"
+                    android:layout_width="@dimen/width_8"
+                    android:layout_height="@dimen/height_7"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:background="@drawable/news" >
+
+                    <TextView
+                        android:id="@+id/plan_news"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/list_image"
+            android:layout_width="@dimen/width_17"
+            android:layout_height="@dimen/height_15"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/width_9"
+            android:src="@drawable/list_style" />
+    </RelativeLayout>
+
+    <com.hongshi.wuliudidi.view.NoLoginView
+        android:id="@+id/no_login_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_view" >
+
+        <include
+            android:id="@+id/transportation_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/transportation_view" />
+
+        <include
+            android:id="@+id/assign_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/assign_view"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

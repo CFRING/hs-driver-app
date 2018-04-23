@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/order_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/one_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/width_9"
+        android:layout_marginTop="@dimen/height_11"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/one_text"
+            style="@style/size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_grey" />
+
+        <TextView
+            android:id="@+id/one_content"
+            style="@style/size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_9"
+            android:textColor="@color/light_grey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/two_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/width_9"
+        android:layout_marginTop="@dimen/height_6"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/two_text"
+            style="@style/size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_grey" />
+
+        <TextView
+            android:id="@+id/two_content"
+            style="@style/size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_9"
+            android:textColor="@color/light_grey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/three_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginLeft="@dimen/width_9"
+        android:layout_marginTop="@dimen/height_6"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/three_time"
+            style="@style/size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_grey" />
+
+        <TextView
+            android:id="@+id/three_content"
+            style="@style/size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_9"
+            android:textColor="@color/light_grey" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/four_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/width_9"
+        android:layout_marginTop="@dimen/height_6"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/four_text"
+            style="@style/size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/light_grey" />
+
+        <TextView
+            android:id="@+id/four_content"
+            style="@style/size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_9"
+            android:textColor="@color/light_grey" />
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_11"
+        android:background="@android:color/transparent"/>
+</LinearLayout>

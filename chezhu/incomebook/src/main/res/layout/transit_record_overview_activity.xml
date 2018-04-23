@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hongshi.wuliudidi.incomebook.TransitRecordOverviewActivity"
+    android:background="@color/home_background">
+
+    <com.hongshi.wuliudidi.incomebook.DiDiTitleView
+        android:id="@+id/transit_record_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_background"/>
+
+    <!--点击筛选的layout-->
+    <LinearLayout
+        android:id="@+id/sifting_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="9dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="11dp"
+            android:src="@drawable/sifting"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:text="@string/sifting"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/switch_layout"
+        android:layout_below="@id/transit_record_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/transit_record_overview_grey">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/transit_overview_switch_background_style">
+
+            <TextView
+                android:id="@+id/daily_statistic_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="@string/daily_statistic"/>
+
+            <TextView
+                android:id="@+id/monthly_statistic_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="@string/monthly_statistic"/>
+
+            <TextView
+                android:id="@+id/annual_statistic_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="@string/annual_statistic"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+<!--    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/switch_layout"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />-->
+
+    <!--每日统计-->
+    <com.hongshi.wuliudidi.incomebook.TransitRecordItemsLayout
+        android:id="@+id/daily_layout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/switch_layout"/>
+
+    <!--月度统计-->
+    <com.hongshi.wuliudidi.incomebook.TransitRecordStatisticLayout
+        android:id="@+id/monthly_layout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/switch_layout"/>
+
+    <!--年度统计-->
+    <com.hongshi.wuliudidi.incomebook.TransitRecordStatisticLayout
+        android:id="@+id/annual_layout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/switch_layout"/>
+
+</RelativeLayout>

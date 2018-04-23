@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:orientation="vertical">
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/rating_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/transite_item"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_79"
+        android:layout_marginTop="8dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/head_image"
+            android:layout_width="@dimen/height_50"
+            android:layout_height="@dimen/height_50"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/head_img_default_evaluate" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/head_image"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="佳佳"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="工号：10000"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+            <RatingBar
+                android:id="@+id/ratingbar_level"
+                style="@style/MyRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:isIndicator="true"
+                android:rating="5"
+                android:stepSize="0.1" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/call_image"
+            android:layout_width="@dimen/width_17"
+            android:layout_height="@dimen/height_15"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/width_9"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/call_blue" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/height_9"
+        android:background="@color/line_color"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="给交易员打分吧"
+            android:textColor="@color/gray"
+            android:textSize="12sp" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp">
+
+            <RadioButton
+                android:id="@+id/btn_0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableLeft="@drawable/rating_one_select_style" />
+
+            <RadioButton
+                android:id="@+id/btn_1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/rating_two_select_style"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/btn_2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/rating_three_select_style"
+                android:button="@null"/>
+        </RadioGroup>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/edittext_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_54"
+        android:layout_marginLeft="@dimen/width_13"
+        android:layout_marginRight="@dimen/width_13"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_style">
+
+        <EditText
+            android:id="@+id/input_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/width_9"
+            android:layout_marginRight="@dimen/width_9"
+            android:layout_marginTop="@dimen/height_7"
+            android:layout_marginBottom="@dimen/height_7"
+            android:hint="请输入对本次运输交易的详细评论"
+            android:textColorHint="@color/line_color"
+            android:textSize="14sp"
+            android:gravity="top"
+            android:maxLength="50"
+            android:background="@android:color/transparent"/>
+        <TextView
+            android:id="@+id/evaluate_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/width_9"
+            android:layout_marginRight="@dimen/width_9"
+            android:layout_marginTop="@dimen/height_7"
+            android:layout_marginBottom="@dimen/height_7"
+            android:text=""
+            android:visibility="gone"
+            android:textSize="14sp"
+            android:gravity="top"
+            android:background="@android:color/transparent"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/submint"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_32"
+        android:layout_marginLeft="@dimen/width_21"
+        android:layout_marginRight="@dimen/width_21"
+        android:layout_below="@id/edittext_layout"
+        android:layout_marginTop="@dimen/height_22"
+        android:background="@drawable/solid_btn_style"
+        android:text="@string/submit"
+        android:textColor="@color/white"/>
+</LinearLayout>

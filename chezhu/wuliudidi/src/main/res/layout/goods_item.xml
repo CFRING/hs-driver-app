@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rect_gray"
+    android:orientation="vertical" >
+
+    <!-- 竞拍单号布局 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_29" >
+
+        <TextView
+            android:id="@+id/auction_number_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_9"
+            android:text="承运期"
+            android:textColor="@color/black"
+            android:textSize="@dimen/width_12" />
+        <ImageView
+            android:id="@+id/tj_icon"
+            android:layout_width="30dp"
+            android:layout_height="15dp"
+            android:src="@drawable/tj"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/auction_number_text"
+            android:layout_marginLeft="6dp"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/read_num"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="@dimen/width_9"-->
+            <!--android:textColor="@color/light_grey"-->
+            <!--android:textSize="@dimen/width_12" />-->
+
+        <RelativeLayout
+            android:id="@+id/map_entry"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/map_icon" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/dotted_line"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layerType="software" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        tools:ignore="UselessParent">
+
+        <!--<ImageView-->
+            <!--android:id="@+id/security_flag"-->
+            <!--android:layout_width="@dimen/width_20"-->
+            <!--android:layout_height="@dimen/height_18"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginRight="@dimen/width_13"-->
+            <!--android:src="@drawable/security_goods"/>-->
+
+        <ImageView
+            android:id="@+id/start_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/goods_load" />
+
+        <TextView
+            android:id="@+id/start_county_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/start_image"
+            android:layout_alignBottom="@id/start_image"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:ellipsize = "end"
+            android:maxLength="6"
+            android:text="江干区"
+            android:includeFontPadding="false" />
+
+        <TextView
+            android:id="@+id/start_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/start_county_text"
+            android:layout_alignBottom="@id/start_county_text"
+            android:textSize="15sp"
+            android:textColor="@color/light_grey"
+            android:ellipsize = "end"
+            android:singleLine="true"
+            android:maxLength="5"
+            android:text="鹿城区"
+            android:includeFontPadding="false"/>
+
+        <ImageView
+            android:id="@+id/end_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/goods_unload"
+            android:layout_alignLeft="@id/start_image"
+            android:layout_below="@id/start_image"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/end_county_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/end_image"
+            android:layout_alignBottom="@id/end_image"
+            android:gravity="center_vertical"
+            android:text="xxxx"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:ellipsize = "end"
+            android:maxLength="6"
+            android:includeFontPadding="false"/>
+
+        <TextView
+            android:id="@+id/end_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/end_county_text"
+            android:layout_alignBottom="@id/end_county_text"
+            android:textSize="15sp"
+            android:textColor="@color/light_grey"
+            android:singleLine="true"
+            android:ellipsize = "end"
+            android:maxLength="5"
+            android:text="江干区"/>
+        <TextView
+            android:id="@+id/auction_image"
+            android:layout_width="77dp"
+            android:layout_height="33dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bid_none" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" >
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/goods_image" />
+
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:text="xxx"
+                android:singleLine="true"
+                android:ellipsize = "end"
+                android:maxWidth="@dimen/width_178"/>
+
+            <TextView
+                android:id="@+id/goods_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:textSize="14sp"
+                android:text=""
+                android:textColor="@color/gray" />
+
+            <TextView
+                android:id="@+id/goods_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textColor="#666666"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/price_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout1"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/price_image" />
+
+            <TextView
+                android:id="@+id/price_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="一口价"
+                android:textColor="@color/title_background"
+                android:textSize="14sp"
+                android:includeFontPadding="false"/>
+
+            <TextView
+            android:id="@+id/price_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="6dp"
+            android:textColor="@color/title_background"
+            android:text="sdf/x"
+            android:includeFontPadding="false"/>
+
+            <TextView
+                android:id="@+id/price_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/home_bottom_background_2"
+                android:textSize="12sp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="4dp"/>
+
+            <TextView
+                android:id="@+id/handling_charges_text"
+                android:layout_width="70dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:textColor="@color/gray"
+                android:text=""
+                android:includeFontPadding="false"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/price_layout"/>
+        <TextView
+            android:id="@+id/start_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price_layout"
+            android:layout_marginLeft="@dimen/width_9"
+            android:text="32432432"
+            android:textColor="@color/start_time_text_color"
+            android:textSize="@dimen/height_9"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

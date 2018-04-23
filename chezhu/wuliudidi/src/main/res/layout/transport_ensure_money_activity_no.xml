@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background" >
+    
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/transport_ensure_money_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    
+    <ImageView 
+        android:id="@+id/pay_insure_money_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transport_ensure_money_title"
+        android:background="@drawable/ensure_money_top_view"/>
+    
+    <LinearLayout 
+        android:id="@+id/ensure_money_introduction_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_18"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/transport_ensure_money_title"
+        android:layout_marginTop="@dimen/height_11"
+        android:gravity="center_vertical">
+        
+        <ImageView 
+            android:layout_width="@dimen/height_11"
+            android:layout_height="@dimen/height_11"
+            android:src="@drawable/i_icon"/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_9"
+            android:layout_marginRight="@dimen/width_9"
+            android:textColor="@color/white"
+            android:textSize="@dimen/width_12"
+            android:text="@string/ensure_money_introduction"/>
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/join_in_insure_service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/transport_ensure_money_title"
+        android:layout_marginTop="@dimen/height_198"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/width_15"
+        android:textColor="@color/black"
+        android:text="@string/join_in_insure_service"/>
+    
+    <LinearLayout 
+        android:id="@+id/step_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/join_in_insure_service"
+        android:layout_marginTop="@dimen/height_27"
+        android:orientation="vertical">
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/width_13"
+                android:text="@string/num1"/>
+            
+            <ImageView 
+                android:layout_width="@dimen/width_7"
+                android:layout_height="@dimen/width_7"
+                android:src="@drawable/point_green"
+                android:layout_marginLeft="@dimen/width_14"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_14"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/width_13"
+                android:text="@string/pay_ensure_money"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_33"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/width_13"
+                android:text="@string/num2"/>
+            
+            <ImageView 
+                android:layout_width="@dimen/width_7"
+                android:layout_height="@dimen/width_7"
+                android:src="@drawable/point_yellow"
+                android:layout_marginLeft="@dimen/width_14"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_14"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/width_13"
+                android:text="@string/platform_confirm"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/height_33"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/width_13"
+                android:text="@string/num3"/>
+            
+            <ImageView 
+                android:layout_width="@dimen/width_7"
+                android:layout_height="@dimen/width_7"
+                android:src="@drawable/point_green"
+                android:layout_marginLeft="@dimen/width_14"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_14"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/width_13"
+                android:text="@string/ensure_service_enjoyment"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button 
+        android:id="@+id/pay_button"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_32"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/height_16"
+        android:layout_marginLeft="@dimen/width_9"
+        android:layout_marginRight="@dimen/width_9"
+        android:background="@drawable/add_truck_button_style"
+        android:text="@string/pay_ensure_money"
+        android:textColor="@color/white"
+        android:textSize="@dimen/width_15"/>
+</RelativeLayout>

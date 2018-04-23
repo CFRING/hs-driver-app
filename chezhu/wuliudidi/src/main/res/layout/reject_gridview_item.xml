@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="@dimen/width_11"
+        android:layout_height="@dimen/height_9"
+        android:layout_marginLeft="@dimen/width_26"
+        android:layout_marginTop="@dimen/height_11" 
+        android:layout_marginBottom="@dimen/height_11"
+        android:src="@drawable/reject_image"/>
+    <TextView 
+        android:id="@+id/reject_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/width_13"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/width_12"
+        android:textColor="@color/gray"/>
+
+</LinearLayout>

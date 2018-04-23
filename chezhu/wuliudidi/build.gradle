@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'wuliudidi'
+            keyPassword 'wuliudidi2015'
+            storeFile file('E:/work/wuliudidi')
+            storePassword 'wuliudidi2015'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.0"
+    defaultConfig {
+        applicationId "com.hongshi.wuliudidi"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1280
+        versionName "2.8.0"
+    }
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled false
+            zipAlignEnabled false
+            signingConfig signingConfigs.release
+//            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-project.txt'
+
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (variant.buildType.name.equals('release')) {
+                def fileName = "hongshiwuliu_${defaultConfig.versionName}.apk"
+//                if(variant.flavorName.equals("360")){
+//                    fileName = "Demo_v${defaultConfig.versionName}_${releaseTime()}_360_release.apk"
+//                }else if(variant.flavorName.equals("yingyongbao")){
+//                    fileName = "Demo_v${defaultConfig.versionName}_${releaseTime()}_yingyongbao_release.apk"
+//                }
+                output.outputFile = new File(outputFile.parent, fileName)
+            }else if(variant.buildType.name.equals('debug')){
+                def fileName = "hongshiwuliu_${defaultConfig.versionName}_debug.apk"
+//                if(variant.flavorName.equals("360")){
+//                    fileName = "Demo_v${defaultConfig.versionName}_${releaseTime()}_360_debug.apk"
+//                }else if(variant.flavorName.equals("yingyongbao")){
+//                    fileName = "Demo_v${defaultConfig.versionName}_${releaseTime()}_yingyongbao_debug.apk"
+//                }
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+}
+
+//def releaseTime() {
+//    return new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("UTC"))
+//}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    compile project(':PluginLib')
+    compile(name: 'appupdate', ext: 'aar')
+    compile(name: 'plugindownloader', ext: 'aar')
+    compile project(':library')
+    compile fileTree(include: '**.jar', dir: 'libs')
+    compile project(':wheelviewlib')
+    compile(project(':slidelibrary')) { transitive = false; }
+    compile files('libs/zxing-3.2.1.jar')
+    compile files('libs/okhttp-3.2.0.jar')
+    compile files('libs/okio-1.6.0.jar')
+}
+

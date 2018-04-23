@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--运输记录，与具体派车单对应的数据条目layout-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    
+    <View
+        android:id="@+id/divide_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_7"
+        android:background="@color/home_background"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_43"
+        android:paddingLeft="@dimen/width_17"
+        android:paddingRight="@dimen/width_13">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/truck_number_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="浙A12345"
+                android:textColor="@color/black"
+                android:textSize="@dimen/width_14" />
+
+            <TextView
+                android:id="@+id/goods_name_and_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="红狮水泥"
+                android:textColor="@color/light_grey"
+                android:textSize="@dimen/width_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:gravity="right">
+            <TextView
+                android:id="@+id/date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_grey"
+                android:textSize="@dimen/width_12"
+                android:text="2016-4-25"/>
+
+            <TextView
+                android:id="@+id/all_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/height_3"
+                android:text="5222.00"
+                android:textColor="@color/theme_color"
+                android:textSize="@dimen/width_15" />
+        </LinearLayout>
+
+        <View
+            style="@style/line_bottom_thin" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_40"
+        android:paddingLeft="@dimen/width_17"
+        android:paddingRight="@dimen/width_13">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/width_11"
+                    android:layout_height="@dimen/width_11"
+                    android:src="@drawable/start_city" />
+
+                <TextView
+                    android:id="@+id/start_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="杭州市滨江区"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/width_10" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_8"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="@dimen/width_11"
+                    android:layout_height="@dimen/width_11"
+                    android:src="@drawable/end_city" />
+
+                <TextView
+                    android:id="@+id/end_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="杭州市滨江区"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/width_10" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            style="@style/line_bottom_thin" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/charge_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/width_17"
+        android:paddingRight="@dimen/width_13">
+    </LinearLayout>
+</LinearLayout>

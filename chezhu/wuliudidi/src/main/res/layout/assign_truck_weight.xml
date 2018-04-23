@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background" >
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <com.hongshi.wuliudidi.view.NullDataView 
+        android:id="@+id/no_data_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginBottom="@dimen/height_36" >
+
+        <LinearLayout
+            android:id="@+id/truck_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_36"
+        android:layout_alignParentBottom="true"
+        android:background="#fafafa" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_13"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/send_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/light_grey"
+                android:textSize="@dimen/width_12" />
+
+            <TextView
+                android:id="@+id/all_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/width_12" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/ok"
+            android:layout_width="@dimen/width_102"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/theme_color"
+           
+            android:textColor="@color/white"
+            android:textSize="@dimen/width_12" />
+
+        <View style="@style/line_top_thin" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_180"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_33"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_9"
+            android:textColor="@color/black"
+            android:textSize="@dimen/width_13" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_9"
+            android:textColor="@color/theme_color"
+            android:textSize="@dimen/width_13" />
+    </LinearLayout>
+
+    <View style="@style/line_bottom_thin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_108"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <com.hongshi.wuliudidi.view.wheel.WheelView
+            android:id="@+id/year"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+        </com.hongshi.wuliudidi.view.wheel.WheelView>
+
+        <com.hongshi.wuliudidi.view.wheel.WheelView
+            android:id="@+id/month"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+        </com.hongshi.wuliudidi.view.wheel.WheelView>
+
+        <com.hongshi.wuliudidi.view.wheel.WheelView
+            android:id="@+id/day"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+        </com.hongshi.wuliudidi.view.wheel.WheelView>
+
+        <com.hongshi.wuliudidi.view.wheel.WheelView
+            android:id="@+id/hour"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+        </com.hongshi.wuliudidi.view.wheel.WheelView>
+
+        <com.hongshi.wuliudidi.view.wheel.WheelView
+            android:id="@+id/minute"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+        </com.hongshi.wuliudidi.view.wheel.WheelView>
+    </LinearLayout>
+
+    <View style="@style/line_bottom_thin" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="取消"
+            android:gravity="center"
+            android:textColor="#0099ff"
+            android:layout_weight="1" />
+
+        <View style="@style/line_height_thin" />
+
+        <TextView
+            android:id="@+id/sure"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="确定"
+            android:textColor="#0099ff"
+            android:gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

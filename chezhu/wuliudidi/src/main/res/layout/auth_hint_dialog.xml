@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/width_239"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white" >
+    
+    <TextView 
+        android:id="@+id/title"
+        android:layout_marginTop="@dimen/height_15"
+        android:layout_marginLeft="@dimen/width_13"
+        android:text="@string/auth_hint_title"
+        style="@style/table_item_textblack"/>
+
+    <TextView 
+        android:id="@+id/content"
+        android:layout_marginTop="@dimen/height_11"
+        android:layout_marginLeft="@dimen/width_13"
+        android:text="@string/auth_individual_hint"
+        style="@style/table_item_textgray"
+        android:lineSpacingExtra="@dimen/height_7"/>
+    
+    <RelativeLayout 
+        android:id="@+id/i_know_layout"
+        android:layout_height="@dimen/height_32"
+        android:layout_width="fill_parent">
+        
+        <View 
+            style="@style/line_top_thin"/>
+        
+        <TextView 
+	        android:id="@+id/i_know"
+	        android:layout_marginTop="@dimen/height_13"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/width_15"
+	        android:text="@string/i_know"
+	        android:layout_centerInParent="true"
+	        android:textColor="@color/sky_blue"/>
+        
+    </RelativeLayout>
+    
+</LinearLayout>

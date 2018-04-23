@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:id="@+id/order_type_name"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/truck_head_left"/>
+
+        <TextView
+            android:id="@+id/truck_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/order_type_name"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:text=""/>
+
+        <RelativeLayout
+            android:id="@+id/state_bg"
+            android:layout_width="@dimen/width_83"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/task_order_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/width_9"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/width_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/message_news_layout"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/width_9"
+            android:visibility="gone"
+            android:background="@drawable/message_news">
+
+            <TextView
+                android:id="@+id/message_news"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_14"
+                android:layout_centerInParent="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/width_10"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/height_9"
+        android:background="@color/line_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_15"
+        android:layout_marginTop="@dimen/height_11" >
+
+        <ImageView
+            android:id="@+id/start_image"
+            android:layout_width="@dimen/width_15"
+            android:layout_height="@dimen/height_13"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_9"
+            android:src="@drawable/start_city" />
+
+        <TextView
+            android:id="@+id/start_city"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/start_image"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/width_14" />
+
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="@dimen/width_17"
+            android:layout_height="1px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/start_city"
+            android:background="@color/gray" />
+
+        <ImageView
+            android:id="@+id/end_image"
+            android:layout_width="@dimen/width_15"
+            android:layout_height="@dimen/height_13"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/line"
+            android:src="@drawable/end_city" />
+
+        <TextView
+            android:id="@+id/end_city"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/end_image"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="@dimen/width_14" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/height_11"
+        android:layout_marginTop="@dimen/height_11"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/task_item_goods_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize = "end"
+            android:maxWidth="@dimen/width_180"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/width_9"
+            android:text="货物名称"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/task_item_goods_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_9"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/goods_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_9"
+            android:textColor="@color/gray"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/buttom_type_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/width_9"
+        android:textColor="@color/gray" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/height_9"
+        android:background="@color/line_color"
+        android:layout_marginTop="15dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <com.hongshi.wuliudidi.view.CircleImageView
+            android:id="@+id/head_image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/head_def_img"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxx"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/head_image"
+            android:layout_marginLeft="10dp"/>
+        <ImageView
+            android:id="@+id/evalute"
+            android:layout_width="83dp"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_7"
+        android:background="@color/home_background" />
+</LinearLayout>

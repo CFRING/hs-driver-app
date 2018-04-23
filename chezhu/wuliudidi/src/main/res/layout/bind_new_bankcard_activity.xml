@@ -1,0 +1,186 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hongshi.wuliudidi.activity.BindNewBankcardActivity"
+    android:background="@color/home_background">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--页面标题-->
+        <com.hongshi.wuliudidi.view.DiDiTitleView
+            android:id="@+id/add_bank_card_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--绑卡提示信息layout-->
+        <RelativeLayout
+            android:id="@+id/bind_bankcard_hint_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_32"
+            android:background="@color/back_grey"
+            android:paddingLeft="@dimen/width_13">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/width_11"
+                android:text="@string/bind_bankcard_hint"/>
+        </RelativeLayout>
+
+        <!--暂不支持此银行-->
+        <RelativeLayout
+            android:id="@+id/bind_failed_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_32"
+            android:background="@color/white"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_13"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/width_14"
+                android:textColor="@color/black"
+                android:text="@string/bankcard_type"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_64"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/width_13"
+                android:textColor="@color/gray"
+                android:text="暂不支持此银行"/>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/width_9"
+                android:layout_marginRight="@dimen/width_9"
+                android:background="@color/line_color"/>
+        </RelativeLayout>
+
+        <!--填写持卡人姓名-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_32"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_13"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/width_14"
+                android:textColor="@color/black"
+                android:text="@string/bankcard_user"/>
+
+            <EditText
+                android:id="@+id/bankcard_username_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_64"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:textSize="@dimen/width_13"
+                android:singleLine="true"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/width_9"
+            android:layout_marginRight="@dimen/width_9"
+            android:background="@color/line_color"/>
+
+        <!--填写银行卡号-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_32"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_13"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/width_14"
+                android:textColor="@color/black"
+                android:text="@string/bankcard_number"/>
+
+            <EditText
+                android:id="@+id/bankcard_number_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_64"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:inputType="number"
+                android:textSize="@dimen/width_13"
+                android:singleLine="true"
+                android:maxLength="25"
+                android:textColor="@color/black"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/width_9"
+            android:layout_marginRight="@dimen/width_9"
+            android:background="@color/line_color"/>
+
+        <!--填写开户信息-->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_32"
+            android:background="@color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_13"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/width_14"
+                android:textColor="@color/black"
+                android:text="@string/bank_text"/>
+
+            <EditText
+                android:id="@+id/bank_info_edittext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/width_64"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:textSize="@dimen/width_13"
+                android:singleLine="true"
+                android:maxLength="25"
+                android:textColor="@color/black"
+                android:hint="@string/bank_tips"
+                android:textColorHint="@color/gray"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bind_button"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/height_32"
+            android:layout_marginTop="@dimen/height_18"
+            android:layout_marginLeft="@dimen/width_9"
+            android:layout_marginRight="@dimen/width_9"
+            android:background="@drawable/solid_btn_style"
+            android:textColor="@color/white"
+            android:textSize="@dimen/width_14"
+            android:text="@string/bind_bankcard"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

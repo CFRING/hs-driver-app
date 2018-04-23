@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="@dimen/width_152"
+        android:layout_height="@dimen/height_52"
+        android:src="@drawable/unlogin" />
+
+    <TextView
+        android:id="@+id/remind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_22"
+        android:text="您还没有登录，请登录"
+        android:textColor="#808080"
+        android:textSize="19sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/height_22"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/sign_btn"
+            android:layout_width="@dimen/width_102"
+            android:layout_height="@dimen/height_33"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/sign" />
+        <Button
+            android:id="@+id/register_btn"
+            android:layout_width="@dimen/width_102"
+            android:layout_height="@dimen/height_33"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/registered"/>
+    </LinearLayout>
+
+</LinearLayout>

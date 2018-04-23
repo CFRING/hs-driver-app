@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:orientation="vertical" >
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_72"
+        android:background="@color/white" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_13"
+            android:layout_marginTop="@dimen/height_11"
+            android:text="（总计）"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="80000.00"
+            android:textColor="@color/theme_color"
+            android:textSize="30sp" />
+
+        <View style="@style/line_bottom_thin" />
+    </RelativeLayout>
+
+    <View
+        style="@style/line_bottom"
+        android:layout_marginTop="@dimen/height_11" />
+
+    <com.hongshi.wuliudidi.view.ChargeItemView
+        android:id="@+id/youfei"   
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.hongshi.wuliudidi.view.ChargeItemView
+        android:id="@+id/gongzi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.hongshi.wuliudidi.view.ChargeItemView
+        android:id="@+id/luntaifei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.hongshi.wuliudidi.view.ChargeItemView
+        android:id="@+id/zulin_weixiufei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.hongshi.wuliudidi.view.ChargeItemView
+        android:id="@+id/tongxingfei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.hongshi.wuliudidi.view.ChargeItemView
+        android:id="@+id/yunfei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View style="@style/line_bottom" />
+
+</LinearLayout>

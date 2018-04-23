@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:orientation="vertical" >
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_108" >
+
+        <com.hongshi.wuliudidi.view.MyViewFlow
+            android:id="@+id/viewflow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_108" >
+        </com.hongshi.wuliudidi.view.MyViewFlow>
+
+        <LinearLayout
+            android:id="@+id/lunbo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dip" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+
+            <com.hongshi.wuliudidi.view.CircleFlowIndicator
+                android:id="@+id/viewflowindic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:padding="2dip"
+                android:radius="4dip" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="@dimen/height_36" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_4"
+            android:layout_marginRight="@dimen/width_4"
+            android:layout_marginTop="@dimen/height_4"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/auction_"
+                    android:layout_width="@dimen/width_154"
+                    android:layout_height="@dimen/height_140"
+                    android:background="@drawable/auction_bg" />
+
+                <ImageView
+                    android:id="@+id/waybill_"
+                    android:layout_width="@dimen/width_154"
+                    android:layout_height="@dimen/height_68"
+                    android:layout_marginLeft="@dimen/width_4"
+                    android:layout_toRightOf="@id/auction_"
+                    android:background="@drawable/waybill_bg" />
+
+                <ImageView
+                    android:id="@+id/account_book"
+                    android:layout_width="@dimen/width_154"
+                    android:layout_height="@dimen/height_68"
+                    android:layout_below="@id/waybill_"
+                    android:layout_marginLeft="@dimen/width_4"
+                    android:layout_marginTop="@dimen/height_3"
+                    android:layout_toRightOf="@id/auction_"
+                    android:background="@drawable/account_book_bg" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/height_3" >
+
+                <ImageView
+                    android:id="@+id/add_truck_"
+                    android:layout_width="@dimen/width_154"
+                    android:layout_height="@dimen/height_68"
+                    android:background="@drawable/add_truck_bg" />
+
+                <ImageView
+                    android:id="@+id/call_car"
+                    android:layout_width="@dimen/width_154"
+                    android:layout_height="@dimen/height_140"
+                    android:layout_marginLeft="@dimen/width_4"
+                    android:layout_toRightOf="@id/add_truck_"
+                    android:background="@drawable/call_car_img" />
+
+                <ImageView
+                    android:id="@+id/contact_"
+                    android:layout_width="@dimen/width_154"
+                    android:layout_height="@dimen/height_68"
+                    android:layout_below="@id/add_truck_"
+                    android:layout_marginTop="@dimen/height_3"
+                    android:background="@drawable/contact_bg" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

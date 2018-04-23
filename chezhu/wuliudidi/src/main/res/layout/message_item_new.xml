@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/list_item_background">
+<TextView
+    android:id="@+id/time"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="2017-02-17 20:12:21"
+    android:textColor="@color/white"
+    android:background="@color/line_color"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="6dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rect_gray"
+        android:layout_below="@id/time"
+        android:layout_marginTop="6dp"
+        android:paddingBottom="10dp">
+        <TextView
+            android:id="@+id/message_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题说明"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"/>
+
+        <ImageView
+            android:id="@+id/message_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/message_type"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/home_two"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/message_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+            android:textSize="13sp"
+            android:textColor="@color/gray"
+            android:layout_below="@id/message_image"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp" />
+        <View
+            android:id="@+id/divide_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignLeft="@id/message_type"
+            android:layout_below="@id/message_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/line_color"/>
+        <TextView
+            android:id="@+id/detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看详情"
+            android:textColor="@color/black"
+            android:layout_below="@id/divide_line"
+            android:layout_alignLeft="@id/divide_line"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/my_item_right"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@id/detail"/>
+    </RelativeLayout>
+</RelativeLayout>

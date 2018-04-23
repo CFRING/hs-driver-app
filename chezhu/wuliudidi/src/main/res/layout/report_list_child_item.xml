@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/report_date"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_33"
+        android:layout_marginLeft="@dimen/width_9"
+        android:gravity="center_vertical"
+        android:text="2015-8-17"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/width_12" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/report_date"
+        android:layout_marginLeft="@dimen/width_9"
+        android:layout_marginRight="@dimen/width_9" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_33"
+        android:layout_below="@+id/line" >
+
+        <TextView
+            android:id="@+id/date_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/width_9"
+            android:textSize="@dimen/width_12"
+            android:text="21日 浙A 0122 李四"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray" />
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/width_9"
+            android:textSize="@dimen/width_12"
+            android:text="+50"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/gray" />
+    </RelativeLayout>
+
+</RelativeLayout>

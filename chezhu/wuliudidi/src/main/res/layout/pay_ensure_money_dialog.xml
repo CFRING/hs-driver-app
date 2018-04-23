@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_252"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_gravity="center_horizontal" >
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_32"
+        android:layout_marginLeft="@dimen/width_21"
+        android:layout_marginRight="@dimen/width_21"
+        android:layout_marginTop="@dimen/height_31"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/width_13"
+        android:background="@drawable/edittext_style"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/width_12"
+        android:text="@string/pay_money_dialog_enterprise"/>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_32"
+        android:layout_marginLeft="@dimen/width_21"
+        android:layout_marginRight="@dimen/width_21"
+        android:layout_marginTop="@dimen/height_7"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/width_13"
+        android:background="@drawable/edittext_style"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/width_12"
+        android:text="@string/pay_money_dialog_bank"/>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_32"
+        android:layout_marginLeft="@dimen/width_21"
+        android:layout_marginRight="@dimen/width_21"
+        android:layout_marginTop="@dimen/height_7"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/width_13"
+        android:background="@drawable/edittext_style"
+        android:textColor="@color/gray"
+        android:textSize="@dimen/width_12"
+        android:text="@string/pay_money_dialog_accid"/>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_32"
+        android:layout_marginLeft="@dimen/width_21"
+        android:layout_marginRight="@dimen/width_21"
+        android:layout_marginTop="@dimen/height_7"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/width_13"
+        android:background="@drawable/edittext_style">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+        	android:textSize="@dimen/width_12"
+        	android:text="@string/pay_money_dialog_remarks"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/width_10"
+            android:textColor="@color/gray"
+        	android:textSize="@dimen/width_12"
+        	android:text="@string/pay_money_dialog_content"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/height_28"
+        android:layout_marginLeft="@dimen/width_21"
+        android:layout_marginRight="@dimen/width_21"
+        android:layout_marginTop="@dimen/height_17">
+        <Button 
+            android:id="@+id/query_service"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/width_13"
+            android:text="@string/query_service"
+            android:gravity="center"
+            android:background="@drawable/solid_btn_style"/>
+        
+        <Button 
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/width_17"
+            android:textColor="@drawable/frame_btn_textcolor"
+            android:textSize="@dimen/width_13"
+            android:text="@string/cancel"
+            android:gravity="center"
+            android:background="@drawable/frame_btn_style"/>
+    </LinearLayout>
+
+</LinearLayout>

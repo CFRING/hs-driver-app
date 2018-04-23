@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    android:orientation="vertical" >
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/upload_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_below="@+id/upload_title"
+        android:layout_marginBottom="@dimen/height_40"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffecd9"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_33"
+                    android:layout_marginLeft="@dimen/width_9"
+                    android:gravity="center_vertical"
+                    android:text="@string/upload_info"
+                    android:textColor="@color/theme_color"
+                    android:textSize="@dimen/width_12" />
+
+                <View style="@style/line_bottom" />
+            </LinearLayout>
+
+            <com.hongshi.wuliudidi.view.EditView
+                android:id="@+id/editView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_33" />
+
+            <View style="@style/line_bottom" />
+
+            <com.hongshi.wuliudidi.view.PhotoItemView
+                android:id="@+id/one_item"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_108" />
+
+            <View style="@style/line_bottom" />
+
+            <com.hongshi.wuliudidi.view.PhotoItemView
+                android:id="@+id/two_item"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_108" />
+
+            <RelativeLayout
+                android:id="@+id/edit_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_75"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/content_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white" />
+
+                <EditText
+                    android:id="@+id/content_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/white"
+                    android:textSize="@dimen/width_12"
+                    android:gravity="top|left"
+                    android:hint="备注"
+                    android:maxLength="100" />
+
+                <TextView
+                    android:id="@+id/last_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="还剩100字" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_35"
+        android:layout_alignParentBottom="true"
+        android:background="@color/theme_color"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="@color/white"
+        android:textSize="@dimen/width_15" />
+
+</RelativeLayout>

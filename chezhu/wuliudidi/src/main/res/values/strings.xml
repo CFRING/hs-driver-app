@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">红狮物流</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_my">MyActivity</string>
+    <string name="home">首页</string>
+    <string name="task">任务</string>
+    <string name="my">我的</string>
+    <string name="goods">货源</string>
+    <string name="message">消息</string>
+    <string name="message_notification">消息通知</string>
+    <string name="home_title">红狮物流</string>
+    <string name="task_title">运输任务</string>
+    <string name="my_title">我的</string>
+    <string name="login_text">登录</string>
+    <string name="register_text">注册</string>
+    <string name="password_text">密码</string>
+    <string name="my_message">消息</string>
+    <string name="my_name_auth">实名认证</string>
+    <string name="my_enterprise_auth">企业认证</string>
+    <string name="my_license_auth">驾照认证</string>
+    <string name="my_car_info">我的车辆</string>
+    <string name="my_task">我的任务</string>
+    <string name="my_team_info">我的司机</string>
+    <string name="my_auction_record">接单记录</string>
+    <string name="my_transport_ensure">运输保障</string>
+    <string name="my_contact">联系客服</string>
+    <string name="my_settings">设置</string>
+    <string name="affirm_auction">确认</string>
+    <string name="manager">管理</string>
+    <string name="bank_card">银行卡</string>
+    <string name="unionpay">银联</string>
+    <string name="recharge">充值</string>
+    <string name="choose_pay_way">请选择支付方式</string>
+    <string name="use_new_bankcard">使用其他银行卡</string>
+    <string name="numeral_number">数额</string>
+    <string name="input_recharge_numeral_number">请输入充值金额</string>
+    <string name="bankcard_recharge_hint">目前仅支持带银联标志的银行卡，其他类型暂不支持</string>
+    <string name="bind_bankcard_hint">请绑定持卡人本人的银行卡</string>
+    <string name="bind_bankcard">绑卡</string>
+    <string name="bankcard_user">持卡人</string>
+    <string name="bankcard_number">卡号</string>
+    <string name="bank_text">开户行</string>
+    <string name="bank_tips">填写开户信息</string>
+    <string name="add_bankcard">添加银行卡</string>
+    <string name="my_bankcard">我的银行卡</string>
+    <string name="confirm_withdraw">确认转出</string>
+    <string name="withdraw_all">全部提现</string>
+    <string name="bankcard_type">卡类型</string>
+    <string name="account_flow">资金流水</string>
+    <string name="daily_statistic">每日统计</string>
+    <string name="monthly_statistic">月度统计</string>
+    <string name="annual_statistic">年度统计</string>
+    <string name="my_transit_bill">我的运单</string>
+    <string name="push_des">红狮物流消息</string>
+    <string name="task_order_number">运单单号</string>
+    <string name="auction_number">接单号</string>
+    <string name="auction_details">货源详情</string>
+    <string name="remark">备注</string>
+    <string name="auction">立即接单</string>
+    <string name="auction_check">接单申请已完成，请耐心等待审核结果</string>
+    <string name="no_data">暂无相关数据</string>
+    <string name="about_us">关于我们</string>
+    <string name="upload_info">过磅单和签收单是结算依据,请务必清晰上传!</string>
+
+    <string name="please_check_your_network">"请检查网络是否正常"</string>
+    <string name="take_task">我要接活</string>
+
+    <!--进行输入操作时的hint-->
+    <string name="passwd_modify">修改密码</string>
+    <string name="cellphone">手机号码</string>
+    <string name="captchas">验证码</string>
+    <string name="short_message_captchas">短信验证码</string>
+    <string name="new_password">新密码</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="submit_password">确认修改</string>
+    <string name="input_cellphone">请输入您的手机号码</string>
+    <string name="get_captchas">获取验证码</string>
+    <string name="captchas_refresh">重新获取</string>
+    <string name="input_captchas">请输入短信验证码</string>
+    <string name="input_new_password">请输入6&#8211;16字母和数字的密码</string>
+    <string name="input_comfirm_password">请再次输入密码</string>
+
+    <string name="account_passwd_wrong">手机号密码错误</string>
+    <string name="forget_passwd">忘记密码？</string>
+    <string name="account_empty_error">请输入手机号</string>
+    <string name="account_illegal_error">请输入11位手机号！</string>
+    <string name="captchas_empty_error">请输入验证码！</string>
+    <string name="captchas_error">验证码错误！</string>
+    <string name="passed_empty_error">请输入密码！</string>
+    <string name="passwd_illegal_error">请输入仅包含数字与英文字母的密码！</string>
+    <string name="passwd_length_error">请输入6&#8211;16位长度的密码！</string>
+    <string name="passwd_inconsistent_error">密码输入不一致！</string>
+    <string name="register_now">立即注册</string>
+    <string name="new_user_reg">新用户注册</string>
+    <string name="next_step">下一步</string>
+    <string name="last_step">上一步</string>
+    <string name="passwd_recovery">找回密码</string>
+    <string name="set_newpasswd">设置新密码</string>
+    <string name="set_passwd">设置密码</string>
+    <string name="finish">完成</string>
+
+    <string name="input_plate_number">请输入车牌号码</string>
+    <string name="truck_photo">车辆照片</string>
+
+
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_type">请选择您要反馈的问题类型</string>
+    <string name="app_feature">功能建议</string>
+    <string name="suggestion">意见与建议</string>
+    <string name="anything_else">其他</string>
+    <string name="input_feedback">在这里输入您的意见</string>
+    <string name="submit">提交</string>
+    <string name="error_network">搜索失败,请检查网络连接！</string>
+    <string name="error_key">key验证无效！</string>
+    <string name="error_other">未知错误，请稍后重试!错误码为</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+
+    <string name="transit_detail">报表明细</string>
+    <string name="detail">详情</string>
+    <string name="transit_number">派车单号</string>
+    <string name="real_load">实际运量</string>
+    <string name="weighing_form_number">过磅单号</string>
+    <string name="goods_receiver">收货单位</string>
+    <string name="goods_sender">发货单位</string>
+    <string name="plate_number">车牌号码</string>
+    <string name="driver">驾驶员</string>
+    <string name="weight_emptycar">空车过磅</string>
+    <string name="weight_loadedcar">车重过磅</string>
+    <string name="goods_checker">验收人</string>
+    <string name="goods_weigher">过磅人</string>
+    <string name="payment_terms">付款方式</string>
+    <string name="creating_time">创建时间</string>
+    <string name="transit_succeed">运单完成</string>
+    <string name="upload_receipt">上传回单</string>
+
+    <string name="scan_text">将过磅单二维码放入框内, 即可自动扫描</string>
+
+    <string name="auth_hint_title">以下情况会使您的审核不通过：</string>
+    <string name="i_know">知道了</string>
+    <string name="auth_individual_hint">① 姓名与身份证不符\n② 上传的身份证不清晰或已过期\n③ 上传的驾驶证不清晰或已过期\n④ 使用不符证件    </string>
+    <string name="auth_company_hint">① 法人代表姓名与身份证不符\n② 上传的身份证不清晰或已过期\n③ 上传的营业执照不清晰或已过期\n④ 上传的道路运输经营许可证不清晰或已过期\n⑤ 使用不符证件     </string>
+
+    <!-- 根据后台反应，所给出的提示.命名风格：动作 + 失败原因 + errmsg -->
+    <string name="add_driver_unsuit_errmsg">很抱歉，车主不能添加为司机</string>
+    <string name="add_driver_invalid_user_errmsg">很遗憾，对方还不是平台用户</string>
+    <string name="add_driver_duplicate_errmsg">您已经添加过该司机</string>
+
+    <string name="cancel">取消</string>
+    <string name="search">搜索</string>
+    <string name="auction_introduce">接单介绍</string>
+    <string name="transit_task_creat_time">派车计划创建时间</string>
+    <string name="start_time">开始时间</string>
+    <string name="end_time">送达时间</string>
+    <string name="send_time">送货时间</string>
+    <string name="consignment_bill_number">托运单号</string>
+    <string name="sifting">货物</string>
+    <string name="clean_data">清除数据</string>
+    <string name="date_sifting_annual">按年筛选</string>
+    <string name="date_sifting_monthly">按月筛选</string>
+    <string name="date_sifting_daily">按日筛选</string>
+
+    <string name="driver_goods_wait">待运输</string>
+    <string name="driver_goods_transiting">运输中</string>
+    <string name="driver_goods_transit_history">历史</string>
+    <string name="no_driver_hint">（此车您还未绑定司机）</string>
+    <string name="truck_modify_dynied">已审核的车辆信息不可更改</string>
+    <string name="truck_licence_default">浙  A</string>
+    <string name="truck_head">车头</string>
+    <string name="truck_side">侧面</string>
+    <string name="truck_tail">车尾</string>
+    <string name="truck_driving_license">行驶证</string>
+    <string name="transport_certificate_front">营运证正面</string>
+    <string name="transport_certificate_back">营运证背面</string>
+    <string name="input_truck_load_capacity">请输入载货量</string>
+    <string name="truck_load">车载运量</string>
+    <string name="confirm_assign_truck">确认派车</string>
+    <string name="bid_price">接单出价</string>
+    <string name="input_bid_price">请输入接单报价</string>
+    <string name="maximum_load">最大运量</string>
+    <string name="input_maximum_load">请输入车辆最大载重量</string>
+    <string name="choose_truck">选择车辆</string>
+    <string name="enterprise_name">企业名称</string>
+    <string name="input_enterprise_name">请填写企业名称</string>
+    <string name="juridical_person_name">法人姓名</string>
+    <string name="input_juridical_person_name">请填写法人的真实姓名</string>
+    <string name="sex">性别</string>
+    <string name="input_sex">请选择您的性别</string>
+    <string name="id_number">身份证号</string>
+    <string name="input_id_number">请填写法人的身份证号</string>
+    <string name="confirm_trucks">确认车辆</string>
+    <string name="custom_service_confirm">联系客服确认</string>
+    <string name="have_no_truck">未绑定车辆</string>
+    <string name="contact_number">400-8555888</string>
+    <string name="referee">报价参考</string>
+    <string name="hint_dialog_text">提示</string>
+    <string name="sure">确定</string>
+    <string name="report_trucks">报备车辆</string>
+    <string name="auction_message">接单信息</string>
+    <string name="add">添加</string>
+    <string name="choose_driver">选择司机</string>
+    <string name="save">保存</string>
+    <string name="input_nickname_hint">点击输入备注昵称</string>
+    <string name="input_backup_phone_hint">点击输入备注电话号码</string>
+    <string name="unknown">未知</string>
+    <string name="start_transit">开始运输</string>
+    <string name="goods_arrive">货物送达</string>
+    <string name="add_truck">添加车辆</string>
+    <string name="truck_owner">车主</string>
+    <string name="submit_success">提交成功</string>
+    <string name="we_will_audit_as_soon">我们会尽快审核您的信息</string>
+    <string name="wait_for_confirming">等待审核确认</string>
+    <string name="not_paid_details">待发放明细</string>
+    <string name="net_income_details">净资产明细</string>
+    <string name="contact_sender">联系发货人</string>
+    <string name="contact_receiver">联系收货人</string>
+    <string name="reject_reason">退回原因</string>
+    <string name="regisiter_hint">注册即视为同意</string>
+    <string name="agreement">《红狮物流用户注册服务协议》</string>
+    <string name="all">全部</string>
+    <string name="check_detail">查看明细</string>
+    <string name="ensure_money_introduction">保证金说明</string>
+    <string name="join_in_insure_service">加盟保障服务步骤</string>
+    <string name="submit_to_audit">提交</string>
+    <string name="num0">0</string>
+    <string name="num1">1</string>
+    <string name="num2">2</string>
+    <string name="num3">3</string>
+    <string name="num4">4</string>
+    <string name="num5">5</string>
+    <string name="num6">6</string>
+    <string name="num7">7</string>
+    <string name="num8">8</string>
+    <string name="num9">9</string>
+    <string name="pay_ensure_money">缴纳保证金</string>
+    <string name="recharge_ensure_money">充值保证金</string>
+    <string name="platform_confirm">平台确认</string>
+    <string name="ensure_service_enjoyment">享受保障服务</string>
+    <string name="ensure_money_account">保证金账户（元）</string>
+    <string name="transport_ensure_money">运输保证金</string>
+    <string name="my_wallet">我的钱包</string>
+    <string name="wallet">钱包</string>
+    <string name="driver_my_route">我的路线</string>
+    <string name="pay_money_dialog_enterprise">公司名称： 浙江红狮物流有限公司</string>
+    <string name="pay_money_dialog_bank">开户行： 中国农业银行兰溪市城关支行</string>
+    <string name="pay_money_dialog_accid">账户号： 19620201040010195</string>
+    <string name="pay_money_dialog_remarks">备注说明： </string>
+    <string name="pay_money_dialog_content">请备注说明充值的红狮物流登录手机号</string>
+    <string name="query_service">咨询客服</string>
+    <string name="truck_type">车辆类型</string>
+    <string name="truck_carriage_type">车厢类型</string>
+    <string name="is_zixieche">是否自卸车</string>
+    <string name="truck_max_load">最大载重（吨）</string>
+    <string name="truck_space">载货空间</string>
+    <string name="optional_item">选填</string>
+    <string name="verify_passed">审核已通过</string>
+    <string name="accounts_settle_unfinished">（未结算）</string>
+    <string name="unlimited">不限</string>
+    <string name="login_on_another_terminal">您的账号已在另一台设备登录，请重新登录。如非您本人操作，请及时找回并修改登录密码。</string>
+    <string name="share_title">【红狮物流】赚钱从这里开始</string>
+    <string name="share_text">让物流更诚信,让配货更简单</string>
+    <string name="weixin_timeline_share_not_support">微信版本不支持朋友圈分享</string>
+    <string name="pull_up_load_more">上拉加载</string>
+    <string name="loading">正在加载</string>
+    <string name="loosen_to_load_more">松开加载更多</string>
+    <string name="loosen_to_refresh">松开刷新</string>
+    <string name="refresing">刷新中</string>
+    <string name="pull_down_refresh">下拉刷新</string>
+    <string name="total_income">总收入</string>
+    <string name="total_transit_truck">运输车辆总计</string>
+    <string name="transit_bill_record">运单记录</string>
+    <string name="end_page">已经是最后一页</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="yuan">元</string>
+    <string name="liang">辆</string>
+    <string name="ci">次</string>
+    <string name="log_http_tag">http_hongshiwuliu</string>
+    <string name="login_account_tip">您可以用货主账号、货运站账号、优煤网账号登录</string>
+    <string name="active_account_tip">尊敬的用户，这是您首次登录红狮物流，确认激活表示您同意遵守如下协议:</string>
+    <string name="red_lion_transit_protocol">《红狮物流运输协议》</string>
+    <string name="red_lion_register_protocol">《用户注册服务协议》</string>
+    <string name="voice_alarm_tip">语音提醒设置</string>
+
+    <!--运输状态-->
+    <string name="estimate_arrive_source_time">预计到达发货地时间</string>
+    <string name="has_arrived">已到达等待装货</string>
+    <string name="wait_for_dispatch">装完发车</string>
+    <string name="estimate_arrive_time">预计到达收货地时间</string>
+    <string name="encounter_tough">遇到困难</string>
+    <string name="finish_transport">货物送达</string>
+    <string name="transport_status_page_tittle">运输状态</string>
+    <string name="transport_record">运输记录</string>
+
+    <!-- 输入限制 -->
+    <string name="passwd_limit">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789</string>
+    <string name="double_limit">0123456789.</string>
+    <string name="title_activity_wallet_recharge">WalletRechargeActivity</string>
+    <string name="title_activity_bank_card_recharge">BankCardRechargeActivity</string>
+    <string name="title_activity_bind_new_bankcard">BindNewBankcardActivity</string>
+    <string name="title_activity_my_bankcards">MyBankcardsActivity</string>
+    <string name="title_activity_bankcard_detail">BankcardDetailActivity</string>
+    <string name="title_activity_transit_record_overview">TransitRecordOverviewActivity</string>
+    <string name="title_activity_time_sifting">TimeSiftingActivity</string>
+
+    <!--插件启动相关-->
+    <string name="plugin_not_exit">这是一个插件，须连接网络才能使用</string>
+    <string name="plugin_is_installing">正在初始化插件...</string>
+    <string name="plugin_installed_ok">插件初始化已完成，重新点击使用</string>
+
+    <!--水泥货源叫车界面-->
+    <string name="cement_goods">叫车货源</string>
+    <!--<string name="is_terminal_charge_text">含装卸费</string>-->
+    <!--<string name="is_not_terminal_charge_text">不含装卸费</string>-->
+
+    <!--选择货品类型弹窗-->
+    <string name="good_type">货品类型</string>
+    <string name="bulk_cement">散装水泥</string>
+    <string name="bag_cement">袋装水泥</string>
+    <string name="clinker">熟料</string>
+    <string name="construction_waste">建筑垃圾</string>
+    <string name="coal">煤炭</string>
+    <string name="reset">重置</string>
+    <string name="good_type_sure">确认</string>
+
+    <!--供应端记录详情-->
+    <string name="billCode">单据号</string>
+    <string name="fullWeight">毛重</string>
+    <string name="netWeight">净重</string>
+    <!-- 供应端列表界面 -->
+    <string name="choose_month">请选择月份</string>
+    <string name="choose_years">请选择年份</string>
+    <string name="day_sum">每日统计</string>
+    <string name="month_sum">月度统计</string>
+    <string name="year_sum">年度统计</string>
+
+    <!--更换绑定手机-->
+    <string name="yan_zheng">验证</string>
+    <string name="yan_zheng_shen_fen">验证身份</string>
+    <string name="phone_change_tip">更换手机</string>
+    <string name="input_login_psw_tip">请输入登录密码</string>
+    <string name="input_new_phone_number_tip">请输入您的新手机号码</string>
+    <string name="login_psw_tip">登录密码</string>
+    <string name="login_register_tip">登录/注册</string>
+
+    <!--广告模块-->
+    <string name="enter_adv">查看活动详情</string>
+
+    <string name="zu_lin_he_tong_tip">《车辆租赁合同》</string>
+    <string name="lao_wu_cheng_bao_he_tong_tip">《劳务承包合同》</string>
+
+    <string name="scan_tip">扫一扫</string>
+    <string name="account_money">可用余额(元)</string>
+    <string name="rmb">¥</string>
+    <string name="sure_to_pay">确认付款</string>
+    <string name="cancel_pay">取消付款</string>
+    <string name="choose_pay_type">选择付款方式</string>
+    <string name="supplier_tip">商  户  信  息</string>
+    <string name="product_tip">商  品  信  息</string>
+    <string name="payment_tip">付  款  方  式</string>
+    <string name="create_time_tip">创  建  时  间</string>
+    <string name="trade_code_tip">交  易  单  号</string>
+    <string name="payment_desc">付  款  说  明</string>
+    <string name="order_num_tip">商  户  名  称</string>
+    <string name="start_time_tip">开始时间</string>
+    <string name="choose_start_time">选择开始时间</string>
+    <string name="end_time_tip">结束时间</string>
+    <string name="choose_end_time">选择结束时间</string>
+    <string name="type_tip">类型</string>
+    <string name="choose_type_tip">选择类型</string>
+    <string name="input_phone_number">输入手机尾号</string>
+    <string name="receive_code">接收到的短信验证码</string>
+    <string name="error_msg">请求出错，请稍后再试</string>
+    <string name="hint_get_captchas">正在获取验证码</string>
+    <string name="waiting">请稍等</string>
+
+    <!--提油-->
+    <string name="ti_xian">确认提取</string>
+    <string name="ti_xian_money">提油额度</string>
+    <string name="can_ti_xian_money">可提油余额</string>
+    <string name="ti_xian_all">全部提油</string>
+    <string name="jiao_yi_type">交易类型</string>
+    <string name="ti_xian_account">提现账户</string>
+    <string name="ti_xian_card">到账银行卡</string>
+    <string name="tips">工作日4小时内到账，法定节假日顺延</string>
+    <string name="choose_oil_cards">请选择油卡</string>
+    <string name="oil_count_flow_tip">额度已超过可提取余额</string>
+
+
+
+
+    <!--提现-->
+    <string name="my_bank">我的收银台</string>
+    <string name="sdk_ti_xian">确认提现</string>
+    <string name="sdk_ti_xian_money">提现金额</string>
+    <string name="sdk_can_ti_xian_money">可提现余额</string>
+    <string name="sdk_ti_xian_all">全部提现</string>
+    <string name="sdk_jiao_yi_type">交易类型</string>
+    <string name="sdk_ti_xian_account">提现账户</string>
+    <string name="sdk_ti_xian_card">到账银行卡</string>
+    <string name="sdk_rmb">¥</string>
+    <string name="gong_shang_yin_hang">工商银行</string>
+    <string name="jian_she_yin_hang">建设银行</string>
+    <string name="nong_ye_yin_hang">农业银行</string>
+    <string name="zhong_guo_yin_hang">中国银行</string>
+    <string name="ok">确认</string>
+    <string name="toast_zero">提现金额不能为零</string>
+    <string name="toast_over">提现金额超出可提现余额</string>
+    <string name="toast_empty">请输入提现金额</string>
+    <string name="cash_error">交易出错，请重新操作</string>
+    <string name="sdk_input_cellphone">请输入您的手机号码</string>
+    <string name="sdk_get_captchas">获取验证码</string>
+    <string name="sdk_captchas_refresh">重新获取</string>
+    <string name="sdk_input_captchas">请输入短信验证码</string>
+    <string name="sdk_short_message_captchas">短信验证码</string>
+    <string name="sdk_cancel">取消</string>
+    <string name="sdk_sure">确定</string>
+    <string name="sdk_hint_get_captchas">正在获取验证码</string>
+    <string name="sdk_waiting">请稍等</string>
+    <string name="sdk_input_phone_number">输入手机尾号</string>
+    <string name="sdk_receive_code">接收到的短信验证码</string>
+    <string name="sdk_error_msg">请求出错，请稍后再试</string>
+    <string name="sdk_dialog_title">请选择支付方式</string>
+    <string name="sdk_tips">工作日最快2小时到账 法定节假日顺延</string>
+
+</resources>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background" >
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/register_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_45" />
+
+    <RelativeLayout
+        android:id="@+id/account_line"
+        android:layout_width="@dimen/width_248"
+        android:layout_height="@dimen/height_43"
+        android:layout_below="@id/register_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_32" >
+
+        <Button
+            android:id="@+id/input_cancel"
+            android:layout_width="@dimen/width_15"
+            android:layout_height="@dimen/height_13"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/height_7"
+            android:background="@drawable/cancel"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/account_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/input_cancel"
+            android:layout_toLeftOf="@id/input_cancel"
+            android:background="@null"
+            android:hint="@string/input_cellphone"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_grey"
+            android:textSize="@dimen/width_14" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/captchas_line"
+        android:layout_width="@dimen/width_248"
+        android:layout_height="@dimen/height_43"
+        android:layout_below="@id/account_line"
+        android:layout_centerHorizontal="true" >
+
+        <EditText
+            android:id="@+id/captchas_input"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/get_captchas"
+            android:background="@null"
+            android:hint="@string/input_captchas"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_grey"
+            android:textSize="@dimen/width_14" />
+
+        <com.hongshi.wuliudidi.view.TimeCounterButton
+            android:id="@+id/get_captchas"
+            android:layout_width="@dimen/width_77"
+            android:layout_height="@dimen/height_25"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/transparent_frame_button_style"
+            android:textSize="@dimen/width_12"
+            android:text="@string/get_captchas"
+            android:textColor="@drawable/frame_btn_textcolor" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/next_step"
+        android:layout_width="@dimen/width_248"
+        android:layout_height="@dimen/height_33"
+        android:layout_below="@id/captchas_line"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/height_22"
+        android:background="@drawable/solid_btn_style"
+        android:text="@string/next_step"
+        android:textColor="@color/white" />
+    
+    
+    <RelativeLayout 
+        android:id="@+id/promoter_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignLeft="@id/next_step"
+        android:layout_alignRight="@id/next_step"
+        android:layout_below="@id/next_step"
+        android:layout_marginTop="@dimen/height_29"
+        android:visibility="gone">
+        
+        <View 
+            style="@style/line_top_thin"/>
+        
+        <RelativeLayout 
+            android:id="@+id/promoter_head_layout"
+	        android:layout_marginTop="@dimen/height_29"
+        	android:layout_width="60dp"
+        	android:layout_height="60dp"
+            android:background="@drawable/user_head_background"
+            android:gravity="center">
+            <com.hongshi.wuliudidi.view.CircleImageView 
+	            android:id="@+id/promoter_head"
+	            android:layout_width="@dimen/width_51"
+	            android:layout_height="@dimen/height_43"
+	            android:scaleType="fitXY"
+	            android:src="@drawable/promoter_default_head"/>
+        </RelativeLayout>
+        
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignBottom="@id/promoter_head_layout"
+            android:layout_toRightOf="@id/promoter_head_layout"
+            android:layout_marginLeft="@dimen/width_9">
+            
+            <TextView 
+                android:id="@+id/promoter_name"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:textColor="@color/black"
+            	android:textSize="@dimen/width_13"/>
+            <TextView 
+                android:id="@+id/promoter_title"
+                android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:textColor="@color/light_grey"
+            	android:textSize="@dimen/width_11"/>
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <ImageView 
+	    android:layout_width="@dimen/width_152"
+	    android:layout_height="@dimen/height_150"
+	    android:src="@drawable/background"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentRight="true"/>
+    
+    <TextView 
+        android:id="@+id/agreement_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/height_8"
+        android:layout_alignLeft="@id/next_step"
+        android:textSize="@dimen/width_12"
+        android:textColor="@color/black"
+        android:visibility="gone"/>
+</RelativeLayout>

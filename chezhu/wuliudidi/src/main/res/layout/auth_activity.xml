@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/home_background" >
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/auth_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/height_7" />
+
+    <ScrollView
+        android:layout_below="@+id/auth_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="@dimen/height_39">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/home_background"
+            android:orientation="vertical" >
+            
+            <RelativeLayout 
+                android:id="@+id/reject_reason_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone">
+                
+                <TextView
+                    android:id="@+id/reject_reason"
+                    android:layout_width="@dimen/height_50"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/width_9"
+                    android:text="@string/reject_reason"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/width_12" />
+
+                <TextView
+                    android:id="@+id/reject_reason_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/width_13"
+                    android:layout_marginRight="@dimen/width_9"
+                    android:layout_marginBottom="@dimen/height_6"
+                    android:layout_marginTop="@dimen/height_6"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/reject_reason"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/width_12" />
+                
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/width_9"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line_color" />
+            </RelativeLayout>
+
+            <!-- 实名姓名/企业名称/驾照姓名  布局 -->
+            <RelativeLayout
+                android:id="@+id/company_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_33"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/company_text"
+                    android:layout_width="@dimen/height_50"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/width_9"
+                    android:text="@string/enterprise_name"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/width_12" />
+
+                <EditText
+                    android:id="@+id/company_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/width_13"
+                    android:layout_toRightOf="@id/company_text"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/input_enterprise_name"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/light_grey"
+                    android:textSize="@dimen/width_12" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="@dimen/width_9"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line_color" />
+            </RelativeLayout>
+
+            <!-- 企业法人 layout -->
+            <RelativeLayout
+                android:id="@+id/name_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_33"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/name_text"
+                    android:layout_width="@dimen/height_50"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/width_9"
+                    android:text="@string/juridical_person_name"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/width_12" />
+
+                <EditText
+                    android:id="@+id/name_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/width_13"
+                    android:layout_toRightOf="@id/name_text"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/input_juridical_person_name"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/light_grey"
+                    android:textSize="@dimen/width_12" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line_color" />
+            </RelativeLayout>
+
+            <!-- 个人认证性别/驾照认证准驾车型 布局 -->
+            <RelativeLayout
+                android:id="@+id/sex_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_33"
+                android:background="@color/white"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/sex_text"
+                    android:layout_width="@dimen/height_50"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/width_9"
+                    android:text="@string/sex"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/width_12" />
+
+                <TextView
+                    android:id="@+id/sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/width_13"
+                    android:layout_toRightOf="@id/sex_text"
+                    android:gravity="center_vertical"
+                    android:text="@string/input_sex"
+                    android:textColor="@color/light_grey" />
+
+                <ImageView
+                    android:id="@+id/authright_icon"
+                    android:layout_width="@dimen/width_17"
+                    android:layout_height="@dimen/height_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/width_13"
+                    android:layout_marginRight="@dimen/width_9"
+                    android:src="@drawable/my_item_right" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line_color" />
+            </RelativeLayout>
+
+            <!-- 身份证号、驾照过期时间布局 -->
+            <RelativeLayout
+                android:id="@+id/id_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/height_33"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/id_text"
+                    android:layout_width="@dimen/height_50"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/width_9"
+                    android:text="@string/id_number"
+                    android:textColor="@color/gray"
+                    android:textSize="@dimen/width_12" />
+
+                <EditText
+                    android:id="@+id/id_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/width_13"
+                    android:layout_toRightOf="@id/id_text"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="@string/input_id_number"
+                    android:maxLength="18"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/light_grey"
+                    android:textSize="@dimen/width_12" />
+
+                <TextView
+                    android:id="@+id/license_date"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="@dimen/width_13"
+                    android:layout_toRightOf="@id/id_text"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:maxLength="18"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/light_grey"
+                    android:textSize="@dimen/width_12"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/past_time_image"
+                    android:layout_width="@dimen/width_17"
+                    android:layout_height="@dimen/height_15"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/width_13"
+                    android:layout_marginRight="@dimen/width_9"
+                    android:src="@drawable/my_item_right"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/line_color" />
+            </RelativeLayout>
+
+            <com.hongshi.wuliudidi.view.PhotoItemView
+                android:id="@+id/one_item"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_108" />
+
+            <com.hongshi.wuliudidi.view.PhotoItemView
+                android:id="@+id/two_item"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_108" />
+
+            <com.hongshi.wuliudidi.view.PhotoItemView
+                android:id="@+id/three_item"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_108" />
+
+            <com.hongshi.wuliudidi.view.PhotoItemView
+                android:id="@+id/four_item"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_108" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_35"
+        android:background="@color/theme_color"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:textSize="@dimen/width_16" />
+</RelativeLayout>

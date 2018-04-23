@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background" >
+
+    <com.hongshi.wuliudidi.view.DiDiTitleView
+        android:id="@+id/choose_truck_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:id="@+id/choose_truck_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_truck_title"
+        android:layout_marginTop="@dimen/height_7"
+        android:layout_marginBottom="@dimen/height_36"
+        android:divider="@null" >
+    </ListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_36"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/height_7"
+        android:background="@color/white" >
+
+        <View style="@style/line_bottom" />
+
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_9"
+            android:background="@drawable/checkbox_style"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/choose_all_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/width_13"
+            android:layout_toRightOf="@+id/check"
+            android:text="全选"
+            android:textColor="@color/black"
+            android:textSize="@dimen/width_13" />
+
+        <Button
+            android:id="@+id/auction_sure"
+            android:layout_width="@dimen/width_102"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/theme_color"
+            android:gravity="center"
+            android:text="@string/confirm_trucks"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
